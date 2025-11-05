@@ -1,0 +1,17 @@
+channel,protein,description,cell type,broad/specyfic
+Argo520,SPP1,macrophage subset marker,SPP1_MACs,subset marker
+Argo555L,HLA-DR,dendritic cell marker,DCs,broad marker
+Argo548,CD3e,T cell marker,Tcells,broad marker
+Argo660L,IBA1,pan macrophage marker,MACs,broad marker
+Argo602,FAP,tumor associated macrophage marker,FAP_FBs,subset marker
+Argo624,CD8a,CD8 T cell marker,CD8_Tcells,subset marker
+Argo658,CD163,broad macrophage marker,MACs,broad marker
+Argo676,FOLR2,macrophage subset marker,FOLR2_MACs,subset marker
+Argo698,GFPT2,fibroblast subset marker,GFPT2_FBs,subset marker
+Argo706,NLRP3,macrophage subset marker,NLRP3_MACs,subset marker
+Argo724,FOXP3,Treg marker,Tregs,subset marker
+Argo760,CD15,neutrophil marker,Neutrophils,subset marker
+Argo782,LYVE1,macrophage subset marker,LYVE1_MACs,subset marker
+Argo812,SMA,smooth muscle cell marker,Smooth_Muscels,subset marker
+Argo845,Pan-CK,pan epithelial cell marker including tumor cells,Cancer_Cells,subset marker
+Argo874,IL-4I1,macrophage subset marker,IL4I1_MACs,subset marker

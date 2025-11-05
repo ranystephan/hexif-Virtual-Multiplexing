@@ -1,0 +1,22 @@
+\documentclass[12pt,twoside]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{url}
+
+\title{HExIF: An End-to-End Deep Learning Framework for Virtual Multiplex Immunofluorescence from H\&E Slides}
+\author{Rany Stephan\thanks{Institute for Computational and Mathematical Engineering, Stanford University. \texttt{ranycs@stanford.edu}} \and
+        Andrew Gentles\thanks{Department of Biomedical Data-Science, Stanford University.}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+High-plex immunofluorescence technologies provide deep, spatially-resolved molecular data but remain costly and complex. In contrast, Hematoxylin and Eosin (H\&E) staining is a ubiquitous, low-cost histological method limited to morphological assessment. To bridge this gap, we present HExIF, an automated deep learning pipeline to generate virtual multiplex immunofluorescence images directly from standard H\&E slides. Our framework begins by co-registering whole-slide images of paired H\&E and 20-channel Orion immunofluorescence slides from a tissue microarray using the \texttt{valis} registration library. We then employ a custom image processing workflow to automatically detect and extract over 270 matched, full-resolution tissue cores. From these cores, we generate a large dataset of paired image patches for training a U-Net-based deep learning model. The model is trained to predict all 20 fluorescence channels from a single H\&E input patch using a specialized, spatially-aware loss function designed to preserve fine-grained details and prevent mode collapse. This paper details our complete methodology, from slide registration and automated data curation to the architecture and training of the predictive model, establishing a robust framework for large-scale \emph{in silico} multiplex imaging.
+\end{abstract}

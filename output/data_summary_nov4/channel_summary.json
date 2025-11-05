@@ -1,0 +1,4974 @@
+{
+  "pairs_dir": "/scratch/users/ranycs/highplex-ml-synthesis/core_patches_npy",
+  "n_cores": 319,
+  "thresholds": [
+    0.08,
+    0.2
+  ],
+  "block_size": 32,
+  "dense_threshold": 0.35,
+  "aggregated_channel_stats": {
+    "0": {
+      "mean_mean": 0.027521074991118524,
+      "mean_median": 0.024808581918478012,
+      "mean_std": 0.016719226575717793,
+      "median_mean": 0.007514661799847706,
+      "median_median": 0.0053864349611103535,
+      "median_std": 0.006701391136575168,
+      "std_mean": 0.04456888525863543,
+      "std_median": 0.04391432926058769,
+      "std_std": 0.019139220054726156,
+      "max_mean": 0.5058845051368669,
+      "max_median": 0.5132066607475281,
+      "max_std": 0.13575938493494563,
+      "p99_mean": 0.19739706893407719,
+      "p99_median": 0.20093080401420593,
+      "p99_std": 0.07255436348822333,
+      "pos_fraction_0.080_mean": 0.12270948879397402,
+      "pos_fraction_0.080_median": 0.10111212730407715,
+      "pos_fraction_0.080_std": 0.0897827821122357,
+      "pos_mean_0.080_mean": 0.1387809841049876,
+      "pos_mean_0.080_median": 0.14036616683006287,
+      "pos_mean_0.080_std": 0.028021502479502164,
+      "pos_p95_0.080_mean": 0.23128157996552118,
+      "pos_p95_0.080_median": 0.23327992856502533,
+      "pos_p95_0.080_std": 0.05948980354931609,
+      "dense_block_fraction_0.080_mean": 0.139575731044279,
+      "dense_block_fraction_0.080_median": 0.108642578125,
+      "dense_block_fraction_0.080_std": 0.1195587662923583,
+      "mean_block_density_0.080_mean": 0.12270948879397402,
+      "mean_block_density_0.080_median": 0.10111212730407715,
+      "mean_block_density_0.080_std": 0.0897827821122357,
+      "max_block_density_0.080_mean": 0.9107379016457681,
+      "max_block_density_0.080_median": 1.0,
+      "max_block_density_0.080_std": 0.21441323620471758,
+      "pos_fraction_0.200_mean": 0.019008149173939864,
+      "pos_fraction_0.200_median": 0.010305643081665039,
+      "pos_fraction_0.200_std": 0.02638758698234396,
+      "pos_mean_0.200_mean": 0.23449367532348933,
+      "pos_mean_0.200_median": 0.24179638922214508,
+      "pos_mean_0.200_std": 0.052252625654901935,
+      "pos_p95_0.200_mean": 0.3175455535467142,
+      "pos_p95_0.200_median": 0.3239108920097351,
+      "pos_p95_0.200_std": 0.07969671270029104,
+      "dense_block_fraction_0.200_mean": 0.011162354280956114,
+      "dense_block_fraction_0.200_median": 0.001708984375,
+      "dense_block_fraction_0.200_std": 0.02688274302203178,
+      "mean_block_density_0.200_mean": 0.019008149173939864,
+      "mean_block_density_0.200_median": 0.010305643081665039,
+      "mean_block_density_0.200_std": 0.02638758698234396,
+      "max_block_density_0.200_mean": 0.5749106093260188,
+      "max_block_density_0.200_median": 0.583984375,
+      "max_block_density_0.200_std": 0.28565107318434657,
+      "speckle_index_mean": 3551.4904892591367,
+      "speckle_index_median": 1.328439115172299,
+      "speckle_index_std": 19119.26770803039,
+      "speckle_score_mean": 0.12158320092681293,
+      "speckle_score_median": 0.12189261718770873,
+      "speckle_score_std": 0.024112393396368774,
+      "mean_intensity_per_pixel_mean": 0.027521074991118524,
+      "mean_intensity_per_pixel_median": 0.024808581918478012,
+      "mean_intensity_per_pixel_std": 0.016719226575717793,
+      "total_intensity_mean": 115431.75491954839,
+      "total_intensity_median": 104054.734375,
+      "total_intensity_std": 70125.51890343944
+    },
+    "1": {
+      "mean_mean": 0.014317334829581476,
+      "mean_median": 0.012667277827858925,
+      "mean_std": 0.007604255125779424,
+      "median_mean": 0.009893251493935207,
+      "median_median": 0.008789196610450745,
+      "median_std": 0.007047969219717378,
+      "std_mean": 0.013924577990167287,
+      "std_median": 0.011716583743691444,
+      "std_std": 0.008143599585799782,
+      "max_mean": 0.24940010319028902,
+      "max_median": 0.2070649266242981,
+      "max_std": 0.14886786055863202,
+      "p99_mean": 0.06157756760296029,
+      "p99_median": 0.05085831880569458,
+      "p99_std": 0.035167309054066266,
+      "pos_fraction_0.080_mean": 0.011092618715053067,
+      "pos_fraction_0.080_median": 0.0005600452423095703,
+      "pos_fraction_0.080_std": 0.03148299226080216,
+      "pos_mean_0.080_mean": 0.09967306711737264,
+      "pos_mean_0.080_median": 0.09363651275634766,
+      "pos_mean_0.080_std": 0.022769830827243133,
+      "pos_p95_0.080_mean": 0.1359069941325995,
+      "pos_p95_0.080_median": 0.11967650800943375,
+      "pos_p95_0.080_std": 0.06296182572735,
+      "dense_block_fraction_0.080_mean": 0.010888365742554858,
+      "dense_block_fraction_0.080_median": 0.0,
+      "dense_block_fraction_0.080_std": 0.03521591815019382,
+      "mean_block_density_0.080_mean": 0.011092618715053067,
+      "mean_block_density_0.080_median": 0.0005600452423095703,
+      "mean_block_density_0.080_std": 0.03148299226080216,
+      "max_block_density_0.080_mean": 0.42372403996865204,
+      "max_block_density_0.080_median": 0.275390625,
+      "max_block_density_0.080_std": 0.36466937071853867,
+      "pos_fraction_0.200_mean": 0.00021437118793356008,
+      "pos_fraction_0.200_median": 2.384185791015625e-07,
+      "pos_fraction_0.200_std": 0.0023727856301915392,
+      "pos_mean_0.200_mean": 0.13471111949521547,
+      "pos_mean_0.200_median": 0.2051117718219757,
+      "pos_mean_0.200_std": 0.13360536235332446,
+      "pos_p95_0.200_mean": 0.16639251124148832,
+      "pos_p95_0.200_median": 0.2069169133901596,
+      "pos_p95_0.200_std": 0.18164791142111966,
+      "dense_block_fraction_0.200_mean": 0.00019133277821316614,
+      "dense_block_fraction_0.200_median": 0.0,
+      "dense_block_fraction_0.200_std": 0.002599749020426435,
+      "mean_block_density_0.200_mean": 0.00021437118793356008,
+      "mean_block_density_0.200_median": 2.384185791015625e-07,
+      "mean_block_density_0.200_std": 0.0023727856301915392,
+      "max_block_density_0.200_mean": 0.058881514498432604,
+      "max_block_density_0.200_median": 0.0009765625,
+      "max_block_density_0.200_std": 0.17734555088695,
+      "speckle_index_mean": 53830.39866699916,
+      "speckle_index_median": 85215.87563848495,
+      "speckle_index_std": 52705.814785121685,
+      "speckle_score_mean": 0.09936399316398324,
+      "speckle_score_median": 0.09426079684059803,
+      "speckle_score_std": 0.022027066378253333,
+      "mean_intensity_per_pixel_mean": 0.014317334829581476,
+      "mean_intensity_per_pixel_median": 0.012667277827858925,
+      "mean_intensity_per_pixel_std": 0.007604255125779424,
+      "total_intensity_mean": 60051.2547450529,
+      "total_intensity_median": 53130.4140625,
+      "total_intensity_std": 31894.55769107714
+    },
+    "2": {
+      "mean_mean": 0.003947014593063828,
+      "mean_median": 0.0033378174994140863,
+      "mean_std": 0.001714622426650779,
+      "median_mean": 0.0033838196619644435,
+      "median_median": 0.0031433585099875927,
+      "median_std": 0.0008420859888921314,
+      "std_mean": 0.005014196580544488,
+      "std_median": 0.0033119567669928074,
+      "std_std": 0.004988271589345151,
+      "max_mean": 0.5120458969624485,
+      "max_median": 0.5090409517288208,
+      "max_std": 0.32387181011140714,
+      "p99_mean": 0.015146851471003413,
+      "p99_median": 0.008392462506890297,
+      "p99_std": 0.017219858492298477,
+      "pos_fraction_0.080_mean": 0.0010421156509542913,
+      "pos_fraction_0.080_median": 0.0002193450927734375,
+      "pos_fraction_0.080_std": 0.0023899083119831035,
+      "pos_mean_0.080_mean": 0.1280799218713303,
+      "pos_mean_0.080_median": 0.13494624197483063,
+      "pos_mean_0.080_std": 0.05676079689144284,
+      "pos_p95_0.080_mean": 0.2664455923027006,
+      "pos_p95_0.080_median": 0.25964289903640747,
+      "pos_p95_0.080_std": 0.16115481372453738,
+      "dense_block_fraction_0.080_mean": 0.0004393000587774295,
+      "dense_block_fraction_0.080_median": 0.0,
+      "dense_block_fraction_0.080_std": 0.001464407438289571,
+      "mean_block_density_0.080_mean": 0.0010421156509542913,
+      "mean_block_density_0.080_median": 0.0002193450927734375,
+      "mean_block_density_0.080_std": 0.0023899083119831035,
+      "max_block_density_0.080_mean": 0.2586604868730408,
+      "max_block_density_0.080_median": 0.1806640625,
+      "max_block_density_0.080_std": 0.25923319419484525,
+      "pos_fraction_0.200_mean": 0.00021358492979809033,
+      "pos_fraction_0.200_median": 2.8133392333984375e-05,
+      "pos_fraction_0.200_std": 0.0005164703910356204,
+      "pos_mean_0.200_mean": 0.22823383698829663,
+      "pos_mean_0.200_median": 0.27303221821784973,
+      "pos_mean_0.200_std": 0.13443539416945466,
+      "pos_p95_0.200_mean": 0.3708009072418871,
+      "pos_p95_0.200_median": 0.4004104733467102,
+      "pos_p95_0.200_std": 0.2545565059896113,
+      "dense_block_fraction_0.200_mean": 5.357317789968652e-05,
+      "dense_block_fraction_0.200_median": 0.0,
+      "dense_block_fraction_0.200_std": 0.0002875873593192626,
+      "mean_block_density_0.200_mean": 0.00021358492979809033,
+      "mean_block_density_0.200_median": 2.8133392333984375e-05,
+      "mean_block_density_0.200_std": 0.0005164703910356204,
+      "max_block_density_0.200_mean": 0.11584051724137931,
+      "max_block_density_0.200_median": 0.0498046875,
+      "max_block_density_0.200_std": 0.17031689939859973,
+      "speckle_index_mean": 80117.86966915795,
+      "speckle_index_median": 106944.33910942078,
+      "speckle_index_std": 69040.38925410005,
+      "speckle_score_mean": 0.1289098354083229,
+      "speckle_score_median": 0.1359274105390102,
+      "speckle_score_std": 0.05664013559738972,
+      "mean_intensity_per_pixel_mean": 0.003947014593063828,
+      "mean_intensity_per_pixel_median": 0.0033378174994140863,
+      "mean_intensity_per_pixel_std": 0.001714622426650779,
+      "total_intensity_mean": 16554.979095745985,
+      "total_intensity_median": 13999.8212890625,
+      "total_intensity_std": 7191.647702591069
+    },
+    "3": {
+      "mean_mean": 0.003923552797605112,
+      "mean_median": 0.0032681089360266924,
+      "mean_std": 0.0023307793913146424,
+      "median_mean": 0.003122885592521218,
+      "median_median": 0.0030518043786287308,
+      "median_std": 0.0006378512641950444,
+      "std_mean": 0.006051361985518495,
+      "std_median": 0.004435002338141203,
+      "std_std": 0.005641693250130982,
+      "max_mean": 0.5422341743904548,
+      "max_median": 0.5180743336677551,
+      "max_std": 0.33365127584819915,
+      "p99_mean": 0.02371232875047666,
+      "p99_median": 0.015335316769778728,
+      "p99_std": 0.02600311153389749,
+      "pos_fraction_0.080_mean": 0.0020837813709223157,
+      "pos_fraction_0.080_median": 0.00042128562927246094,
+      "pos_fraction_0.080_std": 0.006194567579827117,
+      "pos_mean_0.080_mean": 0.11999220856491674,
+      "pos_mean_0.080_median": 0.12683643400669098,
+      "pos_mean_0.080_std": 0.047926577961561564,
+      "pos_p95_0.080_mean": 0.2386523026003733,
+      "pos_p95_0.080_median": 0.23552608489990234,
+      "pos_p95_0.080_std": 0.13395979749182632,
+      "dense_block_fraction_0.080_mean": 0.0008839574353448276,
+      "dense_block_fraction_0.080_median": 0.0,
+      "dense_block_fraction_0.080_std": 0.0033631663957131145,
+      "mean_block_density_0.080_mean": 0.0020837813709223157,
+      "mean_block_density_0.080_median": 0.00042128562927246094,
+      "mean_block_density_0.080_std": 0.006194567579827117,
+      "max_block_density_0.080_mean": 0.29237791438087773,
+      "max_block_density_0.080_median": 0.2490234375,
+      "max_block_density_0.080_std": 0.25310728380707587,
+      "pos_fraction_0.200_mean": 0.0002463925221123292,
+      "pos_fraction_0.200_median": 4.0531158447265625e-05,
+      "pos_fraction_0.200_std": 0.0007679540633589543,
+      "pos_mean_0.200_mean": 0.2304146606533505,
+      "pos_mean_0.200_median": 0.2693122625350952,
+      "pos_mean_0.200_std": 0.1315654793471828,
+      "pos_p95_0.200_mean": 0.38725772612147197,
+      "pos_p95_0.200_median": 0.4096192419528961,
+      "pos_p95_0.200_std": 0.2606385389573255,
+      "dense_block_fraction_0.200_mean": 2.525592672413793e-05,
+      "dense_block_fraction_0.200_median": 0.0,
+      "dense_block_fraction_0.200_std": 9.429425959579155e-05,
+      "mean_block_density_0.200_mean": 0.0002463925221123292,
+      "mean_block_density_0.200_median": 4.0531158447265625e-05,
+      "mean_block_density_0.200_std": 0.0007679540633589543,
+      "max_block_density_0.200_mean": 0.10852701312695925,
+      "max_block_density_0.200_median": 0.0654296875,
+      "max_block_density_0.200_std": 0.12669085735638835,
+      "speckle_index_mean": 67951.23742461014,
+      "speckle_index_median": 91801.18305778503,
+      "speckle_index_std": 66735.87113415744,
+      "speckle_score_mean": 0.1207052090411366,
+      "speckle_score_median": 0.12751577001345119,
+      "speckle_score_std": 0.04782354856041982,
+      "mean_intensity_per_pixel_mean": 0.003923552797605112,
+      "mean_intensity_per_pixel_median": 0.0032681089360266924,
+      "mean_intensity_per_pixel_std": 0.0023307793913146424,
+      "total_intensity_mean": 16456.57319320631,
+      "total_intensity_median": 13707.4423828125,
+      "total_intensity_std": 9775.99732410857
+    },
+    "4": {
+      "mean_mean": 0.003405643932865845,
+      "mean_median": 0.003037338377907872,
+      "mean_std": 0.001595869150406146,
+      "median_mean": 0.0029066284179839314,
+      "median_median": 0.0029755092691630125,
+      "median_std": 0.0002693922029900136,
+      "std_mean": 0.004013524341764115,
+      "std_median": 0.003016034374013543,
+      "std_std": 0.003762961813521131,
+      "max_mean": 0.19292435802075555,
+      "max_median": 0.18168917298316956,
+      "max_std": 0.10804916598408058,
+      "p99_mean": 0.018935920056802304,
+      "p99_median": 0.011474784463644028,
+      "p99_std": 0.0205001267968909,
+      "pos_fraction_0.080_mean": 0.001004698134514979,
+      "pos_fraction_0.080_median": 0.00011920928955078125,
+      "pos_fraction_0.080_std": 0.005176505731599399,
+      "pos_mean_0.080_mean": 0.08630621949426806,
+      "pos_mean_0.080_median": 0.09822089225053787,
+      "pos_mean_0.080_std": 0.03359144420607601,
+      "pos_p95_0.080_mean": 0.1184019730149018,
+      "pos_p95_0.080_median": 0.13368429243564606,
+      "pos_p95_0.080_std": 0.05210481905073172,
+      "dense_block_fraction_0.080_mean": 0.0005051185344827587,
+      "dense_block_fraction_0.080_median": 0.0,
+      "dense_block_fraction_0.080_std": 0.006636818676628789,
+      "mean_block_density_0.080_mean": 0.001004698134514979,
+      "mean_block_density_0.080_median": 0.00011920928955078125,
+      "mean_block_density_0.080_std": 0.005176505731599399,
+      "max_block_density_0.080_mean": 0.1375269396551724,
+      "max_block_density_0.080_median": 0.091796875,
+      "max_block_density_0.080_std": 0.1502051167507192,
+      "pos_fraction_0.200_mean": 2.8541469275017144e-05,
+      "pos_fraction_0.200_median": 0.0,
+      "pos_fraction_0.200_std": 0.0003266688379422411,
+      "pos_mean_0.200_mean": 0.09851131146791213,
+      "pos_mean_0.200_median": 0.0,
+      "pos_mean_0.200_std": 0.11273098565215625,
+      "pos_p95_0.200_mean": 0.11526558368370451,
+      "pos_p95_0.200_median": 0.0,
+      "pos_p95_0.200_std": 0.13513717978111675,
+      "dense_block_fraction_0.200_mean": 0.0,
+      "dense_block_fraction_0.200_median": 0.0,
+      "dense_block_fraction_0.200_std": 0.0,
+      "mean_block_density_0.200_mean": 2.8541469275017144e-05,
+      "mean_block_density_0.200_median": 0.0,
+      "mean_block_density_0.200_std": 0.0003266688379422411,
+      "max_block_density_0.200_mean": 0.009349284874608151,
+      "max_block_density_0.200_median": 0.0,
+      "max_block_density_0.200_std": 0.023368519889969436,
+      "speckle_index_mean": 77901.41229236854,
+      "speckle_index_median": 96628.74950265884,
+      "speckle_index_std": 39966.79932419629,
+      "speckle_score_mean": 0.08719421329485255,
+      "speckle_score_median": 0.09917171790613805,
+      "speckle_score_std": 0.03351383113880384,
+      "mean_intensity_per_pixel_mean": 0.003405643932865845,
+      "mean_intensity_per_pixel_median": 0.003037338377907872,
+      "mean_intensity_per_pixel_std": 0.001595869150406146,
+      "total_intensity_mean": 14284.305970194946,
+      "total_intensity_median": 12739.5205078125,
+      "total_intensity_std": 6693.5603610251
+    },
+    "5": {
+      "mean_mean": 0.0026919565373027354,
+      "mean_median": 0.002740758005529642,
+      "mean_std": 0.00026480568080142355,
+      "median_mean": 0.002910455131938325,
+      "median_median": 0.002944991225376725,
+      "median_std": 0.00014512207246522135,
+      "std_mean": 0.000784564773343375,
+      "std_median": 0.0007110973238013685,
+      "std_std": 0.0006952641964619231,
+      "max_mean": 0.04102227787653621,
+      "max_median": 0.016464484855532646,
+      "max_std": 0.07837205815382828,
+      "p99_mean": 0.003776392688519295,
+      "p99_median": 0.003524834057316184,
+      "p99_std": 0.0006202350951269692,
+      "pos_fraction_0.080_mean": 3.527698098305251e-06,
+      "pos_fraction_0.080_median": 0.0,
+      "pos_fraction_0.080_std": 3.542187956817775e-05,
+      "pos_mean_0.080_mean": 0.01705703314475505,
+      "pos_mean_0.080_median": 0.0,
+      "pos_mean_0.080_std": 0.05195655672567225,
+      "pos_p95_0.080_mean": 0.022869501928550695,
+      "pos_p95_0.080_median": 0.0,
+      "pos_p95_0.080_std": 0.07845652744292327,
+      "dense_block_fraction_0.080_mean": 3.8266555642633225e-06,
+      "dense_block_fraction_0.080_median": 0.0,
+      "dense_block_fraction_0.080_std": 4.9136403186454626e-05,
+      "mean_block_density_0.080_mean": 3.527698098305251e-06,
+      "mean_block_density_0.080_median": 0.0,
+      "mean_block_density_0.080_std": 3.542187956817775e-05,
+      "max_block_density_0.080_mean": 0.006425720023510972,
+      "max_block_density_0.080_median": 0.0,
+      "max_block_density_0.080_std": 0.050461444646404646,
+      "pos_fraction_0.200_mean": 1.707794524285487e-06,
+      "pos_fraction_0.200_median": 0.0,
+      "pos_fraction_0.200_std": 2.2238419044058977e-05,
+      "pos_mean_0.200_mean": 0.009833902260726522,
+      "pos_mean_0.200_median": 0.0,
+      "pos_mean_0.200_std": 0.05926073845724169,
+      "pos_p95_0.200_mean": 0.01185758748211457,
+      "pos_p95_0.200_median": 0.0,
+      "pos_p95_0.200_std": 0.07394660266336936,
+      "dense_block_fraction_0.200_mean": 1.530662225705329e-06,
+      "dense_block_fraction_0.200_median": 0.0,
+      "dense_block_fraction_0.200_std": 2.729561756117599e-05,
+      "mean_block_density_0.200_mean": 1.707794524285487e-06,
+      "mean_block_density_0.200_median": 0.0,
+      "mean_block_density_0.200_std": 2.2238419044058977e-05,
+      "max_block_density_0.200_mean": 0.0027827439263322885,
+      "max_block_density_0.200_median": 0.0,
+      "max_block_density_0.200_std": 0.03016836913222576,
+      "speckle_index_mean": 15140.838227076432,
+      "speckle_index_median": 1.0,
+      "speckle_index_std": 45302.84307525063,
+      "speckle_score_mean": 0.018055973095607383,
+      "speckle_score_median": 0.001,
+      "speckle_score_std": 0.051949359823626085,
+      "mean_intensity_per_pixel_mean": 0.0026919565373027354,
+      "mean_intensity_per_pixel_median": 0.002740758005529642,
+      "mean_intensity_per_pixel_std": 0.00026480568080142355,
+      "total_intensity_mean": 11290.884072235012,
+      "total_intensity_median": 11495.572265625,
+      "total_intensity_std": 1110.675526208134
+    },
+    "6": {
+      "mean_mean": 0.0047012552827725125,
+      "mean_median": 0.004391667898744345,
+      "mean_std": 0.0014366873280429037,
+      "median_mean": 0.003193918973219152,
+      "median_median": 0.0031586175318807364,
+      "median_std": 0.00034323966519622445,
+      "std_mean": 0.006707073691655767,
+      "std_median": 0.006434694863855839,
+      "std_std": 0.0031698299794452305,
+      "max_mean": 0.2908156238799932,
+      "max_median": 0.268970787525177,
+      "max_std": 0.1426301651684556,
+      "p99_mean": 0.03421412339962458,
+      "p99_median": 0.03341725841164589,
+      "p99_std": 0.017265570917866034,
+      "pos_fraction_0.080_mean": 0.001528430508221952,
+      "pos_fraction_0.080_median": 0.0007503032684326172,
+      "pos_fraction_0.080_std": 0.002020447902613839,
+      "pos_mean_0.080_mean": 0.10601743126177116,
+      "pos_mean_0.080_median": 0.10376414656639099,
+      "pos_mean_0.080_std": 0.03144981121917443,
+      "pos_p95_0.080_mean": 0.16354493121835506,
+      "pos_p95_0.080_median": 0.1523338407278061,
+      "pos_p95_0.080_std": 0.08502738812341512,
+      "dense_block_fraction_0.080_mean": 0.00010485036246081505,
+      "dense_block_fraction_0.080_median": 0.0,
+      "dense_block_fraction_0.080_std": 0.00029827890332969584,
+      "mean_block_density_0.080_mean": 0.001528430508221952,
+      "mean_block_density_0.080_median": 0.0007503032684326172,
+      "mean_block_density_0.080_std": 0.002020447902613839,
+      "max_block_density_0.080_mean": 0.22582165948275862,
+      "max_block_density_0.080_median": 0.201171875,
+      "max_block_density_0.080_std": 0.14992424671197999,
+      "pos_fraction_0.200_mean": 3.243314808812635e-05,
+      "pos_fraction_0.200_median": 7.867813110351562e-06,
+      "pos_fraction_0.200_std": 8.03357115273361e-05,
+      "pos_mean_0.200_mean": 0.1764004811130721,
+      "pos_mean_0.200_median": 0.22395485639572144,
+      "pos_mean_0.200_std": 0.11725861581049091,
+      "pos_p95_0.200_mean": 0.2241925551880116,
+      "pos_p95_0.200_median": 0.2599313259124756,
+      "pos_p95_0.200_std": 0.16778972184858987,
+      "dense_block_fraction_0.200_mean": 5.357317789968652e-06,
+      "dense_block_fraction_0.200_median": 0.0,
+      "dense_block_fraction_0.200_std": 6.241086353189629e-05,
+      "mean_block_density_0.200_mean": 3.243314808812635e-05,
+      "mean_block_density_0.200_median": 7.867813110351562e-06,
+      "mean_block_density_0.200_std": 8.03357115273361e-05,
+      "max_block_density_0.200_mean": 0.0313938822492163,
+      "max_block_density_0.200_median": 0.0166015625,
+      "max_block_density_0.200_std": 0.06128782500307302,
+      "speckle_index_mean": 82643.81947017628,
+      "speckle_index_median": 100076.05863904953,
+      "speckle_index_std": 49336.94972157262,
+      "speckle_score_mean": 0.1068516232628917,
+      "speckle_score_median": 0.10449539218610712,
+      "speckle_score_std": 0.03143370141295033,
+      "mean_intensity_per_pixel_mean": 0.0047012552827725125,
+      "mean_intensity_per_pixel_median": 0.004391667898744345,
+      "mean_intensity_per_pixel_std": 0.0014366873280429037,
+      "total_intensity_mean": 19718.49383755388,
+      "total_intensity_median": 18419.990234375,
+      "total_intensity_std": 6025.903406759663
+    },
+    "7": {
+      "mean_mean": 0.002426214569443866,
+      "mean_median": 0.0024567549116909504,
+      "mean_std": 0.0003923947942320072,
+      "median_mean": 0.002747771954952176,
+      "median_median": 0.0028534370940178633,
+      "median_std": 0.000348160755974129,
+      "std_mean": 0.0011157914802729849,
+      "std_median": 0.0010581505484879017,
+      "std_std": 0.0010459872506948101,
+      "max_mean": 0.038313921508860996,
+      "max_median": 0.014862287789583206,
+      "max_std": 0.10595123919967706,
+      "p99_mean": 0.0038144206599008326,
+      "p99_median": 0.0036926832981407642,
+      "p99_std": 0.0005530082059102973,
+      "pos_fraction_0.080_mean": 7.859591780037715e-06,
+      "pos_fraction_0.080_median": 0.0,
+      "pos_fraction_0.080_std": 5.949219739760981e-05,
+      "pos_mean_0.080_mean": 0.01227021051518222,
+      "pos_mean_0.080_median": 0.0,
+      "pos_mean_0.080_std": 0.05987680629113013,
+      "pos_p95_0.080_mean": 0.01927958487249841,
+      "pos_p95_0.080_median": 0.0,
+      "pos_p95_0.080_std": 0.10269491036726697,
+      "dense_block_fraction_0.080_mean": 8.41864224137931e-06,
+      "dense_block_fraction_0.080_median": 0.0,
+      "dense_block_fraction_0.080_std": 7.052682965265155e-05,
+      "mean_block_density_0.080_mean": 7.859591780037715e-06,
+      "mean_block_density_0.080_median": 0.0,
+      "mean_block_density_0.080_std": 5.949219739760981e-05,
+      "max_block_density_0.080_mean": 0.012471835815047022,
+      "max_block_density_0.080_median": 0.0,
+      "max_block_density_0.080_std": 0.08151896121819503,
+      "pos_fraction_0.200_mean": 3.243688505645082e-06,
+      "pos_fraction_0.200_median": 0.0,
+      "pos_fraction_0.200_std": 3.445502358062522e-05,
+      "pos_mean_0.200_mean": 0.011543356092372285,
+      "pos_mean_0.200_median": 0.0,
+      "pos_mean_0.200_std": 0.07371110512290986,
+      "pos_p95_0.200_mean": 0.015490523746768509,
+      "pos_p95_0.200_median": 0.0,
+      "pos_p95_0.200_std": 0.10215024339829513,
+      "dense_block_fraction_0.200_mean": 3.8266555642633225e-06,
+      "dense_block_fraction_0.200_median": 0.0,
+      "dense_block_fraction_0.200_std": 4.9136403186454626e-05,
+      "mean_block_density_0.200_mean": 3.243688505645082e-06,
+      "mean_block_density_0.200_median": 0.0,
+      "mean_block_density_0.200_std": 3.445502358062522e-05,
+      "max_block_density_0.200_mean": 0.005550181230407523,
+      "max_block_density_0.200_median": 0.0,
+      "max_block_density_0.200_std": 0.050466400531138954,
+      "speckle_index_mean": 8169.00933928245,
+      "speckle_index_median": 1.0,
+      "speckle_index_std": 45823.59414689123,
+      "speckle_score_mean": 0.013267960591646484,
+      "speckle_score_median": 0.001,
+      "speckle_score_std": 0.05986149977795496,
+      "mean_intensity_per_pixel_mean": 0.002426214569443866,
+      "mean_intensity_per_pixel_median": 0.0024567549116909504,
+      "mean_intensity_per_pixel_std": 0.0003923947942320072,
+      "total_intensity_mean": 10176.281473476685,
+      "total_intensity_median": 10304.376953125,
+      "total_intensity_std": 1645.8230550264848
+    },
+    "8": {
+      "mean_mean": 0.004555032327610614,
+      "mean_median": 0.004009705036878586,
+      "mean_std": 0.00211995880682215,
+      "median_mean": 0.003433471271143438,
+      "median_median": 0.0032501716632395983,
+      "median_std": 0.0007679039949549689,
+      "std_mean": 0.0038356041274986707,
+      "std_median": 0.0029870395082980394,
+      "std_std": 0.0033930632564642626,
+      "max_mean": 0.1744629028822561,
+      "max_median": 0.11952392011880875,
+      "max_std": 0.15609950616892132,
+      "p99_mean": 0.019559961495494767,
+      "p99_median": 0.01570153422653675,
+      "p99_std": 0.01599750013556931,
+      "pos_fraction_0.080_mean": 0.00054068849378245,
+      "pos_fraction_0.080_median": 5.9604644775390625e-06,
+      "pos_fraction_0.080_std": 0.004228027237900829,
+      "pos_mean_0.080_mean": 0.07136881912016196,
+      "pos_mean_0.080_median": 0.09127961844205856,
+      "pos_mean_0.080_std": 0.05935854391612133,
+      "pos_p95_0.080_mean": 0.10540423292351367,
+      "pos_p95_0.080_median": 0.10884871333837509,
+      "pos_p95_0.080_std": 0.10264016019824132,
+      "dense_block_fraction_0.080_mean": 0.00031608174960815047,
+      "dense_block_fraction_0.080_median": 0.0,
+      "dense_block_fraction_0.080_std": 0.004395557969296923,
+      "mean_block_density_0.080_mean": 0.00054068849378245,
+      "mean_block_density_0.080_median": 5.9604644775390625e-06,
+      "mean_block_density_0.080_std": 0.004228027237900829,
+      "max_block_density_0.080_mean": 0.09014988244514106,
+      "max_block_density_0.080_median": 0.0146484375,
+      "max_block_density_0.080_std": 0.16948259345846745,
+      "pos_fraction_0.200_mean": 1.634549945125759e-05,
+      "pos_fraction_0.200_median": 0.0,
+      "pos_fraction_0.200_std": 0.00014555095361639778,
+      "pos_mean_0.200_mean": 0.07700370663198931,
+      "pos_mean_0.200_median": 0.0,
+      "pos_mean_0.200_std": 0.11921363190012087,
+      "pos_p95_0.200_mean": 0.0994090505154529,
+      "pos_p95_0.200_median": 0.0,
+      "pos_p95_0.200_std": 0.1612543491854018,
+      "dense_block_fraction_0.200_mean": 3.8266555642633225e-06,
+      "dense_block_fraction_0.200_median": 0.0,
+      "dense_block_fraction_0.200_std": 4.9136403186454626e-05,
+      "mean_block_density_0.200_mean": 1.634549945125759e-05,
+      "mean_block_density_0.200_median": 0.0,
+      "mean_block_density_0.200_std": 0.00014555095361639778,
+      "max_block_density_0.200_mean": 0.015220905172413793,
+      "max_block_density_0.200_median": 0.0,
+      "max_block_density_0.200_std": 0.053511927242301915,
+      "speckle_index_mean": 63312.69042297951,
+      "speckle_index_median": 87648.81802892685,
+      "speckle_index_std": 58697.57026386485,
+      "speckle_score_mean": 0.07230859981549881,
+      "speckle_score_median": 0.09227502019637719,
+      "speckle_score_std": 0.05931803443987858,
+      "mean_intensity_per_pixel_mean": 0.004555032327610614,
+      "mean_intensity_per_pixel_median": 0.004009705036878586,
+      "mean_intensity_per_pixel_std": 0.00211995880682215,
+      "total_intensity_mean": 19105.190311826507,
+      "total_intensity_median": 16817.921875,
+      "total_intensity_std": 8891.75170328937
+    },
+    "9": {
+      "mean_mean": 0.003229146899194179,
+      "mean_median": 0.0031426544301211834,
+      "mean_std": 0.0004333814219878675,
+      "median_mean": 0.003051134703686712,
+      "median_median": 0.0030518043786287308,
+      "median_std": 0.0001200444726726948,
+      "std_mean": 0.0019242167179064013,
+      "std_median": 0.0013295443495735526,
+      "std_std": 0.0016706251933511155,
+      "max_mean": 0.16729336263185665,
+      "max_median": 0.14676126837730408,
+      "max_std": 0.11616192482183071,
+      "p99_mean": 0.008587720202498114,
+      "p99_median": 0.005157549399882555,
+      "p99_std": 0.008261687826182005,
+      "pos_fraction_0.080_mean": 0.00014626344543265698,
+      "pos_fraction_0.080_median": 1.6689300537109375e-05,
+      "pos_fraction_0.080_std": 0.00037308176471075857,
+      "pos_mean_0.080_mean": 0.077255052622396,
+      "pos_mean_0.080_median": 0.09656672179698944,
+      "pos_mean_0.080_std": 0.04915671611911078,
+      "pos_p95_0.080_mean": 0.1105761265960233,
+      "pos_p95_0.080_median": 0.12509651482105255,
+      "pos_p95_0.080_std": 0.078357148097197,
+      "dense_block_fraction_0.080_mean": 6.8879800156739816e-06,
+      "dense_block_fraction_0.080_median": 0.0,
+      "dense_block_fraction_0.080_std": 7.069273632662797e-05,
+      "mean_block_density_0.080_mean": 0.00014626344543265698,
+      "mean_block_density_0.080_median": 1.6689300537109375e-05,
+      "mean_block_density_0.080_std": 0.00037308176471075857,
+      "max_block_density_0.080_mean": 0.06153568279780564,
+      "max_block_density_0.080_median": 0.0302734375,
+      "max_block_density_0.080_std": 0.08820849510602308,
+      "pos_fraction_0.200_mean": 4.598713220100044e-06,
+      "pos_fraction_0.200_median": 0.0,
+      "pos_fraction_0.200_std": 2.244125985513586e-05,
+      "pos_mean_0.200_mean": 0.07464072070899054,
+      "pos_mean_0.200_median": 0.0,
+      "pos_mean_0.200_std": 0.11098050953079269,
+      "pos_p95_0.200_mean": 0.0900062482371973,
+      "pos_p95_0.200_median": 0.0,
+      "pos_p95_0.200_std": 0.13879945345736447,
+      "dense_block_fraction_0.200_mean": 1.530662225705329e-06,
+      "dense_block_fraction_0.200_median": 0.0,
+      "dense_block_fraction_0.200_std": 2.729561756117599e-05,
+      "mean_block_density_0.200_mean": 4.598713220100044e-06,
+      "mean_block_density_0.200_median": 0.0,
+      "mean_block_density_0.200_std": 2.244125985513586e-05,
+      "max_block_density_0.200_mean": 0.006667564655172414,
+      "max_block_density_0.200_median": 0.0,
+      "max_block_density_0.200_std": 0.027671723716906217,
+      "speckle_index_mean": 75405.24231959008,
+      "speckle_index_median": 96508.86221027374,
+      "speckle_index_std": 48484.953437755146,
+      "speckle_score_mean": 0.07823890459933858,
+      "speckle_score_median": 0.09756621003916752,
+      "speckle_score_std": 0.04914505941925283,
+      "mean_intensity_per_pixel_mean": 0.003229146899194179,
+      "mean_intensity_per_pixel_median": 0.0031426544301211834,
+      "mean_intensity_per_pixel_std": 0.0004333814219878675,
+      "total_intensity_mean": 13544.023755877743,
+      "total_intensity_median": 13181.248046875,
+      "total_intensity_std": 1817.7334317694006
+    },
+    "10": {
+      "mean_mean": 0.0036871009542779024,
+      "mean_median": 0.0035875439643859863,
+      "mean_std": 0.0007954495244768561,
+      "median_mean": 0.0031027953449905294,
+      "median_median": 0.0030212863348424435,
+      "median_std": 0.00042375648225704296,
+      "std_mean": 0.003674989029200205,
+      "std_median": 0.0029969876632094383,
+      "std_std": 0.0024093692683701405,
+      "max_mean": 0.2464208631866778,
+      "max_median": 0.17772182822227478,
+      "max_std": 0.2042570880401447,
+      "p99_mean": 0.017092448473852537,
+      "p99_median": 0.013244831003248692,
+      "p99_std": 0.012102476601963999,
+      "pos_fraction_0.080_mean": 0.0004853499720462811,
+      "pos_fraction_0.080_median": 8.96453857421875e-05,
+      "pos_fraction_0.080_std": 0.0010831392397635448,
+      "pos_mean_0.080_mean": 0.10313169317185691,
+      "pos_mean_0.080_median": 0.1015992984175682,
+      "pos_mean_0.080_std": 0.04398317925367829,
+      "pos_p95_0.080_mean": 0.1620092072223421,
+      "pos_p95_0.080_median": 0.14060425758361816,
+      "pos_p95_0.080_std": 0.1325180151584209,
+      "dense_block_fraction_0.080_mean": 9.183973354231975e-05,
+      "dense_block_fraction_0.080_median": 0.0,
+      "dense_block_fraction_0.080_std": 0.0003963750245880259,
+      "mean_block_density_0.080_mean": 0.0004853499720462811,
+      "mean_block_density_0.080_median": 8.96453857421875e-05,
+      "mean_block_density_0.080_std": 0.0010831392397635448,
+      "max_block_density_0.080_mean": 0.1525733493338558,
+      "max_block_density_0.080_median": 0.09375,
+      "max_block_density_0.080_std": 0.17740851086823134,
+      "pos_fraction_0.200_mean": 2.196589981126935e-05,
+      "pos_fraction_0.200_median": 0.0,
+      "pos_fraction_0.200_std": 8.266658771227159e-05,
+      "pos_mean_0.200_mean": 0.1156548456899051,
+      "pos_mean_0.200_median": 0.0,
+      "pos_mean_0.200_std": 0.1431467867264682,
+      "pos_p95_0.200_mean": 0.1555921744123148,
+      "pos_p95_0.200_median": 0.0,
+      "pos_p95_0.200_std": 0.21823698049628915,
+      "dense_block_fraction_0.200_mean": 4.591986677115988e-06,
+      "dense_block_fraction_0.200_median": 0.0,
+      "dense_block_fraction_0.200_std": 5.781163507794518e-05,
+      "mean_block_density_0.200_mean": 2.196589981126935e-05,
+      "mean_block_density_0.200_median": 0.0,
+      "mean_block_density_0.200_std": 8.266658771227159e-05,
+      "max_block_density_0.200_mean": 0.023697712578369907,
+      "max_block_density_0.200_median": 0.0,
+      "max_block_density_0.200_std": 0.07347426314849541,
+      "speckle_index_mean": 87583.23077995995,
+      "speckle_index_median": 97643.04919338226,
+      "speckle_index_std": 51190.17025627959,
+      "speckle_score_mean": 0.10407488206862034,
+      "speckle_score_median": 0.10259858903177879,
+      "speckle_score_std": 0.043961473353336035,
+      "mean_intensity_per_pixel_mean": 0.0036871009542779024,
+      "mean_intensity_per_pixel_median": 0.0035875439643859863,
+      "mean_intensity_per_pixel_std": 0.0007954495244768561,
+      "total_intensity_mean": 15464.822280931623,
+      "total_intensity_median": 15047.25,
+      "total_intensity_std": 3336.3571223113754
+    },
+    "11": {
+      "mean_mean": 0.003956789845676632,
+      "mean_median": 0.003729777643457055,
+      "mean_std": 0.0012243010692161136,
+      "median_mean": 0.0033404342976156446,
+      "median_median": 0.0032959487289190292,
+      "median_std": 0.0005195692480387918,
+      "std_mean": 0.00362706068008379,
+      "std_median": 0.0027007278986275196,
+      "std_std": 0.0035437619455751606,
+      "max_mean": 0.31618410571942507,
+      "max_median": 0.251132994890213,
+      "max_std": 0.19436208536731586,
+      "p99_mean": 0.016100372968761243,
+      "p99_median": 0.0119935916736722,
+      "p99_std": 0.016905020182530216,
+      "pos_fraction_0.080_mean": 0.0006593865660664429,
+      "pos_fraction_0.080_median": 6.222724914550781e-05,
+      "pos_fraction_0.080_std": 0.0032982886095332896,
+      "pos_mean_0.080_mean": 0.12091678780354677,
+      "pos_mean_0.080_median": 0.11367015540599823,
+      "pos_mean_0.080_std": 0.03960490042131408,
+      "pos_p95_0.080_mean": 0.20498463707657816,
+      "pos_p95_0.080_median": 0.1796475052833557,
+      "pos_p95_0.080_std": 0.10738369106905116,
+      "dense_block_fraction_0.080_mean": 0.00033980701410658306,
+      "dense_block_fraction_0.080_median": 0.0,
+      "dense_block_fraction_0.080_std": 0.0029083083777359355,
+      "mean_block_density_0.080_mean": 0.0006593865660664429,
+      "mean_block_density_0.080_median": 6.222724914550781e-05,
+      "mean_block_density_0.080_std": 0.0032982886095332896,
+      "max_block_density_0.080_mean": 0.15840211108934169,
+      "max_block_density_0.080_median": 0.076171875,
+      "max_block_density_0.080_std": 0.19511800718771058,
+      "pos_fraction_0.200_mean": 8.589047996975412e-05,
+      "pos_fraction_0.200_median": 1.6689300537109375e-06,
+      "pos_fraction_0.200_std": 0.000597168853378286,
+      "pos_mean_0.200_mean": 0.17751042642937184,
+      "pos_mean_0.200_median": 0.22337108850479126,
+      "pos_mean_0.200_std": 0.13037835780822693,
+      "pos_p95_0.200_mean": 0.2381745143370195,
+      "pos_p95_0.200_median": 0.24730297923088074,
+      "pos_p95_0.200_std": 0.19617208610082287,
+      "dense_block_fraction_0.200_mean": 2.6021257836990596e-05,
+      "dense_block_fraction_0.200_median": 0.0,
+      "dense_block_fraction_0.200_std": 0.00027282953920451213,
+      "mean_block_density_0.200_mean": 8.589047996975412e-05,
+      "mean_block_density_0.200_median": 1.6689300537109375e-06,
+      "mean_block_density_0.200_std": 0.000597168853378286,
+      "max_block_density_0.200_mean": 0.04067887931034483,
+      "max_block_density_0.200_median": 0.005859375,
+      "max_block_density_0.200_std": 0.0987947338154854,
+      "speckle_index_mean": 101536.64482068607,
+      "speckle_index_median": 106955.72359657288,
+      "speckle_index_std": 52093.0908482776,
+      "speckle_score_mean": 0.1218247706174682,
+      "speckle_score_median": 0.11465356574451271,
+      "speckle_score_std": 0.03955679280423665,
+      "mean_intensity_per_pixel_mean": 0.003956789845676632,
+      "mean_intensity_per_pixel_median": 0.003729777643457055,
+      "mean_intensity_per_pixel_std": 0.0012243010692161136,
+      "total_intensity_mean": 16595.97947688088,
+      "total_intensity_median": 15643.8212890625,
+      "total_intensity_std": 5135.090871817422
+    },
+    "12": {
+      "mean_mean": 0.0036327800644871118,
+      "mean_median": 0.0035512312315404415,
+      "mean_std": 0.0007043952716561021,
+      "median_mean": 0.003395060630556091,
+      "median_median": 0.0033722438383847475,
+      "median_std": 0.0004344740996343074,
+      "std_mean": 0.0020955552715227173,
+      "std_median": 0.0014609673526138067,
+      "std_std": 0.0020118008986983638,
+      "max_mean": 0.2690387505769356,
+      "max_median": 0.11544975638389587,
+      "max_std": 0.2999725843656392,
+      "p99_mean": 0.008531658892697863,
+      "p99_median": 0.007186999544501305,
+      "p99_std": 0.004494189683310742,
+      "pos_fraction_0.080_mean": 4.9094047665969704e-05,
+      "pos_fraction_0.080_median": 2.6226043701171875e-06,
+      "pos_fraction_0.080_std": 0.00017286410092069268,
+      "pos_mean_0.080_mean": 0.11792713181819288,
+      "pos_mean_0.080_median": 0.09429135918617249,
+      "pos_mean_0.080_std": 0.11977470006075279,
+      "pos_p95_0.080_mean": 0.21640337144132693,
+      "pos_p95_0.080_median": 0.11278706043958664,
+      "pos_p95_0.080_std": 0.2676403265295535,
+      "dense_block_fraction_0.080_mean": 2.0663940047021943e-05,
+      "dense_block_fraction_0.080_median": 0.0,
+      "dense_block_fraction_0.080_std": 0.0001489350863457375,
+      "mean_block_density_0.080_mean": 4.9094047665969704e-05,
+      "mean_block_density_0.080_median": 2.6226043701171875e-06,
+      "mean_block_density_0.080_std": 0.00017286410092069268,
+      "max_block_density_0.080_mean": 0.054571169670846395,
+      "max_block_density_0.080_median": 0.0087890625,
+      "max_block_density_0.080_std": 0.11722674819598702,
+      "pos_fraction_0.200_mean": 1.714446327903054e-05,
+      "pos_fraction_0.200_median": 0.0,
+      "pos_fraction_0.200_std": 9.904377748645848e-05,
+      "pos_mean_0.200_mean": 0.1287929867408866,
+      "pos_mean_0.200_median": 0.0,
+      "pos_mean_0.200_std": 0.19465985219939638,
+      "pos_p95_0.200_mean": 0.19633646692415016,
+      "pos_p95_0.200_median": 0.0,
+      "pos_p95_0.200_std": 0.31182722714569844,
+      "dense_block_fraction_0.200_mean": 6.122648902821316e-06,
+      "dense_block_fraction_0.200_median": 0.0,
+      "dense_block_fraction_0.200_std": 9.646208572077703e-05,
+      "mean_block_density_0.200_mean": 1.714446327903054e-05,
+      "mean_block_density_0.200_median": 0.0,
+      "mean_block_density_0.200_std": 9.904377748645848e-05,
+      "max_block_density_0.200_mean": 0.021218039772727272,
+      "max_block_density_0.200_median": 0.0,
+      "max_block_density_0.200_std": 0.0736398205842007,
+      "speckle_index_mean": 110259.65938298346,
+      "speckle_index_median": 92424.4464764595,
+      "speckle_index_std": 118011.55336537657,
+      "speckle_score_mean": 0.11891538463423,
+      "speckle_score_median": 0.09529076848618058,
+      "speckle_score_std": 0.11975623236834701,
+      "mean_intensity_per_pixel_mean": 0.0036327800644871118,
+      "mean_intensity_per_pixel_median": 0.0035512312315404415,
+      "mean_intensity_per_pixel_std": 0.0007043952716561021,
+      "total_intensity_mean": 15236.98395559855,
+      "total_intensity_median": 14894.943359375,
+      "total_intensity_std": 2954.447905488276
+    },
+    "13": {
+      "mean_mean": 0.013267969843992805,
+      "mean_median": 0.011825375258922577,
+      "mean_std": 0.006969063768317646,
+      "median_mean": 0.00948718933937458,
+      "median_median": 0.008880751207470894,
+      "median_std": 0.005509424041123732,
+      "std_mean": 0.01521483511477125,
+      "std_median": 0.012085595168173313,
+      "std_std": 0.01056349705240526,
+      "max_mean": 0.631232011701246,
+      "max_median": 0.6743724942207336,
+      "max_std": 0.2689265519774719,
+      "p99_mean": 0.06589854958826284,
+      "p99_median": 0.048630502074956894,
+      "p99_std": 0.05157645092560135,
+      "pos_fraction_0.080_mean": 0.011966906371161481,
+      "pos_fraction_0.080_median": 0.0024263858795166016,
+      "pos_fraction_0.080_std": 0.026696407199395804,
+      "pos_mean_0.080_mean": 0.12577697282020575,
+      "pos_mean_0.080_median": 0.12054431438446045,
+      "pos_mean_0.080_std": 0.02589715781421796,
+      "pos_p95_0.080_mean": 0.23913048408621904,
+      "pos_p95_0.080_median": 0.21812385320663452,
+      "pos_p95_0.080_std": 0.09621686092162836,
+      "dense_block_fraction_0.080_mean": 0.010961837529388715,
+      "dense_block_fraction_0.080_median": 0.0009765625,
+      "dense_block_fraction_0.080_std": 0.02940095624613032,
+      "mean_block_density_0.080_mean": 0.011966906371161481,
+      "mean_block_density_0.080_median": 0.0024263858795166016,
+      "mean_block_density_0.080_std": 0.026696407199395804,
+      "max_block_density_0.080_mean": 0.57934034580721,
+      "max_block_density_0.080_median": 0.5966796875,
+      "max_block_density_0.080_std": 0.3216226106120516,
+      "pos_fraction_0.200_mean": 0.0013368735119093174,
+      "pos_fraction_0.200_median": 0.000141143798828125,
+      "pos_fraction_0.200_std": 0.00421970718592109,
+      "pos_mean_0.200_mean": 0.26620853946874135,
+      "pos_mean_0.200_median": 0.2707371115684509,
+      "pos_mean_0.200_std": 0.07725971182091407,
+      "pos_p95_0.200_mean": 0.4309326027254326,
+      "pos_p95_0.200_median": 0.4123658835887909,
+      "pos_p95_0.200_std": 0.18259108640694613,
+      "dense_block_fraction_0.200_mean": 0.0007247685638714734,
+      "dense_block_fraction_0.200_median": 0.0,
+      "dense_block_fraction_0.200_std": 0.0026030390686212286,
+      "mean_block_density_0.200_mean": 0.0013368735119093174,
+      "mean_block_density_0.200_median": 0.000141143798828125,
+      "mean_block_density_0.200_std": 0.00421970718592109,
+      "max_block_density_0.200_mean": 0.24674275078369906,
+      "max_block_density_0.200_median": 0.1484375,
+      "max_block_density_0.200_std": 0.2632363259416957,
+      "speckle_index_mean": 36558.184197974566,
+      "speckle_index_median": 142.629098146851,
+      "speckle_index_std": 54443.00714404839,
+      "speckle_score_mean": 0.12514933859730012,
+      "speckle_score_median": 0.1207611689719455,
+      "speckle_score_std": 0.02535482956010597,
+      "mean_intensity_per_pixel_mean": 0.013267969843992805,
+      "mean_intensity_per_pixel_median": 0.011825375258922577,
+      "mean_intensity_per_pixel_std": 0.006969063768317646,
+      "total_intensity_mean": 55649.8989885384,
+      "total_intensity_median": 49599.21875,
+      "total_intensity_std": 29230.372039709775
+    },
+    "14": {
+      "mean_mean": 0.00311431830433609,
+      "mean_median": 0.003069348866119981,
+      "mean_std": 0.0004043302845057286,
+      "median_mean": 0.0029629289470379442,
+      "median_median": 0.0029755092691630125,
+      "median_std": 0.00018982179184550343,
+      "std_mean": 0.002509384440129687,
+      "std_median": 0.001906438497826457,
+      "std_std": 0.0016599716715952066,
+      "max_mean": 0.22656136513527098,
+      "max_median": 0.18420691788196564,
+      "max_std": 0.166996424099212,
+      "p99_mean": 0.007951911715469483,
+      "p99_median": 0.006759746931493282,
+      "p99_std": 0.004205781775707631,
+      "pos_fraction_0.080_mean": 0.000220974410962909,
+      "pos_fraction_0.080_median": 4.863739013671875e-05,
+      "pos_fraction_0.080_std": 0.000500795507032424,
+      "pos_mean_0.080_mean": 0.0970305049774415,
+      "pos_mean_0.080_median": 0.1045866310596466,
+      "pos_mean_0.080_std": 0.06674337789053439,
+      "pos_p95_0.080_mean": 0.1608054597269405,
+      "pos_p95_0.080_median": 0.14434422552585602,
+      "pos_p95_0.080_std": 0.13341000721512183,
+      "dense_block_fraction_0.080_mean": 1.3010628918495298e-05,
+      "dense_block_fraction_0.080_median": 0.0,
+      "dense_block_fraction_0.080_std": 9.07683990451302e-05,
+      "mean_block_density_0.080_mean": 0.000220974410962909,
+      "mean_block_density_0.080_median": 4.863739013671875e-05,
+      "mean_block_density_0.080_std": 0.000500795507032424,
+      "max_block_density_0.080_mean": 0.10079104623824452,
+      "max_block_density_0.080_median": 0.0771484375,
+      "max_block_density_0.080_std": 0.10496504961870783,
+      "pos_fraction_0.200_mean": 2.5575811212713067e-05,
+      "pos_fraction_0.200_median": 0.0,
+      "pos_fraction_0.200_std": 8.681911505341353e-05,
+      "pos_mean_0.200_mean": 0.12182320383462039,
+      "pos_mean_0.200_median": 0.0,
+      "pos_mean_0.200_std": 0.1389095976793479,
+      "pos_p95_0.200_mean": 0.15685227849640443,
+      "pos_p95_0.200_median": 0.0,
+      "pos_p95_0.200_std": 0.18545318587703438,
+      "dense_block_fraction_0.200_mean": 0.0,
+      "dense_block_fraction_0.200_median": 0.0,
+      "dense_block_fraction_0.200_std": 0.0,
+      "mean_block_density_0.200_mean": 2.5575811212713067e-05,
+      "mean_block_density_0.200_median": 0.0,
+      "mean_block_density_0.200_std": 8.681911505341353e-05,
+      "max_block_density_0.200_mean": 0.02626616379310345,
+      "max_block_density_0.200_median": 0.0,
+      "max_block_density_0.200_std": 0.050486554450122546,
+      "speckle_index_mean": 92042.33205763882,
+      "speckle_index_median": 102582.76922798157,
+      "speckle_index_std": 67495.23211522184,
+      "speckle_score_mean": 0.09800066410497482,
+      "speckle_score_median": 0.10558124386333305,
+      "speckle_score_std": 0.06672336277587473,
+      "mean_intensity_per_pixel_mean": 0.00311431830433609,
+      "mean_intensity_per_pixel_median": 0.003069348866119981,
+      "mean_intensity_per_pixel_std": 0.0004043302845057286,
+      "total_intensity_mean": 13062.397721150079,
+      "total_intensity_median": 12873.7822265625,
+      "total_intensity_std": 1695.8841296235155
+    },
+    "15": {
+      "mean_mean": 0.003968381115635361,
+      "mean_median": 0.003433915553614497,
+      "mean_std": 0.0020941266875783696,
+      "median_mean": 0.0033257014408625872,
+      "median_median": 0.0031891355756670237,
+      "median_std": 0.0006791325949327013,
+      "std_mean": 0.003587266029191545,
+      "std_median": 0.0024835143703967333,
+      "std_std": 0.005037178634782831,
+      "max_mean": 0.21935838902351626,
+      "max_median": 0.16617074608802795,
+      "max_std": 0.17243808382343484,
+      "p99_mean": 0.016050147282420935,
+      "p99_median": 0.008682383224368095,
+      "p99_std": 0.025563901513107876,
+      "pos_fraction_0.080_mean": 0.0008362475607462437,
+      "pos_fraction_0.080_median": 6.079673767089844e-05,
+      "pos_fraction_0.080_std": 0.006221707089171234,
+      "pos_mean_0.080_mean": 0.09453691918181027,
+      "pos_mean_0.080_median": 0.10107069462537766,
+      "pos_mean_0.080_std": 0.04806570340879108,
+      "pos_p95_0.080_mean": 0.14862055646775285,
+      "pos_p95_0.080_median": 0.13941553235054016,
+      "pos_p95_0.080_std": 0.11142320975439546,
+      "dense_block_fraction_0.080_mean": 0.0006941553193573667,
+      "dense_block_fraction_0.080_median": 0.0,
+      "dense_block_fraction_0.080_std": 0.007146706845089972,
+      "mean_block_density_0.080_mean": 0.0008362475607462437,
+      "mean_block_density_0.080_median": 6.079673767089844e-05,
+      "mean_block_density_0.080_std": 0.006221707089171234,
+      "max_block_density_0.080_mean": 0.1363207778213166,
+      "max_block_density_0.080_median": 0.09375,
+      "max_block_density_0.080_std": 0.1798960068059866,
+      "pos_fraction_0.200_mean": 0.00015210283213648303,
+      "pos_fraction_0.200_median": 0.0,
+      "pos_fraction_0.200_std": 0.0017935699478458882,
+      "pos_mean_0.200_mean": 0.10473076153698387,
+      "pos_mean_0.200_median": 0.0,
+      "pos_mean_0.200_std": 0.1361908526489912,
+      "pos_p95_0.200_mean": 0.1366399823685051,
+      "pos_p95_0.200_median": 0.0,
+      "pos_p95_0.200_std": 0.1926827070982169,
+      "dense_block_fraction_0.200_mean": 0.0001469435736677116,
+      "dense_block_fraction_0.200_median": 0.0,
+      "dense_block_fraction_0.200_std": 0.001941343492964001,
+      "mean_block_density_0.200_mean": 0.00015210283213648303,
+      "mean_block_density_0.200_median": 0.0,
+      "mean_block_density_0.200_std": 0.0017935699478458882,
+      "max_block_density_0.200_mean": 0.03068671630094044,
+      "max_block_density_0.200_median": 0.0,
+      "max_block_density_0.200_std": 0.12505069133333455,
+      "speckle_index_mean": 86989.69543924995,
+      "speckle_index_median": 98539.76382112503,
+      "speckle_index_std": 51709.73850188318,
+      "speckle_score_mean": 0.09540604731511314,
+      "speckle_score_median": 0.10206592485758148,
+      "speckle_score_std": 0.04789074490935423,
+      "mean_intensity_per_pixel_mean": 0.003968381115635361,
+      "mean_intensity_per_pixel_median": 0.003433915553614497,
+      "mean_intensity_per_pixel_std": 0.0020941266875783696,
+      "total_intensity_mean": 16644.596786833856,
+      "total_intensity_median": 14402.8857421875,
+      "total_intensity_std": 8783.403942216706
+    },
+    "16": {
+      "mean_mean": 0.0030147781621863287,
+      "mean_median": 0.003029874060302973,
+      "mean_std": 0.0002847736932801522,
+      "median_mean": 0.003034632000488267,
+      "median_median": 0.0030518043786287308,
+      "median_std": 0.0002815349031526734,
+      "std_mean": 0.0009980125562214879,
+      "std_median": 0.000964784063398838,
+      "std_std": 0.00015856500529635984,
+      "max_mean": 0.038125120728133614,
+      "max_median": 0.029236286878585815,
+      "max_std": 0.032699767702761576,
+      "p99_mean": 0.005337835581488557,
+      "p99_median": 0.005264362785965204,
+      "p99_std": 0.00044609872774721516,
+      "pos_fraction_0.080_mean": 4.2153002700088164e-07,
+      "pos_fraction_0.080_median": 0.0,
+      "pos_fraction_0.080_std": 3.7454209056581947e-06,
+      "pos_mean_0.080_mean": 0.005422220615010276,
+      "pos_mean_0.080_median": 0.0,
+      "pos_mean_0.080_std": 0.02475265626444431,
+      "pos_p95_0.080_mean": 0.006857602970914033,
+      "pos_p95_0.080_median": 0.0,
+      "pos_p95_0.080_std": 0.03306774361746218,
+      "dense_block_fraction_0.080_mean": 0.0,
+      "dense_block_fraction_0.080_median": 0.0,
+      "dense_block_fraction_0.080_std": 0.0,
+      "mean_block_density_0.080_mean": 4.2153002700088164e-07,
+      "mean_block_density_0.080_median": 0.0,
+      "mean_block_density_0.080_std": 3.7454209056581947e-06,
+      "max_block_density_0.080_mean": 0.001245959051724138,
+      "max_block_density_0.080_median": 0.0,
+      "max_block_density_0.080_std": 0.010542560504148939,
+      "pos_fraction_0.200_mean": 3.288532125538793e-08,
+      "pos_fraction_0.200_median": 0.0,
+      "pos_fraction_0.200_std": 5.356096462890304e-07,
+      "pos_mean_0.200_mean": 0.0016333814885549037,
+      "pos_mean_0.200_median": 0.0,
+      "pos_mean_0.200_std": 0.02065331837133849,
+      "pos_p95_0.200_mean": 0.0019714225048555476,
+      "pos_p95_0.200_median": 0.0,
+      "pos_p95_0.200_std": 0.024912301615614918,
+      "dense_block_fraction_0.200_mean": 0.0,
+      "dense_block_fraction_0.200_median": 0.0,
+      "dense_block_fraction_0.200_std": 0.0,
+      "mean_block_density_0.200_mean": 3.288532125538793e-08,
+      "mean_block_density_0.200_median": 0.0,
+      "mean_block_density_0.200_std": 5.356096462890304e-07,
+      "max_block_density_0.200_mean": 9.49010579937304e-05,
+      "max_block_density_0.200_median": 0.0,
+      "max_block_density_0.200_std": 0.0014893713138701536,
+      "speckle_index_mean": 5423.220615010277,
+      "speckle_index_median": 1.0,
+      "speckle_index_std": 24752.656264444307,
+      "speckle_score_mean": 0.006422169263680553,
+      "speckle_score_median": 0.001,
+      "speckle_score_std": 0.024752403443576116,
+      "mean_intensity_per_pixel_mean": 0.0030147781621863287,
+      "mean_intensity_per_pixel_median": 0.003029874060302973,
+      "mean_intensity_per_pixel_std": 0.0002847736932801522,
+      "total_intensity_mean": 12644.896104770767,
+      "total_intensity_median": 12708.212890625,
+      "total_intensity_std": 1194.4274408197155
+    },
+    "17": {
+      "mean_mean": 0.004981197845949835,
+      "mean_median": 0.004714843351393938,
+      "mean_std": 0.0013977790202024823,
+      "median_mean": 0.003303841330829225,
+      "median_median": 0.003219653619453311,
+      "median_std": 0.00042006635544474,
+      "std_mean": 0.005646380034861444,
+      "std_median": 0.005570690147578716,
+      "std_std": 0.0024203556100254827,
+      "max_mean": 0.22989462443326708,
+      "max_median": 0.21532005071640015,
+      "max_std": 0.09276872630264282,
+      "p99_mean": 0.029282924069564637,
+      "p99_median": 0.03002975508570671,
+      "p99_std": 0.013121466009092165,
+      "pos_fraction_0.080_mean": 0.0005472386518615914,
+      "pos_fraction_0.080_median": 0.000247955322265625,
+      "pos_fraction_0.080_std": 0.000891431686094321,
+      "pos_mean_0.080_mean": 0.09883134830801464,
+      "pos_mean_0.080_median": 0.09965110570192337,
+      "pos_mean_0.080_std": 0.014426050953552361,
+      "pos_p95_0.080_mean": 0.14138624002006733,
+      "pos_p95_0.080_median": 0.1413656771183014,
+      "pos_p95_0.080_std": 0.03072840311181848,
+      "dense_block_fraction_0.080_mean": 5.510384012539185e-05,
+      "dense_block_fraction_0.080_median": 0.0,
+      "dense_block_fraction_0.080_std": 0.0003500367159396647,
+      "mean_block_density_0.080_mean": 0.0005472386518615914,
+      "mean_block_density_0.080_median": 0.000247955322265625,
+      "mean_block_density_0.080_std": 0.000891431686094321,
+      "max_block_density_0.080_mean": 0.1527784580721003,
+      "max_block_density_0.080_median": 0.115234375,
+      "max_block_density_0.080_std": 0.13091582358534257,
+      "pos_fraction_0.200_mean": 6.484387436630584e-06,
+      "pos_fraction_0.200_median": 7.152557373046875e-07,
+      "pos_fraction_0.200_std": 1.5260170265190103e-05,
+      "pos_mean_0.200_mean": 0.13247736928791837,
+      "pos_mean_0.200_median": 0.2088916301727295,
+      "pos_mean_0.200_std": 0.11388984164300152,
+      "pos_p95_0.200_mean": 0.15675549274514836,
+      "pos_p95_0.200_median": 0.21403448283672333,
+      "pos_p95_0.200_std": 0.14169810352615866,
+      "dense_block_fraction_0.200_mean": 0.0,
+      "dense_block_fraction_0.200_median": 0.0,
+      "dense_block_fraction_0.200_std": 0.0,
+      "mean_block_density_0.200_mean": 6.484387436630584e-06,
+      "mean_block_density_0.200_median": 7.152557373046875e-07,
+      "mean_block_density_0.200_std": 1.5260170265190103e-05,
+      "max_block_density_0.200_mean": 0.010714635579937305,
+      "max_block_density_0.200_median": 0.0029296875,
+      "max_block_density_0.200_std": 0.021150372713707503,
+      "speckle_index_mean": 90811.32734987231,
+      "speckle_index_median": 98899.93978834152,
+      "speckle_index_std": 29408.232882356177,
+      "speckle_score_mean": 0.09977417277179154,
+      "speckle_score_median": 0.10061676491200365,
+      "speckle_score_std": 0.014406731445710494,
+      "mean_intensity_per_pixel_mean": 0.004981197845949835,
+      "mean_intensity_per_pixel_median": 0.004714843351393938,
+      "mean_intensity_per_pixel_std": 0.0013977790202024823,
+      "total_intensity_mean": 20892.658050058777,
+      "total_intensity_median": 19775.486328125,
+      "total_intensity_std": 5862.710135551352
+    },
+    "18": {
+      "mean_mean": 0.006258919262137486,
+      "mean_median": 0.005532452836632729,
+      "mean_std": 0.0026200721358249006,
+      "median_mean": 0.003659343075439287,
+      "median_median": 0.0034943160135298967,
+      "median_std": 0.0006005794777546381,
+      "std_mean": 0.007603178561853426,
+      "std_median": 0.006538961548358202,
+      "std_std": 0.0050981407798757995,
+      "max_mean": 0.30939872068320884,
+      "max_median": 0.24737925827503204,
+      "max_std": 0.22794933554471247,
+      "p99_mean": 0.0378934131544025,
+      "p99_median": 0.03343251720070839,
+      "p99_std": 0.024319550811714174,
+      "pos_fraction_0.080_mean": 0.0022566124189610016,
+      "pos_fraction_0.080_median": 0.0003402233123779297,
+      "pos_fraction_0.080_std": 0.005368779374496852,
+      "pos_mean_0.080_mean": 0.09671121548429178,
+      "pos_mean_0.080_median": 0.10053615272045135,
+      "pos_mean_0.080_std": 0.03563689270493518,
+      "pos_p95_0.080_mean": 0.15044256066173595,
+      "pos_p95_0.080_median": 0.1423056423664093,
+      "pos_p95_0.080_std": 0.08185671165279756,
+      "dense_block_fraction_0.080_mean": 0.0012008045160658307,
+      "dense_block_fraction_0.080_median": 0.0,
+      "dense_block_fraction_0.080_std": 0.004852523967127832,
+      "mean_block_density_0.080_mean": 0.0022566124189610016,
+      "mean_block_density_0.080_median": 0.0003402233123779297,
+      "mean_block_density_0.080_std": 0.005368779374496852,
+      "max_block_density_0.080_mean": 0.2885757494122257,
+      "max_block_density_0.080_median": 0.181640625,
+      "max_block_density_0.080_std": 0.27711009488293215,
+      "pos_fraction_0.200_mean": 6.26487791725087e-05,
+      "pos_fraction_0.200_median": 2.86102294921875e-06,
+      "pos_fraction_0.200_std": 0.00022436037090791612,
+      "pos_mean_0.200_mean": 0.15752297429642334,
+      "pos_mean_0.200_median": 0.21816866099834442,
+      "pos_mean_0.200_std": 0.1318918924695962,
+      "pos_p95_0.200_mean": 0.22177719266437065,
+      "pos_p95_0.200_median": 0.2393224984407425,
+      "pos_p95_0.200_std": 0.21312182675863797,
+      "dense_block_fraction_0.200_mean": 1.0714635579937304e-05,
+      "dense_block_fraction_0.200_median": 0.0,
+      "dense_block_fraction_0.200_std": 7.409891410205006e-05,
+      "mean_block_density_0.200_mean": 6.26487791725087e-05,
+      "mean_block_density_0.200_median": 2.86102294921875e-06,
+      "mean_block_density_0.200_std": 0.00022436037090791612,
+      "max_block_density_0.200_mean": 0.05202414772727273,
+      "max_block_density_0.200_median": 0.0087890625,
+      "max_block_density_0.200_std": 0.09640821328266129,
+      "speckle_index_mean": 59868.770206564135,
+      "speckle_index_median": 89813.7630352974,
+      "speckle_index_std": 54562.635025795236,
+      "speckle_score_mean": 0.09746308785646847,
+      "speckle_score_median": 0.1013901432221503,
+      "speckle_score_std": 0.03554878258617313,
+      "mean_intensity_per_pixel_mean": 0.006258919262137486,
+      "mean_intensity_per_pixel_median": 0.005532452836632729,
+      "mean_intensity_per_pixel_std": 0.0026200721358249006,
+      "total_intensity_mean": 26251.810096860307,
+      "total_intensity_median": 23204.7890625,
+      "total_intensity_std": 10989.379039578924
+    },
+    "19": {
+      "mean_mean": 0.003094614004617014,
+      "mean_median": 0.0030420043040066957,
+      "mean_std": 0.0002896863063204502,
+      "median_mean": 0.0029612069257584674,
+      "median_median": 0.002960250247269869,
+      "median_std": 0.00010863493904387188,
+      "std_mean": 0.002130928523050253,
+      "std_median": 0.001361481030471623,
+      "std_std": 0.0020137037712280987,
+      "max_mean": 0.29439431810780753,
+      "max_median": 0.23530937731266022,
+      "max_std": 0.2315919035686991,
+      "p99_mean": 0.00726482522057889,
+      "p99_median": 0.00509651331230998,
+      "p99_std": 0.0060957170029584656,
+      "pos_fraction_0.080_mean": 0.00021966796683667221,
+      "pos_fraction_0.080_median": 3.123283386230469e-05,
+      "pos_fraction_0.080_std": 0.0006532482468576665,
+      "pos_mean_0.080_mean": 0.09728171115852075,
+      "pos_mean_0.080_median": 0.11268538981676102,
+      "pos_mean_0.080_std": 0.053036599323668554,
+      "pos_p95_0.080_mean": 0.1663230770387246,
+      "pos_p95_0.080_median": 0.17392845451831818,
+      "pos_p95_0.080_std": 0.11163618167551201,
+      "dense_block_fraction_0.080_mean": 7.653311128526645e-06,
+      "dense_block_fraction_0.080_median": 0.0,
+      "dense_block_fraction_0.080_std": 5.748650555389744e-05,
+      "mean_block_density_0.080_mean": 0.00021966796683667221,
+      "mean_block_density_0.080_median": 3.123283386230469e-05,
+      "mean_block_density_0.080_std": 0.0006532482468576665,
+      "max_block_density_0.080_mean": 0.06409495003918496,
+      "max_block_density_0.080_median": 0.03125,
+      "max_block_density_0.080_std": 0.08523129534902259,
+      "pos_fraction_0.200_mean": 2.795102827974995e-05,
+      "pos_fraction_0.200_median": 1.1920928955078125e-06,
+      "pos_fraction_0.200_std": 0.00012951239318710535,
+      "pos_mean_0.200_mean": 0.1497740589993127,
+      "pos_mean_0.200_median": 0.21922636032104492,
+      "pos_mean_0.200_std": 0.13391107923407783,
+      "pos_p95_0.200_mean": 0.20916991225417506,
+      "pos_p95_0.200_median": 0.23392844200134277,
+      "pos_p95_0.200_std": 0.20381165689235223,
+      "dense_block_fraction_0.200_mean": 0.0,
+      "dense_block_fraction_0.200_median": 0.0,
+      "dense_block_fraction_0.200_std": 0.0,
+      "mean_block_density_0.200_mean": 2.795102827974995e-05,
+      "mean_block_density_0.200_median": 1.1920928955078125e-06,
+      "mean_block_density_0.200_std": 0.00012951239318710535,
+      "max_block_density_0.200_mean": 0.015879089929467086,
+      "max_block_density_0.200_median": 0.0029296875,
+      "max_block_density_0.200_std": 0.031488419315236146,
+      "speckle_index_mean": 93947.14886445702,
+      "speckle_index_median": 111923.30880260468,
+      "speckle_index_std": 54184.72823508184,
+      "speckle_score_mean": 0.09825101098668414,
+      "speckle_score_median": 0.11367823417355737,
+      "speckle_score_std": 0.053010637237303794,
+      "mean_intensity_per_pixel_mean": 0.003094614004617014,
+      "mean_intensity_per_pixel_median": 0.0030420043040066957,
+      "mean_intensity_per_pixel_std": 0.0002896863063204502,
+      "total_intensity_mean": 12979.75189802116,
+      "total_intensity_median": 12759.0908203125,
+      "total_intensity_std": 1215.0324333450897
+    }
+  },
+  "channel_rankings": {
+    "0": {
+      "mean_intensity_top": [
+        {
+          "core": "core_173",
+          "mean": 0.10730736702680588,
+          "total_intensity": 450079.71875,
+          "pos_fraction_0.080": 0.4564385414123535,
+          "speckle_score": 0.11730593296594367
+        },
+        {
+          "core": "core_290",
+          "mean": 0.08489447832107544,
+          "total_intensity": 356073.25,
+          "pos_fraction_0.080": 0.36673831939697266,
+          "speckle_score": 0.12481403498752104
+        },
+        {
+          "core": "core_086",
+          "mean": 0.07984663546085358,
+          "total_intensity": 334901.0625,
+          "pos_fraction_0.080": 0.339733362197876,
+          "speckle_score": 0.13742725759880578
+        },
+        {
+          "core": "core_235",
+          "mean": 0.07428743690252304,
+          "total_intensity": 311584.09375,
+          "pos_fraction_0.080": 0.3704962730407715,
+          "speckle_score": 0.10314609453823607
+        },
+        {
+          "core": "core_186",
+          "mean": 0.0729602798819542,
+          "total_intensity": 306017.59375,
+          "pos_fraction_0.080": 0.3348052501678467,
+          "speckle_score": 0.12218894595920579
+        },
+        {
+          "core": "core_157",
+          "mean": 0.071393221616745,
+          "total_intensity": 299444.875,
+          "pos_fraction_0.080": 0.3732466697692871,
+          "speckle_score": 0.10259141198704219
+        },
+        {
+          "core": "core_035",
+          "mean": 0.07096052914857864,
+          "total_intensity": 297630.03125,
+          "pos_fraction_0.080": 0.3875312805175781,
+          "speckle_score": 0.09184353319509
+        },
+        {
+          "core": "core_184",
+          "mean": 0.06958357244729996,
+          "total_intensity": 291854.65625,
+          "pos_fraction_0.080": 0.3398411273956299,
+          "speckle_score": 0.11492209756260738
+        },
+        {
+          "core": "core_263",
+          "mean": 0.06791994720697403,
+          "total_intensity": 284876.90625,
+          "pos_fraction_0.080": 0.3615868091583252,
+          "speckle_score": 0.09783289692504105
+        },
+        {
+          "core": "core_161",
+          "mean": 0.06589117646217346,
+          "total_intensity": 276367.625,
+          "pos_fraction_0.080": 0.3400547504425049,
+          "speckle_score": 0.10922371071707283
+        }
+      ],
+      "mean_intensity_bottom": [
+        {
+          "core": "core_216",
+          "mean": 0.003292781999334693,
+          "total_intensity": 13810.9287109375,
+          "pos_fraction_0.080": 0.0013275146484375,
+          "speckle_score": 0.15789917474170034
+        },
+        {
+          "core": "core_217",
+          "mean": 0.0034458963200449944,
+          "total_intensity": 14453.13671875,
+          "pos_fraction_0.080": 0.0023949146270751953,
+          "speckle_score": 0.15846968402382008
+        },
+        {
+          "core": "core_226",
+          "mean": 0.0034996189642697573,
+          "total_intensity": 14678.4658203125,
+          "pos_fraction_0.080": 2.384185791015625e-06,
+          "speckle_score": 0.10000944677666374
+        },
+        {
+          "core": "core_231",
+          "mean": 0.0035194566007703543,
+          "total_intensity": 14761.6708984375,
+          "pos_fraction_0.080": 2.384185791015625e-06,
+          "speckle_score": 0.09577966539885102
+        },
+        {
+          "core": "core_099",
+          "mean": 0.0037680892273783684,
+          "total_intensity": 15804.51171875,
+          "pos_fraction_0.080": 5.459785461425781e-05,
+          "speckle_score": 0.1575099783529083
+        }
+      ],
+      "speckle_score_top": [
+        {
+          "core": "core_214",
+          "mean": 0.012959640473127365,
+          "total_intensity": 54356.671875,
+          "pos_fraction_0.080": 0.042346954345703125,
+          "speckle_score": 0.21293208486845014
+        },
+        {
+          "core": "core_155",
+          "mean": 0.03318504989147186,
+          "total_intensity": 139188.1875,
+          "pos_fraction_0.080": 0.12371206283569336,
+          "speckle_score": 0.17972312847187463
+        },
+        {
+          "core": "core_180",
+          "mean": 0.034627385437488556,
+          "total_intensity": 145237.78125,
+          "pos_fraction_0.080": 0.13318991661071777,
+          "speckle_score": 0.1738832490083715
+        },
+        {
+          "core": "core_181",
+          "mean": 0.015722712501883507,
+          "total_intensity": 65945.8359375,
+          "pos_fraction_0.080": 0.05362749099731445,
+          "speckle_score": 0.17348725850491722
+        },
+        {
+          "core": "core_288",
+          "mean": 0.013749978505074978,
+          "total_intensity": 57671.58984375,
+          "pos_fraction_0.080": 0.0453951358795166,
+          "speckle_score": 0.17162146977872153
+        },
+        {
+          "core": "core_169",
+          "mean": 0.014918281696736813,
+          "total_intensity": 62571.80859375,
+          "pos_fraction_0.080": 0.059339046478271484,
+          "speckle_score": 0.16843590920441595
+        },
+        {
+          "core": "core_027",
+          "mean": 0.006034540012478828,
+          "total_intensity": 25310.6953125,
+          "pos_fraction_0.080": 0.011996984481811523,
+          "speckle_score": 0.16805385236904527
+        },
+        {
+          "core": "core_121",
+          "mean": 0.02290826290845871,
+          "total_intensity": 96084.21875,
+          "pos_fraction_0.080": 0.08709096908569336,
+          "speckle_score": 0.16266564728845465
+        },
+        {
+          "core": "core_117",
+          "mean": 0.024808581918478012,
+          "total_intensity": 104054.734375,
+          "pos_fraction_0.080": 0.09498786926269531,
+          "speckle_score": 0.16153160629351554
+        },
+        {
+          "core": "core_153",
+          "mean": 0.06568949669599533,
+          "total_intensity": 275521.71875,
+          "pos_fraction_0.080": 0.2559535503387451,
+          "speckle_score": 0.16069686178297732
+        }
+      ]
+    },
+    "1": {
+      "mean_intensity_top": [
+        {
+          "core": "core_234",
+          "mean": 0.05843152850866318,
+          "total_intensity": 245079.59375,
+          "pos_fraction_0.080": 0.34300875663757324,
+          "speckle_score": 0.0926106936887711
+        },
+        {
+          "core": "core_142",
+          "mean": 0.042998380959033966,
+          "total_intensity": 180348.28125,
+          "pos_fraction_0.080": 0.12073802947998047,
+          "speckle_score": 0.10719723704077455
+        },
+        {
+          "core": "core_220",
+          "mean": 0.03942744433879852,
+          "total_intensity": 165370.6875,
+          "pos_fraction_0.080": 0.14257240295410156,
+          "speckle_score": 0.11160777331502049
+        },
+        {
+          "core": "core_306",
+          "mean": 0.03917670622467995,
+          "total_intensity": 164319.015625,
+          "pos_fraction_0.080": 0.1000525951385498,
+          "speckle_score": 0.10900706426998209
+        },
+        {
+          "core": "core_097",
+          "mean": 0.03861372545361519,
+          "total_intensity": 161957.703125,
+          "pos_fraction_0.080": 0.12783265113830566,
+          "speckle_score": 0.10450189971316043
+        },
+        {
+          "core": "core_150",
+          "mean": 0.03851720318198204,
+          "total_intensity": 161552.859375,
+          "pos_fraction_0.080": 0.10847592353820801,
+          "speckle_score": 0.10714100664255735
+        },
+        {
+          "core": "core_116",
+          "mean": 0.03781963139772415,
+          "total_intensity": 158627.03125,
+          "pos_fraction_0.080": 0.13802456855773926,
+          "speckle_score": 0.10995606722199855
+        },
+        {
+          "core": "core_309",
+          "mean": 0.036414094269275665,
+          "total_intensity": 152731.78125,
+          "pos_fraction_0.080": 0.06979155540466309,
+          "speckle_score": 0.11415392690802771
+        },
+        {
+          "core": "core_086",
+          "mean": 0.03590910881757736,
+          "total_intensity": 150613.71875,
+          "pos_fraction_0.080": 0.11565160751342773,
+          "speckle_score": 0.08877274438207744
+        },
+        {
+          "core": "core_109",
+          "mean": 0.0352938175201416,
+          "total_intensity": 148033.0,
+          "pos_fraction_0.080": 0.1497654914855957,
+          "speckle_score": 0.1057777524090564
+        }
+      ],
+      "mean_intensity_bottom": [
+        {
+          "core": "core_216",
+          "mean": 0.003275564406067133,
+          "total_intensity": 13738.712890625,
+          "pos_fraction_0.080": 4.887580871582031e-05,
+          "speckle_score": 0.21782348108381747
+        },
+        {
+          "core": "core_217",
+          "mean": 0.0033697355538606644,
+          "total_intensity": 14133.6953125,
+          "pos_fraction_0.080": 3.719329833984375e-05,
+          "speckle_score": 0.257218849984866
+        },
+        {
+          "core": "core_270",
+          "mean": 0.004073765594512224,
+          "total_intensity": 17086.611328125,
+          "pos_fraction_0.080": 3.218650817871094e-05,
+          "speckle_score": 0.125044819094196
+        },
+        {
+          "core": "core_305",
+          "mean": 0.004479455295950174,
+          "total_intensity": 18788.197265625,
+          "pos_fraction_0.080": 1.7404556274414062e-05,
+          "speckle_score": 0.08670298893967784
+        },
+        {
+          "core": "core_160",
+          "mean": 0.004487198777496815,
+          "total_intensity": 18820.67578125,
+          "pos_fraction_0.080": 2.7179718017578125e-05,
+          "speckle_score": 0.09628181518905933
+        }
+      ],
+      "speckle_score_top": [
+        {
+          "core": "core_249",
+          "mean": 0.009252898395061493,
+          "total_intensity": 38809.46875,
+          "pos_fraction_0.080": 3.600120544433594e-05,
+          "speckle_score": 0.33425583351898136
+        },
+        {
+          "core": "core_217",
+          "mean": 0.0033697355538606644,
+          "total_intensity": 14133.6953125,
+          "pos_fraction_0.080": 3.719329833984375e-05,
+          "speckle_score": 0.257218849984866
+        },
+        {
+          "core": "core_216",
+          "mean": 0.003275564406067133,
+          "total_intensity": 13738.712890625,
+          "pos_fraction_0.080": 4.887580871582031e-05,
+          "speckle_score": 0.21782348108381747
+        },
+        {
+          "core": "core_082",
+          "mean": 0.010256868787109852,
+          "total_intensity": 43020.42578125,
+          "pos_fraction_0.080": 5.245208740234375e-06,
+          "speckle_score": 0.16302568433669382
+        },
+        {
+          "core": "core_202",
+          "mean": 0.015117990784347057,
+          "total_intensity": 63409.44921875,
+          "pos_fraction_0.080": 1.33514404296875e-05,
+          "speckle_score": 0.1622796872177555
+        },
+        {
+          "core": "core_003",
+          "mean": 0.0078650563955307,
+          "total_intensity": 32988.4375,
+          "pos_fraction_0.080": 7.295608520507812e-05,
+          "speckle_score": 0.15895519498860108
+        },
+        {
+          "core": "core_004",
+          "mean": 0.008295280858874321,
+          "total_intensity": 34792.9296875,
+          "pos_fraction_0.080": 5.9604644775390625e-06,
+          "speckle_score": 0.14883766067893608
+        },
+        {
+          "core": "core_077",
+          "mean": 0.011195085942745209,
+          "total_intensity": 46955.59375,
+          "pos_fraction_0.080": 1.6450881958007812e-05,
+          "speckle_score": 0.14641805314734682
+        },
+        {
+          "core": "core_114",
+          "mean": 0.012066648341715336,
+          "total_intensity": 50611.19140625,
+          "pos_fraction_0.080": 0.005792856216430664,
+          "speckle_score": 0.14453764516558837
+        },
+        {
+          "core": "core_292",
+          "mean": 0.006733515299856663,
+          "total_intensity": 28242.41015625,
+          "pos_fraction_0.080": 7.62939453125e-06,
+          "speckle_score": 0.14094371647039952
+        }
+      ]
+    },
+    "2": {
+      "mean_intensity_top": [
+        {
+          "core": "core_152",
+          "mean": 0.017028534784913063,
+          "total_intensity": 71422.8515625,
+          "pos_fraction_0.080": 0.025763988494873047,
+          "speckle_score": 0.14277310933592377
+        },
+        {
+          "core": "core_144",
+          "mean": 0.014670760370790958,
+          "total_intensity": 61533.62890625,
+          "pos_fraction_0.080": 0.016779422760009766,
+          "speckle_score": 0.14675528100394097
+        },
+        {
+          "core": "core_143",
+          "mean": 0.010865227319300175,
+          "total_intensity": 45572.06640625,
+          "pos_fraction_0.080": 0.012756586074829102,
+          "speckle_score": 0.19150986758935792
+        },
+        {
+          "core": "core_162",
+          "mean": 0.00959788914769888,
+          "total_intensity": 40256.46484375,
+          "pos_fraction_0.080": 0.00596165657043457,
+          "speckle_score": 0.17798783509511415
+        },
+        {
+          "core": "core_171",
+          "mean": 0.00932418555021286,
+          "total_intensity": 39108.46875,
+          "pos_fraction_0.080": 0.005865573883056641,
+          "speckle_score": 0.15996755644843053
+        },
+        {
+          "core": "core_292",
+          "mean": 0.009268498048186302,
+          "total_intensity": 38874.8984375,
+          "pos_fraction_0.080": 0.006852626800537109,
+          "speckle_score": 0.14219134838002948
+        },
+        {
+          "core": "core_249",
+          "mean": 0.008796485140919685,
+          "total_intensity": 36895.1328125,
+          "pos_fraction_0.080": 0.0025315284729003906,
+          "speckle_score": 0.11669142659500659
+        },
+        {
+          "core": "core_274",
+          "mean": 0.008211285807192326,
+          "total_intensity": 34440.62890625,
+          "pos_fraction_0.080": 0.0027112960815429688,
+          "speckle_score": 0.13449503025429
+        },
+        {
+          "core": "core_170",
+          "mean": 0.008127880282700062,
+          "total_intensity": 34090.80078125,
+          "pos_fraction_0.080": 0.00439000129699707,
+          "speckle_score": 0.1541242512199717
+        },
+        {
+          "core": "core_023",
+          "mean": 0.007785330526530743,
+          "total_intensity": 32654.04296875,
+          "pos_fraction_0.080": 0.0010449886322021484,
+          "speckle_score": 0.1598463867652162
+        }
+      ],
+      "mean_intensity_bottom": [
+        {
+          "core": "core_173",
+          "mean": 0.001800774596631527,
+          "total_intensity": 7552.99609375,
+          "pos_fraction_0.080": 7.62939453125e-06,
+          "speckle_score": 0.20794413083482868
+        },
+        {
+          "core": "core_086",
+          "mean": 0.0018603689968585968,
+          "total_intensity": 7802.953125,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_186",
+          "mean": 0.0018913332605734468,
+          "total_intensity": 7932.82666015625,
+          "pos_fraction_0.080": 5.0067901611328125e-06,
+          "speckle_score": 0.13858701733543027
+        },
+        {
+          "core": "core_235",
+          "mean": 0.0020030990708619356,
+          "total_intensity": 8401.6064453125,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_184",
+          "mean": 0.002032545628026128,
+          "total_intensity": 8525.1142578125,
+          "pos_fraction_0.080": 5.888938903808594e-05,
+          "speckle_score": 0.2321070808588681
+        }
+      ],
+      "speckle_score_top": [
+        {
+          "core": "core_002",
+          "mean": 0.0049774618819355965,
+          "total_intensity": 20876.98828125,
+          "pos_fraction_0.080": 0.003612518310546875,
+          "speckle_score": 0.3374498429442501
+        },
+        {
+          "core": "core_102",
+          "mean": 0.0038234603125602007,
+          "total_intensity": 16036.7548828125,
+          "pos_fraction_0.080": 0.0006856918334960938,
+          "speckle_score": 0.33339054938938445
+        },
+        {
+          "core": "core_218",
+          "mean": 0.003679967252537608,
+          "total_intensity": 15434.9013671875,
+          "pos_fraction_0.080": 0.0017321109771728516,
+          "speckle_score": 0.25395702836584527
+        },
+        {
+          "core": "core_251",
+          "mean": 0.0021930504590272903,
+          "total_intensity": 9198.3203125,
+          "pos_fraction_0.080": 0.00013399124145507812,
+          "speckle_score": 0.2435083380877042
+        },
+        {
+          "core": "core_305",
+          "mean": 0.0036552499514073133,
+          "total_intensity": 15331.2294921875,
+          "pos_fraction_0.080": 0.0010671615600585938,
+          "speckle_score": 0.23916500099562438
+        },
+        {
+          "core": "core_018",
+          "mean": 0.005102597177028656,
+          "total_intensity": 21401.84375,
+          "pos_fraction_0.080": 0.0033020973205566406,
+          "speckle_score": 0.23608938049915287
+        },
+        {
+          "core": "core_184",
+          "mean": 0.002032545628026128,
+          "total_intensity": 8525.1142578125,
+          "pos_fraction_0.080": 5.888938903808594e-05,
+          "speckle_score": 0.2321070808588681
+        },
+        {
+          "core": "core_268",
+          "mean": 0.0043588848784565926,
+          "total_intensity": 18282.48828125,
+          "pos_fraction_0.080": 0.00031447410583496094,
+          "speckle_score": 0.22589501851601682
+        },
+        {
+          "core": "core_240",
+          "mean": 0.00515010068193078,
+          "total_intensity": 21601.087890625,
+          "pos_fraction_0.080": 0.00011944770812988281,
+          "speckle_score": 0.225341473683094
+        },
+        {
+          "core": "core_010",
+          "mean": 0.0055913967080414295,
+          "total_intensity": 23452.017578125,
+          "pos_fraction_0.080": 0.005624532699584961,
+          "speckle_score": 0.2209525741715873
+        }
+      ]
+    },
+    "3": {
+      "mean_intensity_top": [
+        {
+          "core": "core_166",
+          "mean": 0.025028368458151817,
+          "total_intensity": 104976.5859375,
+          "pos_fraction_0.080": 0.06953644752502441,
+          "speckle_score": 0.13072897100806816
+        },
+        {
+          "core": "core_159",
+          "mean": 0.02408497966825962,
+          "total_intensity": 101019.7265625,
+          "pos_fraction_0.080": 0.061018943786621094,
+          "speckle_score": 0.12936583610735897
+        },
+        {
+          "core": "core_296",
+          "mean": 0.01596330665051937,
+          "total_intensity": 66954.9609375,
+          "pos_fraction_0.080": 0.034548044204711914,
+          "speckle_score": 0.11428347753437768
+        },
+        {
+          "core": "core_034",
+          "mean": 0.01562819816172123,
+          "total_intensity": 65549.4140625,
+          "pos_fraction_0.080": 0.019620656967163086,
+          "speckle_score": 0.12671495324569113
+        },
+        {
+          "core": "core_317",
+          "mean": 0.012170743197202682,
+          "total_intensity": 51047.796875,
+          "pos_fraction_0.080": 0.012226343154907227,
+          "speckle_score": 0.12507633826411846
+        },
+        {
+          "core": "core_271",
+          "mean": 0.009750708006322384,
+          "total_intensity": 40897.43359375,
+          "pos_fraction_0.080": 0.022639751434326172,
+          "speckle_score": 0.133888224870528
+        },
+        {
+          "core": "core_274",
+          "mean": 0.0086250901222229,
+          "total_intensity": 36176.25,
+          "pos_fraction_0.080": 0.01065826416015625,
+          "speckle_score": 0.15144669277892717
+        },
+        {
+          "core": "core_290",
+          "mean": 0.008599023334681988,
+          "total_intensity": 36066.91796875,
+          "pos_fraction_0.080": 0.009431123733520508,
+          "speckle_score": 0.13773366222922834
+        },
+        {
+          "core": "core_184",
+          "mean": 0.008517015725374222,
+          "total_intensity": 35722.953125,
+          "pos_fraction_0.080": 0.015175104141235352,
+          "speckle_score": 0.14121816337459564
+        },
+        {
+          "core": "core_096",
+          "mean": 0.00838518887758255,
+          "total_intensity": 35170.03125,
+          "pos_fraction_0.080": 0.012830972671508789,
+          "speckle_score": 0.14479096117165385
+        }
+      ],
+      "mean_intensity_bottom": [
+        {
+          "core": "core_086",
+          "mean": 0.0019218723755329847,
+          "total_intensity": 8060.9169921875,
+          "pos_fraction_0.080": 0.00045418739318847656,
+          "speckle_score": 0.14039864493596615
+        },
+        {
+          "core": "core_138",
+          "mean": 0.0019556584302335978,
+          "total_intensity": 8202.6259765625,
+          "pos_fraction_0.080": 9.274482727050781e-05,
+          "speckle_score": 0.15073005308409848
+        },
+        {
+          "core": "core_157",
+          "mean": 0.0020789881236851215,
+          "total_intensity": 8719.908203125,
+          "pos_fraction_0.080": 0.0005004405975341797,
+          "speckle_score": 0.12260896865577785
+        },
+        {
+          "core": "core_161",
+          "mean": 0.0020818982739001513,
+          "total_intensity": 8732.1142578125,
+          "pos_fraction_0.080": 0.0001595020294189453,
+          "speckle_score": 0.11970745490480056
+        },
+        {
+          "core": "core_195",
+          "mean": 0.0021341603714972734,
+          "total_intensity": 8951.3173828125,
+          "pos_fraction_0.080": 0.00022339820861816406,
+          "speckle_score": 0.106238257648798
+        }
+      ],
+      "speckle_score_top": [
+        {
+          "core": "core_249",
+          "mean": 0.0030489081982523203,
+          "total_intensity": 12788.0478515625,
+          "pos_fraction_0.080": 5.841255187988281e-05,
+          "speckle_score": 0.2310784903675759
+        },
+        {
+          "core": "core_002",
+          "mean": 0.0034168523270636797,
+          "total_intensity": 14331.3173828125,
+          "pos_fraction_0.080": 0.0005691051483154297,
+          "speckle_score": 0.2279998531215003
+        },
+        {
+          "core": "core_259",
+          "mean": 0.002983593614771962,
+          "total_intensity": 12514.0986328125,
+          "pos_fraction_0.080": 0.00010943412780761719,
+          "speckle_score": 0.21826128330384292
+        },
+        {
+          "core": "core_106",
+          "mean": 0.003262855112552643,
+          "total_intensity": 13685.40625,
+          "pos_fraction_0.080": 0.00031447410583496094,
+          "speckle_score": 0.21587313181606774
+        },
+        {
+          "core": "core_085",
+          "mean": 0.0031455475836992264,
+          "total_intensity": 13193.3828125,
+          "pos_fraction_0.080": 0.0004601478576660156,
+          "speckle_score": 0.21371686829519068
+        },
+        {
+          "core": "core_078",
+          "mean": 0.00598402414470911,
+          "total_intensity": 25098.81640625,
+          "pos_fraction_0.080": 0.0035474300384521484,
+          "speckle_score": 0.2124336513437733
+        },
+        {
+          "core": "core_219",
+          "mean": 0.003879633266478777,
+          "total_intensity": 16272.361328125,
+          "pos_fraction_0.080": 0.0005817413330078125,
+          "speckle_score": 0.2115240567634462
+        },
+        {
+          "core": "core_008",
+          "mean": 0.00293874298222363,
+          "total_intensity": 12325.9814453125,
+          "pos_fraction_0.080": 1.6689300537109375e-05,
+          "speckle_score": 0.20319694697292398
+        },
+        {
+          "core": "core_108",
+          "mean": 0.003477369202300906,
+          "total_intensity": 14585.1435546875,
+          "pos_fraction_0.080": 0.0008916854858398438,
+          "speckle_score": 0.20255519663325322
+        },
+        {
+          "core": "core_185",
+          "mean": 0.002159428084269166,
+          "total_intensity": 9057.2978515625,
+          "pos_fraction_0.080": 0.00021266937255859375,
+          "speckle_score": 0.19826998640348836
+        }
+      ]
+    },
+    "4": {
+      "mean_intensity_top": [
+        {
+          "core": "core_184",
+          "mean": 0.02260567806661129,
+          "total_intensity": 94815.0859375,
+          "pos_fraction_0.080": 0.08446073532104492,
+          "speckle_score": 0.11548320004327621
+        },
+        {
+          "core": "core_173",
+          "mean": 0.012990179471671581,
+          "total_intensity": 54484.76171875,
+          "pos_fraction_0.080": 0.02971482276916504,
+          "speckle_score": 0.10858962247506997
+        },
+        {
+          "core": "core_096",
+          "mean": 0.009423836134374142,
+          "total_intensity": 39526.43359375,
+          "pos_fraction_0.080": 0.017680644989013672,
+          "speckle_score": 0.11299659410973158
+        },
+        {
+          "core": "core_296",
+          "mean": 0.008611775003373623,
+          "total_intensity": 36120.40234375,
+          "pos_fraction_0.080": 0.009677410125732422,
+          "speckle_score": 0.10287924207957706
+        },
+        {
+          "core": "core_095",
+          "mean": 0.007599450647830963,
+          "total_intensity": 31874.40625,
+          "pos_fraction_0.080": 0.005860805511474609,
+          "speckle_score": 0.10450277264969475
+        },
+        {
+          "core": "core_201",
+          "mean": 0.007164963986724615,
+          "total_intensity": 30052.037109375,
+          "pos_fraction_0.080": 0.00395512580871582,
+          "speckle_score": 0.10094877690803465
+        },
+        {
+          "core": "core_153",
+          "mean": 0.006770475301891565,
+          "total_intensity": 28397.431640625,
+          "pos_fraction_0.080": 0.007201671600341797,
+          "speckle_score": 0.10550657029571892
+        },
+        {
+          "core": "core_054",
+          "mean": 0.006211322266608477,
+          "total_intensity": 26052.173828125,
+          "pos_fraction_0.080": 0.0045888423919677734,
+          "speckle_score": 0.10526347648762968
+        },
+        {
+          "core": "core_317",
+          "mean": 0.006112272851169109,
+          "total_intensity": 25636.73046875,
+          "pos_fraction_0.080": 0.0008854866027832031,
+          "speckle_score": 0.0958974094067591
+        },
+        {
+          "core": "core_290",
+          "mean": 0.005843783263117075,
+          "total_intensity": 24510.603515625,
+          "pos_fraction_0.080": 0.0016856193542480469,
+          "speckle_score": 0.1016960677645435
+        }
+      ],
+      "mean_intensity_bottom": [
+        {
+          "core": "core_142",
+          "mean": 0.0015410010237246752,
+          "total_intensity": 6463.4267578125,
+          "pos_fraction_0.080": 1.1920928955078125e-06,
+          "speckle_score": 0.08975551550910174
+        },
+        {
+          "core": "core_309",
+          "mean": 0.0016904952935874462,
+          "total_intensity": 7090.451171875,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_197",
+          "mean": 0.0017064749263226986,
+          "total_intensity": 7157.474609375,
+          "pos_fraction_0.080": 7.152557373046875e-07,
+          "speckle_score": 0.08920217428047317
+        },
+        {
+          "core": "core_140",
+          "mean": 0.001725349691696465,
+          "total_intensity": 7236.64111328125,
+          "pos_fraction_0.080": 2.384185791015625e-07,
+          "speckle_score": 0.08223901015781647
+        },
+        {
+          "core": "core_097",
+          "mean": 0.0017517254455015063,
+          "total_intensity": 7347.26904296875,
+          "pos_fraction_0.080": 1.430511474609375e-06,
+          "speckle_score": 0.08414628037729156
+        }
+      ],
+      "speckle_score_top": [
+        {
+          "core": "core_264",
+          "mean": 0.002941030776128173,
+          "total_intensity": 12335.5771484375,
+          "pos_fraction_0.080": 7.867813110351562e-06,
+          "speckle_score": 0.13768138241258449
+        },
+        {
+          "core": "core_115",
+          "mean": 0.002654223470017314,
+          "total_intensity": 11132.6201171875,
+          "pos_fraction_0.080": 0.0003237724304199219,
+          "speckle_score": 0.1310866280088282
+        },
+        {
+          "core": "core_078",
+          "mean": 0.0038043023087084293,
+          "total_intensity": 15956.400390625,
+          "pos_fraction_0.080": 0.0010814666748046875,
+          "speckle_score": 0.12258825848048911
+        },
+        {
+          "core": "core_046",
+          "mean": 0.0033325054682791233,
+          "total_intensity": 13977.541015625,
+          "pos_fraction_0.080": 0.0006158351898193359,
+          "speckle_score": 0.12166121975739744
+        },
+        {
+          "core": "core_007",
+          "mean": 0.00291198818013072,
+          "total_intensity": 12213.763671875,
+          "pos_fraction_0.080": 1.5735626220703125e-05,
+          "speckle_score": 0.11899800151784715
+        },
+        {
+          "core": "core_061",
+          "mean": 0.00306908437050879,
+          "total_intensity": 12872.6728515625,
+          "pos_fraction_0.080": 0.00021386146545410156,
+          "speckle_score": 0.11877532803792032
+        },
+        {
+          "core": "core_060",
+          "mean": 0.002954003866761923,
+          "total_intensity": 12389.990234375,
+          "pos_fraction_0.080": 0.00020432472229003906,
+          "speckle_score": 0.11874625507877641
+        },
+        {
+          "core": "core_004",
+          "mean": 0.0034812248777598143,
+          "total_intensity": 14601.3154296875,
+          "pos_fraction_0.080": 0.0005118846893310547,
+          "speckle_score": 0.11633439359380357
+        },
+        {
+          "core": "core_263",
+          "mean": 0.004596159793436527,
+          "total_intensity": 19277.69140625,
+          "pos_fraction_0.080": 0.005307674407958984,
+          "speckle_score": 0.11588921827051127
+        },
+        {
+          "core": "core_184",
+          "mean": 0.02260567806661129,
+          "total_intensity": 94815.0859375,
+          "pos_fraction_0.080": 0.08446073532104492,
+          "speckle_score": 0.11548320004327621
+        }
+      ]
+    },
+    "5": {
+      "mean_intensity_top": [
+        {
+          "core": "core_102",
+          "mean": 0.0032565973233431578,
+          "total_intensity": 13659.1591796875,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_099",
+          "mean": 0.0032127343583852053,
+          "total_intensity": 13475.1845703125,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_150",
+          "mean": 0.003196282545104623,
+          "total_intensity": 13406.1806640625,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_306",
+          "mean": 0.0031795722898095846,
+          "total_intensity": 13336.0927734375,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_113",
+          "mean": 0.003140142187476158,
+          "total_intensity": 13170.7109375,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_110",
+          "mean": 0.0031123363878577948,
+          "total_intensity": 13054.0849609375,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_307",
+          "mean": 0.003100789152085781,
+          "total_intensity": 13005.65234375,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_312",
+          "mean": 0.0030728839337825775,
+          "total_intensity": 12888.609375,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_308",
+          "mean": 0.003071035025641322,
+          "total_intensity": 12880.8544921875,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_189",
+          "mean": 0.0030616028234362602,
+          "total_intensity": 12841.29296875,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        }
+      ],
+      "mean_intensity_bottom": [
+        {
+          "core": "core_173",
+          "mean": 0.0016972182784229517,
+          "total_intensity": 7118.6494140625,
+          "pos_fraction_0.080": 5.4836273193359375e-06,
+          "speckle_score": 0.16397807776535267
+        },
+        {
+          "core": "core_157",
+          "mean": 0.001784977037459612,
+          "total_intensity": 7486.736328125,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_235",
+          "mean": 0.0017920761601999402,
+          "total_intensity": 7516.51220703125,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_086",
+          "mean": 0.001816118136048317,
+          "total_intensity": 7617.3515625,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_186",
+          "mean": 0.0018687599804252386,
+          "total_intensity": 7838.1474609375,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        }
+      ],
+      "speckle_score_top": [
+        {
+          "core": "core_159",
+          "mean": 0.0026160087436437607,
+          "total_intensity": 10972.3359375,
+          "pos_fraction_0.080": 0.0005331039428710938,
+          "speckle_score": 0.4458270437745382
+        },
+        {
+          "core": "core_216",
+          "mean": 0.0030466776806861162,
+          "total_intensity": 12778.6923828125,
+          "pos_fraction_0.080": 2.193450927734375e-05,
+          "speckle_score": 0.3707727055937908
+        },
+        {
+          "core": "core_217",
+          "mean": 0.0030346771236509085,
+          "total_intensity": 12728.3583984375,
+          "pos_fraction_0.080": 2.193450927734375e-05,
+          "speckle_score": 0.3707727055937908
+        },
+        {
+          "core": "core_266",
+          "mean": 0.0028686176519840956,
+          "total_intensity": 12031.8544921875,
+          "pos_fraction_0.080": 2.1457672119140625e-06,
+          "speckle_score": 0.18733769487312515
+        },
+        {
+          "core": "core_140",
+          "mean": 0.002570460783317685,
+          "total_intensity": 10781.2939453125,
+          "pos_fraction_0.080": 3.1948089599609375e-05,
+          "speckle_score": 0.18658348644114
+        },
+        {
+          "core": "core_093",
+          "mean": 0.002405144739896059,
+          "total_intensity": 10087.908203125,
+          "pos_fraction_0.080": 0.00033855438232421875,
+          "speckle_score": 0.1684104097432871
+        },
+        {
+          "core": "core_173",
+          "mean": 0.0016972182784229517,
+          "total_intensity": 7118.6494140625,
+          "pos_fraction_0.080": 5.4836273193359375e-06,
+          "speckle_score": 0.16397807776535267
+        },
+        {
+          "core": "core_078",
+          "mean": 0.0029921282548457384,
+          "total_intensity": 12549.8955078125,
+          "pos_fraction_0.080": 4.744529724121094e-05,
+          "speckle_score": 0.13980659393495187
+        },
+        {
+          "core": "core_063",
+          "mean": 0.002738563111051917,
+          "total_intensity": 11486.3662109375,
+          "pos_fraction_0.080": 5.245208740234375e-06,
+          "speckle_score": 0.13717702891577108
+        },
+        {
+          "core": "core_239",
+          "mean": 0.0019434603163972497,
+          "total_intensity": 8151.46337890625,
+          "pos_fraction_0.080": 7.62939453125e-06,
+          "speckle_score": 0.1314207252275246
+        }
+      ]
+    },
+    "6": {
+      "mean_intensity_top": [
+        {
+          "core": "core_201",
+          "mean": 0.012815955094993114,
+          "total_intensity": 53754.01171875,
+          "pos_fraction_0.080": 0.012157917022705078,
+          "speckle_score": 0.1010612804570593
+        },
+        {
+          "core": "core_089",
+          "mean": 0.012395782396197319,
+          "total_intensity": 51991.6796875,
+          "pos_fraction_0.080": 0.01201319694519043,
+          "speckle_score": 0.10083397293082466
+        },
+        {
+          "core": "core_054",
+          "mean": 0.009868142195045948,
+          "total_intensity": 41389.98828125,
+          "pos_fraction_0.080": 0.009818315505981445,
+          "speckle_score": 0.10444653141073443
+        },
+        {
+          "core": "core_265",
+          "mean": 0.009038255549967289,
+          "total_intensity": 37909.19140625,
+          "pos_fraction_0.080": 0.0061283111572265625,
+          "speckle_score": 0.10119558337738396
+        },
+        {
+          "core": "core_166",
+          "mean": 0.008494239300489426,
+          "total_intensity": 35627.421875,
+          "pos_fraction_0.080": 0.008409976959228516,
+          "speckle_score": 0.10203011055692784
+        },
+        {
+          "core": "core_296",
+          "mean": 0.008472548797726631,
+          "total_intensity": 35536.4453125,
+          "pos_fraction_0.080": 0.0019297599792480469,
+          "speckle_score": 0.09606412978431834
+        },
+        {
+          "core": "core_301",
+          "mean": 0.008174989372491837,
+          "total_intensity": 34288.390625,
+          "pos_fraction_0.080": 0.002331256866455078,
+          "speckle_score": 0.0976378533747758
+        },
+        {
+          "core": "core_095",
+          "mean": 0.008128095418214798,
+          "total_intensity": 34091.703125,
+          "pos_fraction_0.080": 0.002329111099243164,
+          "speckle_score": 0.0976538366809114
+        },
+        {
+          "core": "core_131",
+          "mean": 0.008095651865005493,
+          "total_intensity": 33955.625,
+          "pos_fraction_0.080": 0.011438369750976562,
+          "speckle_score": 0.11359581287636683
+        },
+        {
+          "core": "core_271",
+          "mean": 0.00808844156563282,
+          "total_intensity": 33925.3828125,
+          "pos_fraction_0.080": 0.0073392391204833984,
+          "speckle_score": 0.10820208917254755
+        }
+      ],
+      "mean_intensity_bottom": [
+        {
+          "core": "core_195",
+          "mean": 0.002498734276741743,
+          "total_intensity": 10480.451171875,
+          "pos_fraction_0.080": 0.00046896934509277344,
+          "speckle_score": 0.10357851552196055
+        },
+        {
+          "core": "core_185",
+          "mean": 0.0027026692405343056,
+          "total_intensity": 11335.81640625,
+          "pos_fraction_0.080": 0.0003218650817871094,
+          "speckle_score": 0.09909980921341435
+        },
+        {
+          "core": "core_090",
+          "mean": 0.002760643605142832,
+          "total_intensity": 11578.978515625,
+          "pos_fraction_0.080": 0.00026488304138183594,
+          "speckle_score": 0.09651076546439354
+        },
+        {
+          "core": "core_232",
+          "mean": 0.0027716036420315504,
+          "total_intensity": 11624.9482421875,
+          "pos_fraction_0.080": 1.9073486328125e-06,
+          "speckle_score": 0.09297357445001263
+        },
+        {
+          "core": "core_124",
+          "mean": 0.002803918207064271,
+          "total_intensity": 11760.4853515625,
+          "pos_fraction_0.080": 1.9073486328125e-05,
+          "speckle_score": 0.10223556309913397
+        }
+      ],
+      "speckle_score_top": [
+        {
+          "core": "core_217",
+          "mean": 0.002946297638118267,
+          "total_intensity": 12357.66796875,
+          "pos_fraction_0.080": 4.696846008300781e-05,
+          "speckle_score": 0.3940317454576688
+        },
+        {
+          "core": "core_159",
+          "mean": 0.002805166644975543,
+          "total_intensity": 11765.7216796875,
+          "pos_fraction_0.080": 0.0006952285766601562,
+          "speckle_score": 0.3839689782864157
+        },
+        {
+          "core": "core_216",
+          "mean": 0.00283879810012877,
+          "total_intensity": 11906.7822265625,
+          "pos_fraction_0.080": 3.9577484130859375e-05,
+          "speckle_score": 0.33723308350860476
+        },
+        {
+          "core": "core_068",
+          "mean": 0.003631993429735303,
+          "total_intensity": 15233.6845703125,
+          "pos_fraction_0.080": 0.00042366981506347656,
+          "speckle_score": 0.19526852125294641
+        },
+        {
+          "core": "core_062",
+          "mean": 0.0032613477669656277,
+          "total_intensity": 13679.083984375,
+          "pos_fraction_0.080": 6.699562072753906e-05,
+          "speckle_score": 0.18516116326501075
+        },
+        {
+          "core": "core_011",
+          "mean": 0.004535909742116928,
+          "total_intensity": 19024.984375,
+          "pos_fraction_0.080": 0.0028502941131591797,
+          "speckle_score": 0.15344436657290053
+        },
+        {
+          "core": "core_093",
+          "mean": 0.0030318850185722113,
+          "total_intensity": 12716.6474609375,
+          "pos_fraction_0.080": 0.0005011558532714844,
+          "speckle_score": 0.1434304504450613
+        },
+        {
+          "core": "core_023",
+          "mean": 0.0034636184573173523,
+          "total_intensity": 14527.46875,
+          "pos_fraction_0.080": 9.942054748535156e-05,
+          "speckle_score": 0.14249822529118591
+        },
+        {
+          "core": "core_067",
+          "mean": 0.004202098120003939,
+          "total_intensity": 17624.876953125,
+          "pos_fraction_0.080": 0.00010156631469726562,
+          "speckle_score": 0.14183037057516612
+        },
+        {
+          "core": "core_138",
+          "mean": 0.003391769714653492,
+          "total_intensity": 14226.11328125,
+          "pos_fraction_0.080": 0.00017547607421875,
+          "speckle_score": 0.1402338770036904
+        }
+      ]
+    },
+    "7": {
+      "mean_intensity_top": [
+        {
+          "core": "core_099",
+          "mean": 0.003217377932742238,
+          "total_intensity": 13494.6611328125,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_102",
+          "mean": 0.003185080597177148,
+          "total_intensity": 13359.1962890625,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_107",
+          "mean": 0.0031503906939178705,
+          "total_intensity": 13213.6962890625,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_110",
+          "mean": 0.003125797724351287,
+          "total_intensity": 13110.5458984375,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_113",
+          "mean": 0.0031188379507511854,
+          "total_intensity": 13081.3544921875,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_000",
+          "mean": 0.0031117231119424105,
+          "total_intensity": 13051.5126953125,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_009",
+          "mean": 0.003069123486056924,
+          "total_intensity": 12872.8369140625,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_094",
+          "mean": 0.0030626943334937096,
+          "total_intensity": 12845.87109375,
+          "pos_fraction_0.080": 1.0967254638671875e-05,
+          "speckle_score": 0.1118107970111201
+        },
+        {
+          "core": "core_040",
+          "mean": 0.003060846123844385,
+          "total_intensity": 12838.119140625,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_270",
+          "mean": 0.0030429356265813112,
+          "total_intensity": 12762.9970703125,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        }
+      ],
+      "mean_intensity_bottom": [
+        {
+          "core": "core_173",
+          "mean": 0.0012959929881617427,
+          "total_intensity": 5435.78857421875,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_235",
+          "mean": 0.0013603608822450042,
+          "total_intensity": 5705.76708984375,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_157",
+          "mean": 0.0014400017680600286,
+          "total_intensity": 6039.80517578125,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_035",
+          "mean": 0.0014580412534996867,
+          "total_intensity": 6115.46826171875,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_239",
+          "mean": 0.0014788869302719831,
+          "total_intensity": 6202.9013671875,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        }
+      ],
+      "speckle_score_top": [
+        {
+          "core": "core_159",
+          "mean": 0.001971264835447073,
+          "total_intensity": 8268.083984375,
+          "pos_fraction_0.080": 0.0006742477416992188,
+          "speckle_score": 0.5632845784263454
+        },
+        {
+          "core": "core_216",
+          "mean": 0.0030311192385852337,
+          "total_intensity": 12713.435546875,
+          "pos_fraction_0.080": 2.9087066650390625e-05,
+          "speckle_score": 0.46143520051670794
+        },
+        {
+          "core": "core_217",
+          "mean": 0.003019976429641247,
+          "total_intensity": 12666.69921875,
+          "pos_fraction_0.080": 2.9087066650390625e-05,
+          "speckle_score": 0.46143520051670794
+        },
+        {
+          "core": "core_093",
+          "mean": 0.0022387795615941286,
+          "total_intensity": 9390.1220703125,
+          "pos_fraction_0.080": 0.0004279613494873047,
+          "speckle_score": 0.34309731260464027
+        },
+        {
+          "core": "core_140",
+          "mean": 0.0017800452187657356,
+          "total_intensity": 7466.05078125,
+          "pos_fraction_0.080": 4.9114227294921875e-05,
+          "speckle_score": 0.32648081675729895
+        },
+        {
+          "core": "core_303",
+          "mean": 0.002676410134881735,
+          "total_intensity": 11225.677734375,
+          "pos_fraction_0.080": 0.00018596649169921875,
+          "speckle_score": 0.22522030162562862
+        },
+        {
+          "core": "core_276",
+          "mean": 0.0018580339383333921,
+          "total_intensity": 7793.1591796875,
+          "pos_fraction_0.080": 1.2159347534179688e-05,
+          "speckle_score": 0.16176348721071176
+        },
+        {
+          "core": "core_208",
+          "mean": 0.0023172625806182623,
+          "total_intensity": 9719.3037109375,
+          "pos_fraction_0.080": 2.1457672119140625e-06,
+          "speckle_score": 0.15203349249258793
+        },
+        {
+          "core": "core_214",
+          "mean": 0.0028747953474521637,
+          "total_intensity": 12057.765625,
+          "pos_fraction_0.080": 8.58306884765625e-06,
+          "speckle_score": 0.14988099831050603
+        },
+        {
+          "core": "core_129",
+          "mean": 0.00285316351801157,
+          "total_intensity": 11967.03515625,
+          "pos_fraction_0.080": 1.7642974853515625e-05,
+          "speckle_score": 0.11261755261518303
+        }
+      ]
+    },
+    "8": {
+      "mean_intensity_top": [
+        {
+          "core": "core_128",
+          "mean": 0.02212025597691536,
+          "total_intensity": 92779.078125,
+          "pos_fraction_0.080": 0.07247567176818848,
+          "speckle_score": 0.1085611503692516
+        },
+        {
+          "core": "core_213",
+          "mean": 0.018935075029730797,
+          "total_intensity": 79419.4609375,
+          "pos_fraction_0.080": 0.013854503631591797,
+          "speckle_score": 0.09686836166709376
+        },
+        {
+          "core": "core_313",
+          "mean": 0.013346623629331589,
+          "total_intensity": 55979.796875,
+          "pos_fraction_0.080": 0.007083892822265625,
+          "speckle_score": 0.09889189957323015
+        },
+        {
+          "core": "core_293",
+          "mean": 0.012450236827135086,
+          "total_intensity": 52220.078125,
+          "pos_fraction_0.080": 0.003646373748779297,
+          "speckle_score": 0.09920617746830601
+        },
+        {
+          "core": "core_141",
+          "mean": 0.012414515018463135,
+          "total_intensity": 52070.25,
+          "pos_fraction_0.080": 0.010526418685913086,
+          "speckle_score": 0.10382730982502754
+        },
+        {
+          "core": "core_166",
+          "mean": 0.011299870908260345,
+          "total_intensity": 47395.09375,
+          "pos_fraction_0.080": 4.982948303222656e-05,
+          "speckle_score": 0.09227502019637719
+        },
+        {
+          "core": "core_201",
+          "mean": 0.009659009985625744,
+          "total_intensity": 40512.82421875,
+          "pos_fraction_0.080": 0.0031785964965820312,
+          "speckle_score": 0.10158116797968052
+        },
+        {
+          "core": "core_139",
+          "mean": 0.00930570624768734,
+          "total_intensity": 39030.9609375,
+          "pos_fraction_0.080": 3.075599670410156e-05,
+          "speckle_score": 0.10020349975847224
+        },
+        {
+          "core": "core_271",
+          "mean": 0.00923383329063654,
+          "total_intensity": 38729.50390625,
+          "pos_fraction_0.080": 0.0035614967346191406,
+          "speckle_score": 0.09979720087334422
+        },
+        {
+          "core": "core_250",
+          "mean": 0.009121149778366089,
+          "total_intensity": 38256.875,
+          "pos_fraction_0.080": 0.009477615356445312,
+          "speckle_score": 0.10533263401052625
+        }
+      ],
+      "mean_intensity_bottom": [
+        {
+          "core": "core_234",
+          "mean": 0.0018633020808920264,
+          "total_intensity": 7815.25537109375,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_173",
+          "mean": 0.002113451948389411,
+          "total_intensity": 8864.4599609375,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_186",
+          "mean": 0.0021711960434913635,
+          "total_intensity": 9106.65625,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_086",
+          "mean": 0.0023894510231912136,
+          "total_intensity": 10022.083984375,
+          "pos_fraction_0.080": 2.86102294921875e-06,
+          "speckle_score": 0.08820887547504089
+        },
+        {
+          "core": "core_161",
+          "mean": 0.0024164202623069286,
+          "total_intensity": 10135.201171875,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        }
+      ],
+      "speckle_score_top": [
+        {
+          "core": "core_253",
+          "mean": 0.003879108466207981,
+          "total_intensity": 16270.16015625,
+          "pos_fraction_0.080": 5.745887756347656e-05,
+          "speckle_score": 0.3784144761254369
+        },
+        {
+          "core": "core_159",
+          "mean": 0.008167819119989872,
+          "total_intensity": 34258.31640625,
+          "pos_fraction_0.080": 0.0006866455078125,
+          "speckle_score": 0.29489399212303036
+        },
+        {
+          "core": "core_216",
+          "mean": 0.003094790503382683,
+          "total_intensity": 12980.4921875,
+          "pos_fraction_0.080": 3.147125244140625e-05,
+          "speckle_score": 0.2739270971978151
+        },
+        {
+          "core": "core_217",
+          "mean": 0.003074571257457137,
+          "total_intensity": 12895.6865234375,
+          "pos_fraction_0.080": 3.147125244140625e-05,
+          "speckle_score": 0.2739270971978151
+        },
+        {
+          "core": "core_093",
+          "mean": 0.002990586217492819,
+          "total_intensity": 12543.427734375,
+          "pos_fraction_0.080": 0.0003960132598876953,
+          "speckle_score": 0.2607424650637908
+        },
+        {
+          "core": "core_044",
+          "mean": 0.0038369237445294857,
+          "total_intensity": 16093.224609375,
+          "pos_fraction_0.080": 1.0728836059570312e-05,
+          "speckle_score": 0.2474041094054292
+        },
+        {
+          "core": "core_083",
+          "mean": 0.0035206866450607777,
+          "total_intensity": 14766.830078125,
+          "pos_fraction_0.080": 4.0531158447265625e-06,
+          "speckle_score": 0.23299812508006557
+        },
+        {
+          "core": "core_010",
+          "mean": 0.0054472992196679115,
+          "total_intensity": 22847.62890625,
+          "pos_fraction_0.080": 5.1021575927734375e-05,
+          "speckle_score": 0.18137998561920113
+        },
+        {
+          "core": "core_088",
+          "mean": 0.0039769806899130344,
+          "total_intensity": 16680.666015625,
+          "pos_fraction_0.080": 0.00037288665771484375,
+          "speckle_score": 0.17177131556247843
+        },
+        {
+          "core": "core_140",
+          "mean": 0.004265127703547478,
+          "total_intensity": 17889.2421875,
+          "pos_fraction_0.080": 0.00014925003051757812,
+          "speckle_score": 0.16516438619149834
+        }
+      ]
+    },
+    "9": {
+      "mean_intensity_top": [
+        {
+          "core": "core_095",
+          "mean": 0.006120120640844107,
+          "total_intensity": 25669.646484375,
+          "pos_fraction_0.080": 0.003351926803588867,
+          "speckle_score": 0.10874908622237875
+        },
+        {
+          "core": "core_173",
+          "mean": 0.005361202638596296,
+          "total_intensity": 22486.513671875,
+          "pos_fraction_0.080": 0.0020329952239990234,
+          "speckle_score": 0.11296227275620413
+        },
+        {
+          "core": "core_049",
+          "mean": 0.005225264932960272,
+          "total_intensity": 21916.349609375,
+          "pos_fraction_0.080": 0.0033125877380371094,
+          "speckle_score": 0.11558075106133445
+        },
+        {
+          "core": "core_096",
+          "mean": 0.004974930547177792,
+          "total_intensity": 20866.37109375,
+          "pos_fraction_0.080": 0.0016720294952392578,
+          "speckle_score": 0.10750968326984607
+        },
+        {
+          "core": "core_201",
+          "mean": 0.004941561259329319,
+          "total_intensity": 20726.41015625,
+          "pos_fraction_0.080": 0.0007755756378173828,
+          "speckle_score": 0.11004141692555636
+        },
+        {
+          "core": "core_166",
+          "mean": 0.004799764137715101,
+          "total_intensity": 20131.669921875,
+          "pos_fraction_0.080": 0.00035762786865234375,
+          "speckle_score": 0.10239839439582232
+        },
+        {
+          "core": "core_184",
+          "mean": 0.004686473868787289,
+          "total_intensity": 19656.49609375,
+          "pos_fraction_0.080": 0.0009844303131103516,
+          "speckle_score": 0.10784106599416958
+        },
+        {
+          "core": "core_054",
+          "mean": 0.00466073676943779,
+          "total_intensity": 19548.546875,
+          "pos_fraction_0.080": 0.0017087459564208984,
+          "speckle_score": 0.11352001897386141
+        },
+        {
+          "core": "core_052",
+          "mean": 0.004572405479848385,
+          "total_intensity": 19178.05859375,
+          "pos_fraction_0.080": 0.001268148422241211,
+          "speckle_score": 0.10382968667669715
+        },
+        {
+          "core": "core_055",
+          "mean": 0.0045461347326636314,
+          "total_intensity": 19067.87109375,
+          "pos_fraction_0.080": 0.0014519691467285156,
+          "speckle_score": 0.10496142582811492
+        }
+      ],
+      "mean_intensity_bottom": [
+        {
+          "core": "core_137",
+          "mean": 0.0025270897895097733,
+          "total_intensity": 10599.3828125,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_136",
+          "mean": 0.0025698640383780003,
+          "total_intensity": 10778.791015625,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_186",
+          "mean": 0.002570988377556205,
+          "total_intensity": 10783.5068359375,
+          "pos_fraction_0.080": 9.059906005859375e-06,
+          "speckle_score": 0.08894456602951743
+        },
+        {
+          "core": "core_210",
+          "mean": 0.0026318978052586317,
+          "total_intensity": 11038.9794921875,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_116",
+          "mean": 0.002662091050297022,
+          "total_intensity": 11165.619140625,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        }
+      ],
+      "speckle_score_top": [
+        {
+          "core": "core_159",
+          "mean": 0.003370005404576659,
+          "total_intensity": 14134.8271484375,
+          "pos_fraction_0.080": 0.0004811286926269531,
+          "speckle_score": 0.28055962613654767
+        },
+        {
+          "core": "core_216",
+          "mean": 0.0030213631689548492,
+          "total_intensity": 12672.515625,
+          "pos_fraction_0.080": 2.2411346435546875e-05,
+          "speckle_score": 0.26065937911730486
+        },
+        {
+          "core": "core_217",
+          "mean": 0.002998768351972103,
+          "total_intensity": 12577.74609375,
+          "pos_fraction_0.080": 2.2411346435546875e-05,
+          "speckle_score": 0.26065937911730486
+        },
+        {
+          "core": "core_302",
+          "mean": 0.0030173221603035927,
+          "total_intensity": 12655.56640625,
+          "pos_fraction_0.080": 4.38690185546875e-05,
+          "speckle_score": 0.1770985940525793
+        },
+        {
+          "core": "core_140",
+          "mean": 0.002684257924556732,
+          "total_intensity": 11258.59375,
+          "pos_fraction_0.080": 2.6464462280273438e-05,
+          "speckle_score": 0.15227611980518585
+        },
+        {
+          "core": "core_047",
+          "mean": 0.0035604937002062798,
+          "total_intensity": 14933.79296875,
+          "pos_fraction_0.080": 0.00020742416381835938,
+          "speckle_score": 0.13205475033087657
+        },
+        {
+          "core": "core_050",
+          "mean": 0.0032257952261716127,
+          "total_intensity": 13529.9658203125,
+          "pos_fraction_0.080": 8.392333984375e-05,
+          "speckle_score": 0.12899992280389416
+        },
+        {
+          "core": "core_160",
+          "mean": 0.003073108848184347,
+          "total_intensity": 12889.552734375,
+          "pos_fraction_0.080": 3.218650817871094e-05,
+          "speckle_score": 0.12862673433588517
+        },
+        {
+          "core": "core_082",
+          "mean": 0.0033868553582578897,
+          "total_intensity": 14205.5009765625,
+          "pos_fraction_0.080": 4.38690185546875e-05,
+          "speckle_score": 0.12784213543298392
+        },
+        {
+          "core": "core_035",
+          "mean": 0.003187489928677678,
+          "total_intensity": 13369.3017578125,
+          "pos_fraction_0.080": 0.00011301040649414062,
+          "speckle_score": 0.1254995609485445
+        }
+      ]
+    },
+    "10": {
+      "mean_intensity_top": [
+        {
+          "core": "core_146",
+          "mean": 0.00733245350420475,
+          "total_intensity": 30754.5390625,
+          "pos_fraction_0.080": 0.0070917606353759766,
+          "speckle_score": 0.11190835444856431
+        },
+        {
+          "core": "core_236",
+          "mean": 0.0072721876204013824,
+          "total_intensity": 30501.765625,
+          "pos_fraction_0.080": 0.0054552555084228516,
+          "speckle_score": 0.10464633433638316
+        },
+        {
+          "core": "core_279",
+          "mean": 0.006766113452613354,
+          "total_intensity": 28379.13671875,
+          "pos_fraction_0.080": 0.0004343986511230469,
+          "speckle_score": 0.10020770638291214
+        },
+        {
+          "core": "core_055",
+          "mean": 0.006228326354175806,
+          "total_intensity": 26123.494140625,
+          "pos_fraction_0.080": 0.007170438766479492,
+          "speckle_score": 0.11682625945780727
+        },
+        {
+          "core": "core_173",
+          "mean": 0.006168472580611706,
+          "total_intensity": 25872.44921875,
+          "pos_fraction_0.080": 0.002413034439086914,
+          "speckle_score": 0.11308230420029593
+        },
+        {
+          "core": "core_250",
+          "mean": 0.0060521322302520275,
+          "total_intensity": 25384.482421875,
+          "pos_fraction_0.080": 0.007524251937866211,
+          "speckle_score": 0.11701324265204135
+        },
+        {
+          "core": "core_311",
+          "mean": 0.005920024588704109,
+          "total_intensity": 24830.3828125,
+          "pos_fraction_0.080": 2.1457672119140625e-06,
+          "speckle_score": 0.09520729860841605
+        },
+        {
+          "core": "core_240",
+          "mean": 0.005874416790902615,
+          "total_intensity": 24639.08984375,
+          "pos_fraction_0.080": 0.0019500255584716797,
+          "speckle_score": 0.10048955239905055
+        },
+        {
+          "core": "core_289",
+          "mean": 0.005721455439925194,
+          "total_intensity": 23997.5234375,
+          "pos_fraction_0.080": 0.0002758502960205078,
+          "speckle_score": 0.09682586683290498
+        },
+        {
+          "core": "core_301",
+          "mean": 0.005694606341421604,
+          "total_intensity": 23884.91015625,
+          "pos_fraction_0.080": 0.00035500526428222656,
+          "speckle_score": 0.10173307827733837
+        }
+      ],
+      "mean_intensity_bottom": [
+        {
+          "core": "core_234",
+          "mean": 0.0017395305912941694,
+          "total_intensity": 7296.1201171875,
+          "pos_fraction_0.080": 2.1219253540039062e-05,
+          "speckle_score": 0.10225241263918065
+        },
+        {
+          "core": "core_195",
+          "mean": 0.0022387532517313957,
+          "total_intensity": 9390.01171875,
+          "pos_fraction_0.080": 5.245208740234375e-06,
+          "speckle_score": 0.2670556136955456
+        },
+        {
+          "core": "core_159",
+          "mean": 0.002338153077289462,
+          "total_intensity": 9806.9248046875,
+          "pos_fraction_0.080": 5.4836273193359375e-05,
+          "speckle_score": 0.09111651088076633
+        },
+        {
+          "core": "core_196",
+          "mean": 0.0025059946347028017,
+          "total_intensity": 10510.9033203125,
+          "pos_fraction_0.080": 3.814697265625e-06,
+          "speckle_score": 0.0959231452283434
+        },
+        {
+          "core": "core_161",
+          "mean": 0.002523112576454878,
+          "total_intensity": 10582.701171875,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        }
+      ],
+      "speckle_score_top": [
+        {
+          "core": "core_068",
+          "mean": 0.0033077734988182783,
+          "total_intensity": 13873.8076171875,
+          "pos_fraction_0.080": 0.00044345855712890625,
+          "speckle_score": 0.3623815120103004
+        },
+        {
+          "core": "core_081",
+          "mean": 0.0030607550870627165,
+          "total_intensity": 12837.7373046875,
+          "pos_fraction_0.080": 9.751319885253906e-05,
+          "speckle_score": 0.3286589072699019
+        },
+        {
+          "core": "core_152",
+          "mean": 0.0030650657135993242,
+          "total_intensity": 12855.8173828125,
+          "pos_fraction_0.080": 3.3855438232421875e-05,
+          "speckle_score": 0.3094812884734067
+        },
+        {
+          "core": "core_195",
+          "mean": 0.0022387532517313957,
+          "total_intensity": 9390.01171875,
+          "pos_fraction_0.080": 5.245208740234375e-06,
+          "speckle_score": 0.2670556136955456
+        },
+        {
+          "core": "core_217",
+          "mean": 0.002832788974046707,
+          "total_intensity": 11881.578125,
+          "pos_fraction_0.080": 4.291534423828125e-05,
+          "speckle_score": 0.2554645701417653
+        },
+        {
+          "core": "core_062",
+          "mean": 0.0035091445315629244,
+          "total_intensity": 14718.4189453125,
+          "pos_fraction_0.080": 6.151199340820312e-05,
+          "speckle_score": 0.24698500703531942
+        },
+        {
+          "core": "core_056",
+          "mean": 0.003377129789441824,
+          "total_intensity": 14164.708984375,
+          "pos_fraction_0.080": 6.9141387939453125e-06,
+          "speckle_score": 0.23923800672288778
+        },
+        {
+          "core": "core_060",
+          "mean": 0.0036016867961734533,
+          "total_intensity": 15106.5693359375,
+          "pos_fraction_0.080": 6.580352783203125e-05,
+          "speckle_score": 0.23713242438884732
+        },
+        {
+          "core": "core_233",
+          "mean": 0.003113526850938797,
+          "total_intensity": 13059.078125,
+          "pos_fraction_0.080": 0.0001876354217529297,
+          "speckle_score": 0.21500745388934095
+        },
+        {
+          "core": "core_004",
+          "mean": 0.003646185388788581,
+          "total_intensity": 15293.2099609375,
+          "pos_fraction_0.080": 2.6464462280273438e-05,
+          "speckle_score": 0.21213430320481574
+        }
+      ]
+    },
+    "11": {
+      "mean_intensity_top": [
+        {
+          "core": "core_236",
+          "mean": 0.01675231195986271,
+          "total_intensity": 70264.2890625,
+          "pos_fraction_0.080": 0.048073768615722656,
+          "speckle_score": 0.15040744183952323
+        },
+        {
+          "core": "core_240",
+          "mean": 0.011496709659695625,
+          "total_intensity": 48220.6953125,
+          "pos_fraction_0.080": 0.023479700088500977,
+          "speckle_score": 0.14570018071128413
+        },
+        {
+          "core": "core_151",
+          "mean": 0.008745231665670872,
+          "total_intensity": 36680.16015625,
+          "pos_fraction_0.080": 0.01647329330444336,
+          "speckle_score": 0.15058864896229607
+        },
+        {
+          "core": "core_250",
+          "mean": 0.00861944817006588,
+          "total_intensity": 36152.5859375,
+          "pos_fraction_0.080": 0.014423131942749023,
+          "speckle_score": 0.12256385787988036
+        },
+        {
+          "core": "core_173",
+          "mean": 0.008308089338243008,
+          "total_intensity": 34846.65234375,
+          "pos_fraction_0.080": 0.0057985782623291016,
+          "speckle_score": 0.12380584424358543
+        },
+        {
+          "core": "core_180",
+          "mean": 0.007451060693711042,
+          "total_intensity": 31252.013671875,
+          "pos_fraction_0.080": 0.006405830383300781,
+          "speckle_score": 0.11305641275718409
+        },
+        {
+          "core": "core_153",
+          "mean": 0.0070596435107290745,
+          "total_intensity": 29610.291015625,
+          "pos_fraction_0.080": 0.003902912139892578,
+          "speckle_score": 0.11573035271513979
+        },
+        {
+          "core": "core_020",
+          "mean": 0.0070594483986496925,
+          "total_intensity": 29609.47265625,
+          "pos_fraction_0.080": 0.0037186145782470703,
+          "speckle_score": 0.1216124364908472
+        },
+        {
+          "core": "core_271",
+          "mean": 0.0065703927539289,
+          "total_intensity": 27558.224609375,
+          "pos_fraction_0.080": 0.003389120101928711,
+          "speckle_score": 0.11835258770732578
+        },
+        {
+          "core": "core_301",
+          "mean": 0.0064061773009598255,
+          "total_intensity": 26869.455078125,
+          "pos_fraction_0.080": 0.0004878044128417969,
+          "speckle_score": 0.10351945306807378
+        }
+      ],
+      "mean_intensity_bottom": [
+        {
+          "core": "core_234",
+          "mean": 0.0023524018470197916,
+          "total_intensity": 9866.6884765625,
+          "pos_fraction_0.080": 0.00010228157043457031,
+          "speckle_score": 0.15789492372245206
+        },
+        {
+          "core": "core_216",
+          "mean": 0.002428671345114708,
+          "total_intensity": 10186.5859375,
+          "pos_fraction_0.080": 9.5367431640625e-06,
+          "speckle_score": 0.09132108715097366
+        },
+        {
+          "core": "core_169",
+          "mean": 0.0024696465115994215,
+          "total_intensity": 10358.4482421875,
+          "pos_fraction_0.080": 4.5299530029296875e-06,
+          "speckle_score": 0.14395149204951793
+        },
+        {
+          "core": "core_195",
+          "mean": 0.0025744347367435694,
+          "total_intensity": 10797.9619140625,
+          "pos_fraction_0.080": 1.1920928955078125e-05,
+          "speckle_score": 0.1882836108701776
+        },
+        {
+          "core": "core_172",
+          "mean": 0.002583140740171075,
+          "total_intensity": 10834.4775390625,
+          "pos_fraction_0.080": 8.58306884765625e-06,
+          "speckle_score": 0.12672309385048505
+        }
+      ],
+      "speckle_score_top": [
+        {
+          "core": "core_292",
+          "mean": 0.003916499670594931,
+          "total_intensity": 16426.990234375,
+          "pos_fraction_0.080": 7.367134094238281e-05,
+          "speckle_score": 0.33378694206139303
+        },
+        {
+          "core": "core_233",
+          "mean": 0.003614269895479083,
+          "total_intensity": 15159.3466796875,
+          "pos_fraction_0.080": 0.0002033710479736328,
+          "speckle_score": 0.323055638429351
+        },
+        {
+          "core": "core_068",
+          "mean": 0.0035101270768791437,
+          "total_intensity": 14722.5400390625,
+          "pos_fraction_0.080": 0.0004904270172119141,
+          "speckle_score": 0.29200064872463616
+        },
+        {
+          "core": "core_081",
+          "mean": 0.0032033659517765045,
+          "total_intensity": 13435.890625,
+          "pos_fraction_0.080": 0.00011420249938964844,
+          "speckle_score": 0.2863206304916403
+        },
+        {
+          "core": "core_152",
+          "mean": 0.0029592467471957207,
+          "total_intensity": 12411.98046875,
+          "pos_fraction_0.080": 6.866455078125e-05,
+          "speckle_score": 0.2384432113503217
+        },
+        {
+          "core": "core_077",
+          "mean": 0.003254904178902507,
+          "total_intensity": 13652.0576171875,
+          "pos_fraction_0.080": 3.814697265625e-05,
+          "speckle_score": 0.23484242922732937
+        },
+        {
+          "core": "core_286",
+          "mean": 0.0036587249487638474,
+          "total_intensity": 15345.8046875,
+          "pos_fraction_0.080": 0.0004763603210449219,
+          "speckle_score": 0.2323020710370627
+        },
+        {
+          "core": "core_144",
+          "mean": 0.0031784274615347385,
+          "total_intensity": 13331.291015625,
+          "pos_fraction_0.080": 0.00029754638671875,
+          "speckle_score": 0.22947845271863934
+        },
+        {
+          "core": "core_006",
+          "mean": 0.004087100271135569,
+          "total_intensity": 17142.541015625,
+          "pos_fraction_0.080": 6.67572021484375e-06,
+          "speckle_score": 0.21852354652878056
+        },
+        {
+          "core": "core_192",
+          "mean": 0.002879787003621459,
+          "total_intensity": 12078.7021484375,
+          "pos_fraction_0.080": 1.71661376953125e-05,
+          "speckle_score": 0.21828409129992268
+        }
+      ]
+    },
+    "12": {
+      "mean_intensity_top": [
+        {
+          "core": "core_094",
+          "mean": 0.012314610183238983,
+          "total_intensity": 51651.21875,
+          "pos_fraction_0.080": 1.52587890625e-05,
+          "speckle_score": 0.08428485028440263
+        },
+        {
+          "core": "core_279",
+          "mean": 0.006850570440292358,
+          "total_intensity": 28733.375,
+          "pos_fraction_0.080": 2.86102294921875e-06,
+          "speckle_score": 0.1342871797202189
+        },
+        {
+          "core": "core_095",
+          "mean": 0.006035435013473034,
+          "total_intensity": 25314.44921875,
+          "pos_fraction_0.080": 4.291534423828125e-06,
+          "speckle_score": 0.16991919170413575
+        },
+        {
+          "core": "core_176",
+          "mean": 0.005931321997195482,
+          "total_intensity": 24877.767578125,
+          "pos_fraction_0.080": 0.0005364418029785156,
+          "speckle_score": 0.19986484747600974
+        },
+        {
+          "core": "core_055",
+          "mean": 0.005753535311669111,
+          "total_intensity": 24132.076171875,
+          "pos_fraction_0.080": 0.00013971328735351562,
+          "speckle_score": 0.09452316896512639
+        },
+        {
+          "core": "core_040",
+          "mean": 0.005668266210705042,
+          "total_intensity": 23774.431640625,
+          "pos_fraction_0.080": 0.00045990943908691406,
+          "speckle_score": 0.2207553585712212
+        },
+        {
+          "core": "core_254",
+          "mean": 0.005189575720578432,
+          "total_intensity": 21766.658203125,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_289",
+          "mean": 0.004983217921108007,
+          "total_intensity": 20901.130859375,
+          "pos_fraction_0.080": 4.76837158203125e-07,
+          "speckle_score": 0.08574856996602495
+        },
+        {
+          "core": "core_011",
+          "mean": 0.004967797547578812,
+          "total_intensity": 20836.453125,
+          "pos_fraction_0.080": 0.0018393993377685547,
+          "speckle_score": 0.44564115328075676
+        },
+        {
+          "core": "core_026",
+          "mean": 0.004594607278704643,
+          "total_intensity": 19271.1796875,
+          "pos_fraction_0.080": 3.337860107421875e-06,
+          "speckle_score": 0.09397618194319278
+        }
+      ],
+      "mean_intensity_bottom": [
+        {
+          "core": "core_216",
+          "mean": 0.0026562795974314213,
+          "total_intensity": 11141.244140625,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_169",
+          "mean": 0.0027592265978455544,
+          "total_intensity": 11573.03515625,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_131",
+          "mean": 0.002774432534351945,
+          "total_intensity": 11636.8134765625,
+          "pos_fraction_0.080": 1.9073486328125e-06,
+          "speckle_score": 0.10734945719306575
+        },
+        {
+          "core": "core_180",
+          "mean": 0.002783089177682996,
+          "total_intensity": 11673.1220703125,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_217",
+          "mean": 0.002791438717395067,
+          "total_intensity": 11708.142578125,
+          "pos_fraction_0.080": 2.1696090698242188e-05,
+          "speckle_score": 0.34950092404505295
+        }
+      ],
+      "speckle_score_top": [
+        {
+          "core": "core_218",
+          "mean": 0.0033041248098015785,
+          "total_intensity": 13858.50390625,
+          "pos_fraction_0.080": 9.083747863769531e-05,
+          "speckle_score": 0.5576432520436522
+        },
+        {
+          "core": "core_087",
+          "mean": 0.0037277094088494778,
+          "total_intensity": 15635.146484375,
+          "pos_fraction_0.080": 3.0994415283203125e-05,
+          "speckle_score": 0.5528364617901728
+        },
+        {
+          "core": "core_247",
+          "mean": 0.003294267226010561,
+          "total_intensity": 13817.158203125,
+          "pos_fraction_0.080": 1.0728836059570312e-05,
+          "speckle_score": 0.5170247048470166
+        },
+        {
+          "core": "core_293",
+          "mean": 0.004155008587986231,
+          "total_intensity": 17427.369140625,
+          "pos_fraction_0.080": 7.748603820800781e-05,
+          "speckle_score": 0.5160478533389673
+        },
+        {
+          "core": "core_067",
+          "mean": 0.0036228953395038843,
+          "total_intensity": 15195.5244140625,
+          "pos_fraction_0.080": 5.602836608886719e-05,
+          "speckle_score": 0.49097050296473416
+        },
+        {
+          "core": "core_156",
+          "mean": 0.0031447866931557655,
+          "total_intensity": 13190.19140625,
+          "pos_fraction_0.080": 0.00010061264038085938,
+          "speckle_score": 0.48072056043404404
+        },
+        {
+          "core": "core_166",
+          "mean": 0.0034571513533592224,
+          "total_intensity": 14500.34375,
+          "pos_fraction_0.080": 0.00042438507080078125,
+          "speckle_score": 0.4577772294467363
+        },
+        {
+          "core": "core_178",
+          "mean": 0.0033493193332105875,
+          "total_intensity": 14048.0634765625,
+          "pos_fraction_0.080": 7.343292236328125e-05,
+          "speckle_score": 0.4469352097144556
+        },
+        {
+          "core": "core_011",
+          "mean": 0.004967797547578812,
+          "total_intensity": 20836.453125,
+          "pos_fraction_0.080": 0.0018393993377685547,
+          "speckle_score": 0.44564115328075676
+        },
+        {
+          "core": "core_060",
+          "mean": 0.003498595207929611,
+          "total_intensity": 14674.171875,
+          "pos_fraction_0.080": 2.2411346435546875e-05,
+          "speckle_score": 0.43250081491762216
+        }
+      ]
+    },
+    "13": {
+      "mean_intensity_top": [
+        {
+          "core": "core_171",
+          "mean": 0.05425964668393135,
+          "total_intensity": 227581.453125,
+          "pos_fraction_0.080": 0.1900787353515625,
+          "speckle_score": 0.12715927044024647
+        },
+        {
+          "core": "core_170",
+          "mean": 0.0492754727602005,
+          "total_intensity": 206676.3125,
+          "pos_fraction_0.080": 0.16727590560913086,
+          "speckle_score": 0.1323245040444017
+        },
+        {
+          "core": "core_144",
+          "mean": 0.04429705813527107,
+          "total_intensity": 185795.328125,
+          "pos_fraction_0.080": 0.14287114143371582,
+          "speckle_score": 0.11422951902835968
+        },
+        {
+          "core": "core_162",
+          "mean": 0.040254395455121994,
+          "total_intensity": 168839.171875,
+          "pos_fraction_0.080": 0.1397075653076172,
+          "speckle_score": 0.1228041879497091
+        },
+        {
+          "core": "core_294",
+          "mean": 0.038244862109422684,
+          "total_intensity": 160410.578125,
+          "pos_fraction_0.080": 0.12341666221618652,
+          "speckle_score": 0.12917809701161306
+        },
+        {
+          "core": "core_109",
+          "mean": 0.03690230846405029,
+          "total_intensity": 154779.5,
+          "pos_fraction_0.080": 0.1422269344329834,
+          "speckle_score": 0.13120099330423865
+        },
+        {
+          "core": "core_101",
+          "mean": 0.035282306373119354,
+          "total_intensity": 147984.71875,
+          "pos_fraction_0.080": 0.09897518157958984,
+          "speckle_score": 0.179467067639083
+        },
+        {
+          "core": "core_208",
+          "mean": 0.032765962183475494,
+          "total_intensity": 137430.40625,
+          "pos_fraction_0.080": 0.10657143592834473,
+          "speckle_score": 0.11806781602489275
+        },
+        {
+          "core": "core_213",
+          "mean": 0.03259166702628136,
+          "total_intensity": 136699.359375,
+          "pos_fraction_0.080": 0.06645631790161133,
+          "speckle_score": 0.11739840716488112
+        },
+        {
+          "core": "core_229",
+          "mean": 0.032139915972948074,
+          "total_intensity": 134804.578125,
+          "pos_fraction_0.080": 0.10486721992492676,
+          "speckle_score": 0.12204364833592357
+        }
+      ],
+      "mean_intensity_bottom": [
+        {
+          "core": "core_032",
+          "mean": 0.0036907922476530075,
+          "total_intensity": 15480.3046875,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_216",
+          "mean": 0.004031393676996231,
+          "total_intensity": 16908.890625,
+          "pos_fraction_0.080": 0.0003058910369873047,
+          "speckle_score": 0.09799011360775241
+        },
+        {
+          "core": "core_217",
+          "mean": 0.004274304490536451,
+          "total_intensity": 17927.732421875,
+          "pos_fraction_0.080": 0.001107931137084961,
+          "speckle_score": 0.10692742880722558
+        },
+        {
+          "core": "core_081",
+          "mean": 0.004512679297477007,
+          "total_intensity": 18927.548828125,
+          "pos_fraction_0.080": 1.2636184692382812e-05,
+          "speckle_score": 0.12677161932451095
+        },
+        {
+          "core": "core_027",
+          "mean": 0.0045312740840017796,
+          "total_intensity": 19005.541015625,
+          "pos_fraction_0.080": 0.00012302398681640625,
+          "speckle_score": 0.11889467610090361
+        }
+      ],
+      "speckle_score_top": [
+        {
+          "core": "core_196",
+          "mean": 0.013950692489743233,
+          "total_intensity": 58513.4453125,
+          "pos_fraction_0.080": 0.0036356449127197266,
+          "speckle_score": 0.2557057010473099
+        },
+        {
+          "core": "core_165",
+          "mean": 0.009595518931746483,
+          "total_intensity": 40246.5234375,
+          "pos_fraction_0.080": 0.001154184341430664,
+          "speckle_score": 0.23618541281885197
+        },
+        {
+          "core": "core_310",
+          "mean": 0.008013337850570679,
+          "total_intensity": 33610.375,
+          "pos_fraction_0.080": 0.00029397010803222656,
+          "speckle_score": 0.23555856046392287
+        },
+        {
+          "core": "core_209",
+          "mean": 0.012429004535079002,
+          "total_intensity": 52131.0234375,
+          "pos_fraction_0.080": 0.0013747215270996094,
+          "speckle_score": 0.2284666959200082
+        },
+        {
+          "core": "core_015",
+          "mean": 0.012925170361995697,
+          "total_intensity": 54212.09375,
+          "pos_fraction_0.080": 0.008514404296875,
+          "speckle_score": 0.22370276185188048
+        },
+        {
+          "core": "core_040",
+          "mean": 0.011178724467754364,
+          "total_intensity": 46886.96875,
+          "pos_fraction_0.080": 0.009956598281860352,
+          "speckle_score": 0.21964657814168884
+        },
+        {
+          "core": "core_050",
+          "mean": 0.012958172708749771,
+          "total_intensity": 54350.515625,
+          "pos_fraction_0.080": 0.002895355224609375,
+          "speckle_score": 0.2009373539830017
+        },
+        {
+          "core": "core_128",
+          "mean": 0.01578923873603344,
+          "total_intensity": 66224.8671875,
+          "pos_fraction_0.080": 0.009359598159790039,
+          "speckle_score": 0.19928383325074112
+        },
+        {
+          "core": "core_163",
+          "mean": 0.015977492555975914,
+          "total_intensity": 67014.4609375,
+          "pos_fraction_0.080": 0.002012014389038086,
+          "speckle_score": 0.18212794723448894
+        },
+        {
+          "core": "core_154",
+          "mean": 0.014925983734428883,
+          "total_intensity": 62604.11328125,
+          "pos_fraction_0.080": 0.007975339889526367,
+          "speckle_score": 0.18204865136249634
+        }
+      ]
+    },
+    "14": {
+      "mean_intensity_top": [
+        {
+          "core": "core_094",
+          "mean": 0.008122223429381847,
+          "total_intensity": 34067.07421875,
+          "pos_fraction_0.080": 0.0002040863037109375,
+          "speckle_score": 0.10017839879658322
+        },
+        {
+          "core": "core_095",
+          "mean": 0.005423686932772398,
+          "total_intensity": 22748.591796875,
+          "pos_fraction_0.080": 0.0027060508728027344,
+          "speckle_score": 0.13730511958712646
+        },
+        {
+          "core": "core_096",
+          "mean": 0.004439454060047865,
+          "total_intensity": 18620.419921875,
+          "pos_fraction_0.080": 0.004989147186279297,
+          "speckle_score": 0.14097917232624935
+        },
+        {
+          "core": "core_043",
+          "mean": 0.004397562704980373,
+          "total_intensity": 18444.71484375,
+          "pos_fraction_0.080": 0.0026230812072753906,
+          "speckle_score": 0.11944752897438679
+        },
+        {
+          "core": "core_055",
+          "mean": 0.0039775557816028595,
+          "total_intensity": 16683.078125,
+          "pos_fraction_0.080": 0.0029594898223876953,
+          "speckle_score": 0.15645384261133383
+        },
+        {
+          "core": "core_108",
+          "mean": 0.003956093452870846,
+          "total_intensity": 16593.05859375,
+          "pos_fraction_0.080": 0.002232074737548828,
+          "speckle_score": 0.2034364274762122
+        },
+        {
+          "core": "core_254",
+          "mean": 0.0038989284075796604,
+          "total_intensity": 16353.291015625,
+          "pos_fraction_0.080": 0.0005934238433837891,
+          "speckle_score": 0.1148615166974244
+        },
+        {
+          "core": "core_014",
+          "mean": 0.0038958180230110884,
+          "total_intensity": 16340.2451171875,
+          "pos_fraction_0.080": 0.0002727508544921875,
+          "speckle_score": 0.10224955942408884
+        },
+        {
+          "core": "core_017",
+          "mean": 0.003781359177082777,
+          "total_intensity": 15860.169921875,
+          "pos_fraction_0.080": 0.0014820098876953125,
+          "speckle_score": 0.12168726135860208
+        },
+        {
+          "core": "core_020",
+          "mean": 0.0037130913697183132,
+          "total_intensity": 15573.833984375,
+          "pos_fraction_0.080": 0.0012569427490234375,
+          "speckle_score": 0.12595046043362731
+        }
+      ],
+      "mean_intensity_bottom": [
+        {
+          "core": "core_294",
+          "mean": 0.002475367859005928,
+          "total_intensity": 10382.4453125,
+          "pos_fraction_0.080": 0.00010371208190917969,
+          "speckle_score": 0.22313856569672486
+        },
+        {
+          "core": "core_162",
+          "mean": 0.002512300619855523,
+          "total_intensity": 10537.3525390625,
+          "pos_fraction_0.080": 2.3603439331054688e-05,
+          "speckle_score": 0.244993221544878
+        },
+        {
+          "core": "core_193",
+          "mean": 0.002521481830626726,
+          "total_intensity": 10575.861328125,
+          "pos_fraction_0.080": 2.4318695068359375e-05,
+          "speckle_score": 0.09298180213583339
+        },
+        {
+          "core": "core_144",
+          "mean": 0.002529267920181155,
+          "total_intensity": 10608.5185546875,
+          "pos_fraction_0.080": 5.245208740234375e-06,
+          "speckle_score": 0.1791508913420957
+        },
+        {
+          "core": "core_086",
+          "mean": 0.002552608260884881,
+          "total_intensity": 10706.4150390625,
+          "pos_fraction_0.080": 0.00011396408081054688,
+          "speckle_score": 0.10399100855168678
+        }
+      ],
+      "speckle_score_top": [
+        {
+          "core": "core_184",
+          "mean": 0.0033135556150227785,
+          "total_intensity": 13898.0595703125,
+          "pos_fraction_0.080": 5.245208740234375e-06,
+          "speckle_score": 0.29269271844063255
+        },
+        {
+          "core": "core_156",
+          "mean": 0.003028586506843567,
+          "total_intensity": 12702.8125,
+          "pos_fraction_0.080": 0.00010943412780761719,
+          "speckle_score": 0.27789592404617053
+        },
+        {
+          "core": "core_178",
+          "mean": 0.0031946024391800165,
+          "total_intensity": 13399.1337890625,
+          "pos_fraction_0.080": 7.963180541992188e-05,
+          "speckle_score": 0.2520972721113071
+        },
+        {
+          "core": "core_159",
+          "mean": 0.0028854620177298784,
+          "total_intensity": 12102.5048828125,
+          "pos_fraction_0.080": 0.0005183219909667969,
+          "speckle_score": 0.25159979876988925
+        },
+        {
+          "core": "core_135",
+          "mean": 0.002668574685230851,
+          "total_intensity": 11192.8134765625,
+          "pos_fraction_0.080": 1.0967254638671875e-05,
+          "speckle_score": 0.2483072147948381
+        },
+        {
+          "core": "core_162",
+          "mean": 0.002512300619855523,
+          "total_intensity": 10537.3525390625,
+          "pos_fraction_0.080": 2.3603439331054688e-05,
+          "speckle_score": 0.244993221544878
+        },
+        {
+          "core": "core_101",
+          "mean": 0.0027828444726765156,
+          "total_intensity": 11672.095703125,
+          "pos_fraction_0.080": 0.00044417381286621094,
+          "speckle_score": 0.24397467427351324
+        },
+        {
+          "core": "core_192",
+          "mean": 0.003070167265832424,
+          "total_intensity": 12877.21484375,
+          "pos_fraction_0.080": 7.152557373046875e-06,
+          "speckle_score": 0.24316910120839713
+        },
+        {
+          "core": "core_067",
+          "mean": 0.003207684028893709,
+          "total_intensity": 13454.001953125,
+          "pos_fraction_0.080": 5.5789947509765625e-05,
+          "speckle_score": 0.23906403419849367
+        },
+        {
+          "core": "core_293",
+          "mean": 0.00255755428224802,
+          "total_intensity": 10727.16015625,
+          "pos_fraction_0.080": 7.843971252441406e-05,
+          "speckle_score": 0.23892577082038854
+        }
+      ]
+    },
+    "15": {
+      "mean_intensity_top": [
+        {
+          "core": "core_070",
+          "mean": 0.032349810004234314,
+          "total_intensity": 135684.9375,
+          "pos_fraction_0.080": 0.10230565071105957,
+          "speckle_score": 0.17576976140940698
+        },
+        {
+          "core": "core_074",
+          "mean": 0.014343321323394775,
+          "total_intensity": 60160.25,
+          "pos_fraction_0.080": 0.029757261276245117,
+          "speckle_score": 0.1328853686306209
+        },
+        {
+          "core": "core_310",
+          "mean": 0.010625265538692474,
+          "total_intensity": 44565.59375,
+          "pos_fraction_0.080": 0.021698474884033203,
+          "speckle_score": 0.1505789829023812
+        },
+        {
+          "core": "core_254",
+          "mean": 0.009905087761580944,
+          "total_intensity": 41544.94921875,
+          "pos_fraction_0.080": 0.00030922889709472656,
+          "speckle_score": 0.10579588575160787
+        },
+        {
+          "core": "core_279",
+          "mean": 0.009859246201813221,
+          "total_intensity": 41352.67578125,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_072",
+          "mean": 0.009077230468392372,
+          "total_intensity": 38072.6640625,
+          "pos_fraction_0.080": 0.011977434158325195,
+          "speckle_score": 0.1682740870672706
+        },
+        {
+          "core": "core_079",
+          "mean": 0.008633488789200783,
+          "total_intensity": 36211.4765625,
+          "pos_fraction_0.080": 0.022479534149169922,
+          "speckle_score": 0.14072604288263177
+        },
+        {
+          "core": "core_274",
+          "mean": 0.008371022529900074,
+          "total_intensity": 35110.61328125,
+          "pos_fraction_0.080": 0.0042798519134521484,
+          "speckle_score": 0.1100739163900872
+        },
+        {
+          "core": "core_195",
+          "mean": 0.0075623830780386925,
+          "total_intensity": 31718.93359375,
+          "pos_fraction_0.080": 0.0027670860290527344,
+          "speckle_score": 0.10558986428462827
+        },
+        {
+          "core": "core_251",
+          "mean": 0.007254479918628931,
+          "total_intensity": 30427.494140625,
+          "pos_fraction_0.080": 0.0007741451263427734,
+          "speckle_score": 0.10371058013494316
+        }
+      ],
+      "mean_intensity_bottom": [
+        {
+          "core": "core_005",
+          "mean": 0.002538839355111122,
+          "total_intensity": 10648.6640625,
+          "pos_fraction_0.080": 1.6450881958007812e-05,
+          "speckle_score": 0.10074369819652254
+        },
+        {
+          "core": "core_016",
+          "mean": 0.0025948653928935528,
+          "total_intensity": 10883.654296875,
+          "pos_fraction_0.080": 4.76837158203125e-07,
+          "speckle_score": 0.08994479456194046
+        },
+        {
+          "core": "core_008",
+          "mean": 0.002602272666990757,
+          "total_intensity": 10914.72265625,
+          "pos_fraction_0.080": 4.76837158203125e-07,
+          "speckle_score": 0.08994479456194046
+        },
+        {
+          "core": "core_065",
+          "mean": 0.002641982864588499,
+          "total_intensity": 11081.279296875,
+          "pos_fraction_0.080": 3.0994415283203125e-06,
+          "speckle_score": 0.09393653758078253
+        },
+        {
+          "core": "core_013",
+          "mean": 0.0026672985404729843,
+          "total_intensity": 11187.4609375,
+          "pos_fraction_0.080": 4.76837158203125e-06,
+          "speckle_score": 0.09178311367725689
+        }
+      ],
+      "speckle_score_top": [
+        {
+          "core": "core_156",
+          "mean": 0.0030711726285517216,
+          "total_intensity": 12881.431640625,
+          "pos_fraction_0.080": 5.078315734863281e-05,
+          "speckle_score": 0.32913915963139084
+        },
+        {
+          "core": "core_247",
+          "mean": 0.0033355592750012875,
+          "total_intensity": 13990.349609375,
+          "pos_fraction_0.080": 1.6689300537109375e-05,
+          "speckle_score": 0.27745679180632327
+        },
+        {
+          "core": "core_166",
+          "mean": 0.00409168004989624,
+          "total_intensity": 17161.75,
+          "pos_fraction_0.080": 0.0003657341003417969,
+          "speckle_score": 0.2761619726515835
+        },
+        {
+          "core": "core_093",
+          "mean": 0.0029993976932018995,
+          "total_intensity": 12580.3857421875,
+          "pos_fraction_0.080": 2.8371810913085938e-05,
+          "speckle_score": 0.27195234674275726
+        },
+        {
+          "core": "core_101",
+          "mean": 0.0036761199589818716,
+          "total_intensity": 15418.7646484375,
+          "pos_fraction_0.080": 0.0001201629638671875,
+          "speckle_score": 0.2296942232129709
+        },
+        {
+          "core": "core_135",
+          "mean": 0.0041611576452851295,
+          "total_intensity": 17453.16015625,
+          "pos_fraction_0.080": 5.9604644775390625e-06,
+          "speckle_score": 0.21046606715129831
+        },
+        {
+          "core": "core_159",
+          "mean": 0.005622883792966604,
+          "total_intensity": 23584.083984375,
+          "pos_fraction_0.080": 0.0005671977996826172,
+          "speckle_score": 0.20705850297585898
+        },
+        {
+          "core": "core_157",
+          "mean": 0.0034284372813999653,
+          "total_intensity": 14379.908203125,
+          "pos_fraction_0.080": 3.814697265625e-06,
+          "speckle_score": 0.18419053720001285
+        },
+        {
+          "core": "core_070",
+          "mean": 0.032349810004234314,
+          "total_intensity": 135684.9375,
+          "pos_fraction_0.080": 0.10230565071105957,
+          "speckle_score": 0.17576976140940698
+        },
+        {
+          "core": "core_153",
+          "mean": 0.003627603407949209,
+          "total_intensity": 15215.271484375,
+          "pos_fraction_0.080": 1.621246337890625e-05,
+          "speckle_score": 0.17176942491286662
+        }
+      ]
+    },
+    "16": {
+      "mean_intensity_top": [
+        {
+          "core": "core_086",
+          "mean": 0.004653728101402521,
+          "total_intensity": 19519.150390625,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_049",
+          "mean": 0.0037608251441270113,
+          "total_intensity": 15774.0439453125,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_017",
+          "mean": 0.003616842906922102,
+          "total_intensity": 15170.138671875,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_001",
+          "mean": 0.003556943964213133,
+          "total_intensity": 14918.904296875,
+          "pos_fraction_0.080": 1.9073486328125e-06,
+          "speckle_score": 0.09180817175703647
+        },
+        {
+          "core": "core_000",
+          "mean": 0.003491482697427273,
+          "total_intensity": 14644.33984375,
+          "pos_fraction_0.080": 1.9073486328125e-06,
+          "speckle_score": 0.09180817175703647
+        },
+        {
+          "core": "core_002",
+          "mean": 0.0034762818831950426,
+          "total_intensity": 14580.5830078125,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_005",
+          "mean": 0.003436742816120386,
+          "total_intensity": 14414.744140625,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_018",
+          "mean": 0.0034298179671168327,
+          "total_intensity": 14385.69921875,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_087",
+          "mean": 0.0034217957872897387,
+          "total_intensity": 14352.0517578125,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_020",
+          "mean": 0.003388204611837864,
+          "total_intensity": 14211.16015625,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        }
+      ],
+      "mean_intensity_bottom": [
+        {
+          "core": "core_279",
+          "mean": 0.0009156933519989252,
+          "total_intensity": 3840.6962890625,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_289",
+          "mean": 0.001705826260149479,
+          "total_intensity": 7154.75390625,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_254",
+          "mean": 0.001983196008950472,
+          "total_intensity": 8318.126953125,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_070",
+          "mean": 0.0021573358681052923,
+          "total_intensity": 9048.5224609375,
+          "pos_fraction_0.080": 5.555152893066406e-05,
+          "speckle_score": 0.14932608821118742
+        },
+        {
+          "core": "core_095",
+          "mean": 0.0023419575300067663,
+          "total_intensity": 9822.8818359375,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        }
+      ],
+      "speckle_score_top": [
+        {
+          "core": "core_047",
+          "mean": 0.0030369276646524668,
+          "total_intensity": 12737.7978515625,
+          "pos_fraction_0.080": 2.1457672119140625e-06,
+          "speckle_score": 0.21504123356932284
+        },
+        {
+          "core": "core_070",
+          "mean": 0.0021573358681052923,
+          "total_intensity": 9048.5224609375,
+          "pos_fraction_0.080": 5.555152893066406e-05,
+          "speckle_score": 0.14932608821118742
+        },
+        {
+          "core": "core_157",
+          "mean": 0.0030774432234466076,
+          "total_intensity": 12907.732421875,
+          "pos_fraction_0.080": 1.9073486328125e-06,
+          "speckle_score": 0.14696753102720003
+        },
+        {
+          "core": "core_277",
+          "mean": 0.0030108685605227947,
+          "total_intensity": 12628.498046875,
+          "pos_fraction_0.080": 1.430511474609375e-06,
+          "speckle_score": 0.11316127330813143
+        },
+        {
+          "core": "core_057",
+          "mean": 0.003229284193366766,
+          "total_intensity": 13544.599609375,
+          "pos_fraction_0.080": 8.58306884765625e-06,
+          "speckle_score": 0.10487489336047968
+        },
+        {
+          "core": "core_298",
+          "mean": 0.0029692579992115498,
+          "total_intensity": 12453.970703125,
+          "pos_fraction_0.080": 2.6226043701171875e-06,
+          "speckle_score": 0.10322269345459799
+        },
+        {
+          "core": "core_031",
+          "mean": 0.0031622624956071377,
+          "total_intensity": 13263.490234375,
+          "pos_fraction_0.080": 9.059906005859375e-06,
+          "speckle_score": 0.101501832162245
+        },
+        {
+          "core": "core_043",
+          "mean": 0.003340817056596279,
+          "total_intensity": 14012.40234375,
+          "pos_fraction_0.080": 3.337860107421875e-05,
+          "speckle_score": 0.09840824339057155
+        },
+        {
+          "core": "core_148",
+          "mean": 0.003061290830373764,
+          "total_intensity": 12839.984375,
+          "pos_fraction_0.080": 9.5367431640625e-07,
+          "speckle_score": 0.09286303700149005
+        },
+        {
+          "core": "core_149",
+          "mean": 0.0029736801516264677,
+          "total_intensity": 12472.5185546875,
+          "pos_fraction_0.080": 9.5367431640625e-07,
+          "speckle_score": 0.09286303700149005
+        }
+      ]
+    },
+    "17": {
+      "mean_intensity_top": [
+        {
+          "core": "core_295",
+          "mean": 0.009500788524746895,
+          "total_intensity": 39849.1953125,
+          "pos_fraction_0.080": 0.0004734992980957031,
+          "speckle_score": 0.09997104375430067
+        },
+        {
+          "core": "core_038",
+          "mean": 0.009360379539430141,
+          "total_intensity": 39260.27734375,
+          "pos_fraction_0.080": 0.003844738006591797,
+          "speckle_score": 0.09831413388265557
+        },
+        {
+          "core": "core_096",
+          "mean": 0.008957442827522755,
+          "total_intensity": 37570.23828125,
+          "pos_fraction_0.080": 0.005969524383544922,
+          "speckle_score": 0.10525757978435672
+        },
+        {
+          "core": "core_203",
+          "mean": 0.008610480464994907,
+          "total_intensity": 36114.97265625,
+          "pos_fraction_0.080": 0.00023746490478515625,
+          "speckle_score": 0.09892344542644378
+        },
+        {
+          "core": "core_151",
+          "mean": 0.00854727253317833,
+          "total_intensity": 35849.859375,
+          "pos_fraction_0.080": 6.604194641113281e-05,
+          "speckle_score": 0.09063971969828738
+        },
+        {
+          "core": "core_193",
+          "mean": 0.008485464379191399,
+          "total_intensity": 35590.6171875,
+          "pos_fraction_0.080": 0.00011968612670898438,
+          "speckle_score": 0.09220718841569894
+        },
+        {
+          "core": "core_315",
+          "mean": 0.00828223954886198,
+          "total_intensity": 34738.23046875,
+          "pos_fraction_0.080": 0.0011267662048339844,
+          "speckle_score": 0.10162031760942863
+        },
+        {
+          "core": "core_128",
+          "mean": 0.00819779746234417,
+          "total_intensity": 34384.0546875,
+          "pos_fraction_0.080": 0.0025758743286132812,
+          "speckle_score": 0.10073686562355277
+        },
+        {
+          "core": "core_236",
+          "mean": 0.008174490183591843,
+          "total_intensity": 34286.296875,
+          "pos_fraction_0.080": 0.001739501953125,
+          "speckle_score": 0.10320817322226686
+        },
+        {
+          "core": "core_114",
+          "mean": 0.00793642271310091,
+          "total_intensity": 33287.76953125,
+          "pos_fraction_0.080": 0.0004589557647705078,
+          "speckle_score": 0.09629330290048073
+        }
+      ],
+      "mean_intensity_bottom": [
+        {
+          "core": "core_189",
+          "mean": 0.0030581222381442785,
+          "total_intensity": 12826.6943359375,
+          "pos_fraction_0.080": 2.4318695068359375e-05,
+          "speckle_score": 0.11040254209443222
+        },
+        {
+          "core": "core_138",
+          "mean": 0.0030600724276155233,
+          "total_intensity": 12834.8740234375,
+          "pos_fraction_0.080": 1.5974044799804688e-05,
+          "speckle_score": 0.11492020141446797
+        },
+        {
+          "core": "core_032",
+          "mean": 0.0030701172072440386,
+          "total_intensity": 12877.0048828125,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_206",
+          "mean": 0.003071923740208149,
+          "total_intensity": 12884.58203125,
+          "pos_fraction_0.080": 5.1021575927734375e-05,
+          "speckle_score": 0.10649814748372237
+        },
+        {
+          "core": "core_191",
+          "mean": 0.0030807051807641983,
+          "total_intensity": 12921.4140625,
+          "pos_fraction_0.080": 2.3126602172851562e-05,
+          "speckle_score": 0.11509108898787036
+        }
+      ],
+      "speckle_score_top": [
+        {
+          "core": "core_062",
+          "mean": 0.003135112812742591,
+          "total_intensity": 13149.6162109375,
+          "pos_fraction_0.080": 0.0003693103790283203,
+          "speckle_score": 0.13728816892147336
+        },
+        {
+          "core": "core_232",
+          "mean": 0.0031216067727655172,
+          "total_intensity": 13092.9677734375,
+          "pos_fraction_0.080": 0.0002689361572265625,
+          "speckle_score": 0.13420875389601883
+        },
+        {
+          "core": "core_060",
+          "mean": 0.0031710066832602024,
+          "total_intensity": 13300.166015625,
+          "pos_fraction_0.080": 0.0003159046173095703,
+          "speckle_score": 0.12640411034289606
+        },
+        {
+          "core": "core_234",
+          "mean": 0.003474694676697254,
+          "total_intensity": 14573.92578125,
+          "pos_fraction_0.080": 8.678436279296875e-05,
+          "speckle_score": 0.12635430563472086
+        },
+        {
+          "core": "core_238",
+          "mean": 0.0032660337164998055,
+          "total_intensity": 13698.73828125,
+          "pos_fraction_0.080": 0.0003666877746582031,
+          "speckle_score": 0.12390893838327637
+        },
+        {
+          "core": "core_061",
+          "mean": 0.0034291385672986507,
+          "total_intensity": 14382.849609375,
+          "pos_fraction_0.080": 0.0008711814880371094,
+          "speckle_score": 0.12159659924762992
+        },
+        {
+          "core": "core_201",
+          "mean": 0.004211690276861191,
+          "total_intensity": 17665.109375,
+          "pos_fraction_0.080": 0.0005414485931396484,
+          "speckle_score": 0.12079191046036546
+        },
+        {
+          "core": "core_081",
+          "mean": 0.003126774914562702,
+          "total_intensity": 13114.64453125,
+          "pos_fraction_0.080": 0.0001575946807861328,
+          "speckle_score": 0.11981365852087773
+        },
+        {
+          "core": "core_233",
+          "mean": 0.006367633584886789,
+          "total_intensity": 26707.791015625,
+          "pos_fraction_0.080": 0.00010037422180175781,
+          "speckle_score": 0.1175162746743951
+        },
+        {
+          "core": "core_084",
+          "mean": 0.004435170907527208,
+          "total_intensity": 18602.455078125,
+          "pos_fraction_0.080": 0.0019114017486572266,
+          "speckle_score": 0.11658106951481872
+        }
+      ]
+    },
+    "18": {
+      "mean_intensity_top": [
+        {
+          "core": "core_192",
+          "mean": 0.016533952206373215,
+          "total_intensity": 69348.421875,
+          "pos_fraction_0.080": 0.05875730514526367,
+          "speckle_score": 0.1143050026351855
+        },
+        {
+          "core": "core_056",
+          "mean": 0.015313214622437954,
+          "total_intensity": 64228.27734375,
+          "pos_fraction_0.080": 0.013041019439697266,
+          "speckle_score": 0.09619353692839491
+        },
+        {
+          "core": "core_208",
+          "mean": 0.015039484947919846,
+          "total_intensity": 63080.171875,
+          "pos_fraction_0.080": 0.01650857925415039,
+          "speckle_score": 0.10931611384359231
+        },
+        {
+          "core": "core_106",
+          "mean": 0.01492431852966547,
+          "total_intensity": 62597.12890625,
+          "pos_fraction_0.080": 0.025389432907104492,
+          "speckle_score": 0.09830091865829059
+        },
+        {
+          "core": "core_091",
+          "mean": 0.013614557683467865,
+          "total_intensity": 57103.59375,
+          "pos_fraction_0.080": 0.008544921875,
+          "speckle_score": 0.09390149870052118
+        },
+        {
+          "core": "core_245",
+          "mean": 0.013483445160090923,
+          "total_intensity": 56553.66796875,
+          "pos_fraction_0.080": 0.005667448043823242,
+          "speckle_score": 0.10492477916332814
+        },
+        {
+          "core": "core_092",
+          "mean": 0.013141808100044727,
+          "total_intensity": 55120.73828125,
+          "pos_fraction_0.080": 0.008526086807250977,
+          "speckle_score": 0.13002913477769748
+        },
+        {
+          "core": "core_204",
+          "mean": 0.01307318639010191,
+          "total_intensity": 54832.91796875,
+          "pos_fraction_0.080": 0.014165163040161133,
+          "speckle_score": 0.10168414853836198
+        },
+        {
+          "core": "core_148",
+          "mean": 0.012874006293714046,
+          "total_intensity": 53997.49609375,
+          "pos_fraction_0.080": 0.010440349578857422,
+          "speckle_score": 0.1014077871330027
+        },
+        {
+          "core": "core_051",
+          "mean": 0.012808365747332573,
+          "total_intensity": 53722.1796875,
+          "pos_fraction_0.080": 0.00638127326965332,
+          "speckle_score": 0.09525830243277758
+        }
+      ],
+      "mean_intensity_bottom": [
+        {
+          "core": "core_160",
+          "mean": 0.0029816138558089733,
+          "total_intensity": 12505.794921875,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_165",
+          "mean": 0.003018804360181093,
+          "total_intensity": 12661.783203125,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_123",
+          "mean": 0.003026405582204461,
+          "total_intensity": 12693.6650390625,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_130",
+          "mean": 0.0030296596232801676,
+          "total_intensity": 12707.3134765625,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        },
+        {
+          "core": "core_167",
+          "mean": 0.0030540362931787968,
+          "total_intensity": 12809.556640625,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        }
+      ],
+      "speckle_score_top": [
+        {
+          "core": "core_039",
+          "mean": 0.0051932018250226974,
+          "total_intensity": 21781.8671875,
+          "pos_fraction_0.080": 0.00015020370483398438,
+          "speckle_score": 0.29089224680751025
+        },
+        {
+          "core": "core_018",
+          "mean": 0.0054642376489937305,
+          "total_intensity": 22918.673828125,
+          "pos_fraction_0.080": 0.0006835460662841797,
+          "speckle_score": 0.2256865663594623
+        },
+        {
+          "core": "core_134",
+          "mean": 0.005712231155484915,
+          "total_intensity": 23958.833984375,
+          "pos_fraction_0.080": 0.0003871917724609375,
+          "speckle_score": 0.16736357516647446
+        },
+        {
+          "core": "core_021",
+          "mean": 0.005113869905471802,
+          "total_intensity": 21449.125,
+          "pos_fraction_0.080": 0.0002307891845703125,
+          "speckle_score": 0.1643651513588875
+        },
+        {
+          "core": "core_169",
+          "mean": 0.0038468861021101475,
+          "total_intensity": 16135.009765625,
+          "pos_fraction_0.080": 7.152557373046875e-06,
+          "speckle_score": 0.16004720391024113
+        },
+        {
+          "core": "core_212",
+          "mean": 0.004238672088831663,
+          "total_intensity": 17778.279296875,
+          "pos_fraction_0.080": 1.621246337890625e-05,
+          "speckle_score": 0.15556688017383602
+        },
+        {
+          "core": "core_216",
+          "mean": 0.0030811240430921316,
+          "total_intensity": 12923.1708984375,
+          "pos_fraction_0.080": 2.9802322387695312e-05,
+          "speckle_score": 0.1537553421281418
+        },
+        {
+          "core": "core_110",
+          "mean": 0.007554321549832821,
+          "total_intensity": 31685.12109375,
+          "pos_fraction_0.080": 0.00011301040649414062,
+          "speckle_score": 0.14853029374684154
+        },
+        {
+          "core": "core_254",
+          "mean": 0.005799860693514347,
+          "total_intensity": 24326.37890625,
+          "pos_fraction_0.080": 0.0002791881561279297,
+          "speckle_score": 0.1476985486028465
+        },
+        {
+          "core": "core_052",
+          "mean": 0.004713091533631086,
+          "total_intensity": 19768.138671875,
+          "pos_fraction_0.080": 5.340576171875e-05,
+          "speckle_score": 0.1428136824432795
+        }
+      ]
+    },
+    "19": {
+      "mean_intensity_top": [
+        {
+          "core": "core_166",
+          "mean": 0.005290800239890814,
+          "total_intensity": 22191.224609375,
+          "pos_fraction_0.080": 0.007088422775268555,
+          "speckle_score": 0.14456175983532685
+        },
+        {
+          "core": "core_034",
+          "mean": 0.005094331689178944,
+          "total_intensity": 21367.17578125,
+          "pos_fraction_0.080": 0.006607770919799805,
+          "speckle_score": 0.17667386651402203
+        },
+        {
+          "core": "core_089",
+          "mean": 0.00423138402402401,
+          "total_intensity": 17747.7109375,
+          "pos_fraction_0.080": 0.0018143653869628906,
+          "speckle_score": 0.1263692554173361
+        },
+        {
+          "core": "core_095",
+          "mean": 0.0042297630570828915,
+          "total_intensity": 17740.912109375,
+          "pos_fraction_0.080": 0.004184722900390625,
+          "speckle_score": 0.16373290414921984
+        },
+        {
+          "core": "core_201",
+          "mean": 0.004047746304422617,
+          "total_intensity": 16977.478515625,
+          "pos_fraction_0.080": 0.0014884471893310547,
+          "speckle_score": 0.12094719977846397
+        },
+        {
+          "core": "core_236",
+          "mean": 0.0039443071000278,
+          "total_intensity": 16543.623046875,
+          "pos_fraction_0.080": 0.0016560554504394531,
+          "speckle_score": 0.18583822678109851
+        },
+        {
+          "core": "core_265",
+          "mean": 0.003922795876860619,
+          "total_intensity": 16453.3984375,
+          "pos_fraction_0.080": 0.0016117095947265625,
+          "speckle_score": 0.1332470565573019
+        },
+        {
+          "core": "core_293",
+          "mean": 0.0038879357744008303,
+          "total_intensity": 16307.1845703125,
+          "pos_fraction_0.080": 0.0011706352233886719,
+          "speckle_score": 0.1255789967714677
+        },
+        {
+          "core": "core_198",
+          "mean": 0.003860954660922289,
+          "total_intensity": 16194.017578125,
+          "pos_fraction_0.080": 0.0014536380767822266,
+          "speckle_score": 0.12751823806396292
+        },
+        {
+          "core": "core_229",
+          "mean": 0.003799268277361989,
+          "total_intensity": 15935.2861328125,
+          "pos_fraction_0.080": 0.0007479190826416016,
+          "speckle_score": 0.1260080119377324
+        }
+      ],
+      "mean_intensity_bottom": [
+        {
+          "core": "core_094",
+          "mean": 0.0025020733010023832,
+          "total_intensity": 10494.4560546875,
+          "pos_fraction_0.080": 0.00015735626220703125,
+          "speckle_score": 0.1212488006823677
+        },
+        {
+          "core": "core_087",
+          "mean": 0.002656229306012392,
+          "total_intensity": 11141.033203125,
+          "pos_fraction_0.080": 4.076957702636719e-05,
+          "speckle_score": 0.12263625588303531
+        },
+        {
+          "core": "core_280",
+          "mean": 0.0026747763622552156,
+          "total_intensity": 11218.8251953125,
+          "pos_fraction_0.080": 7.867813110351562e-06,
+          "speckle_score": 0.14550688916084248
+        },
+        {
+          "core": "core_091",
+          "mean": 0.0026859694626182318,
+          "total_intensity": 11265.7724609375,
+          "pos_fraction_0.080": 1.9073486328125e-05,
+          "speckle_score": 0.10232443937986181
+        },
+        {
+          "core": "core_099",
+          "mean": 0.0027025456074625254,
+          "total_intensity": 11335.2978515625,
+          "pos_fraction_0.080": 0.0,
+          "speckle_score": 0.001
+        }
+      ],
+      "speckle_score_top": [
+        {
+          "core": "core_148",
+          "mean": 0.0028664744459092617,
+          "total_intensity": 12022.865234375,
+          "pos_fraction_0.080": 5.221366882324219e-05,
+          "speckle_score": 0.39591636509623185
+        },
+        {
+          "core": "core_039",
+          "mean": 0.003059664275497198,
+          "total_intensity": 12833.162109375,
+          "pos_fraction_0.080": 4.029273986816406e-05,
+          "speckle_score": 0.3340832511557417
+        },
+        {
+          "core": "core_236",
+          "mean": 0.0039443071000278,
+          "total_intensity": 16543.623046875,
+          "pos_fraction_0.080": 0.0016560554504394531,
+          "speckle_score": 0.18583822678109851
+        },
+        {
+          "core": "core_034",
+          "mean": 0.005094331689178944,
+          "total_intensity": 21367.17578125,
+          "pos_fraction_0.080": 0.006607770919799805,
+          "speckle_score": 0.17667386651402203
+        },
+        {
+          "core": "core_103",
+          "mean": 0.0032295926939696074,
+          "total_intensity": 13545.8935546875,
+          "pos_fraction_0.080": 0.0006716251373291016,
+          "speckle_score": 0.17630133434783973
+        },
+        {
+          "core": "core_092",
+          "mean": 0.002887587295845151,
+          "total_intensity": 12111.4189453125,
+          "pos_fraction_0.080": 0.00040912628173828125,
+          "speckle_score": 0.16405112792098475
+        },
+        {
+          "core": "core_095",
+          "mean": 0.0042297630570828915,
+          "total_intensity": 17740.912109375,
+          "pos_fraction_0.080": 0.004184722900390625,
+          "speckle_score": 0.16373290414921984
+        },
+        {
+          "core": "core_085",
+          "mean": 0.002850101562216878,
+          "total_intensity": 11954.1923828125,
+          "pos_fraction_0.080": 0.0001232624053955078,
+          "speckle_score": 0.16303739029839182
+        },
+        {
+          "core": "core_204",
+          "mean": 0.00303270248696208,
+          "total_intensity": 12720.076171875,
+          "pos_fraction_0.080": 0.0003376007080078125,
+          "speckle_score": 0.15751896663118442
+        },
+        {
+          "core": "core_066",
+          "mean": 0.003094474319368601,
+          "total_intensity": 12979.166015625,
+          "pos_fraction_0.080": 0.0005924701690673828,
+          "speckle_score": 0.15542412604856046
+        }
+      ]
+    }
+  }
+}

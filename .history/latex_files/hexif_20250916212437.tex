@@ -1,0 +1,104 @@
+\documentclass[12pt,twoside]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{url}
+
+\title{HExIF: An End-to-End Deep Learning Framework for Virtual Multiplex Immunofluorescence from H\&E Slides}
+\author{Rany Stephan\thanks{Institute for Computational and Mathematical Engineering, Stanford University. \texttt{ranycs@stanford.edu}} \and
+        Andrew Gentles\thanks{Department of Biomedical Data-Science, Stanford University.}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+High-plex immunofluorescence technologies provide deep, spatially-resolved molecular data but remain costly and complex. In contrast, Hematoxylin and Eosin (H\&E) staining is a ubiquitous, low-cost histological method limited to morphological assessment. To bridge this gap, we present HExIF, an automated deep learning pipeline to generate virtual multiplex immunofluorescence images directly from standard H\&E slides. Our framework begins by co-registering whole-slide images of paired H\&E and 20-channel Orion immunofluorescence slides from a tissue microarray using the \texttt{valis} registration library. We then employ a custom image processing workflow to automatically detect and extract over 270 matched, full-resolution tissue cores. From these cores, we generate a large dataset of paired image patches for training a U-Net-based deep learning model. The model is trained to predict all 20 fluorescence channels from a single H\&E input patch using a specialized, spatially-aware loss function designed to preserve fine-grained details and prevent mode collapse. This paper details our complete methodology, from slide registration and automated data curation to the architecture and training of the predictive model, establishing a robust framework for large-scale \emph{in silico} multiplex imaging.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+\noindent
+The study of complex cellular interactions within their native tissue context, known as spatial biology, has been revolutionized by high-plex imaging technologies. Platforms like CODEX \cite{Goltsev2018} and Orion \cite{Angel2017} enable the simultaneous visualization of dozens of protein markers on a single tissue section, providing unprecedented insight into tissue microenvironments, particularly in fields like oncology and immunology. However, the specialized instrumentation, high reagent costs, and complex experimental workflows associated with these methods limit their widespread adoption. In stark contrast, Hematoxylin and Eosin (H\&E) staining is the cornerstone of histopathology, performed routinely in clinical and research settings worldwide. While inexpensive and highly standardized, H\&E provides only morphological information and lacks molecular specificity.
+
+\noindent
+Recent advances in deep learning, particularly in image-to-image translation, have opened the possibility of "virtual staining"---computationally predicting molecular or special stains from standard H\&E images \cite{Isola2017}. This approach promises to unlock a wealth of molecular information from vast archives of existing H\&E slides, democratizing high-plex spatial profiling. HExIF (H\&E to virtual Immunofluorescence) is an end-to-end framework designed to realize this promise by learning to predict 20-channel Orion fluorescence images directly from their paired H\&E counterparts.
+
+\noindent
+Our pipeline addresses several key challenges in this domain. First, it implements a fully automated workflow for the precise, pixel-level registration of gigapixel whole-slide images. Second, it automates the detection and extraction of corresponding tissue cores from tissue microarrays (TMAs), generating a large-scale, curated dataset for model training. Finally, it employs a U-Net-based architecture trained with a custom, spatially-aware loss function tailored to the unique characteristics of immunofluorescence data. This paper describes the complete HExIF methodology, covering the data preparation pipeline and the deep learning framework in detail.
+
+\section{Methods}
+Our methodology is divided into two main stages: (1) automated data preparation, which includes slide registration and tissue core extraction to create a paired dataset, and (2) a deep learning framework for training a model to perform the virtual immunofluorescence task.
+
+\subsection{Data Acquisition and Registration}
+The source data consists of paired whole-slide images: one stained with H\&E and the other imaged using the 20-channel Orion platform. Both slides originate from the same tissue microarray (TMA), providing hundreds of distinct tissue cores. The Orion panel contains a range of markers targeting specific immune and stromal cell populations, such as IBA1 (pan-macrophage), CD163 (macrophage), CD3e (T-cell), and Pan-CK (epithelial/cancer cells).
+
+\noindent
+To generate a training dataset, the whole-slide images must be precisely aligned. We automated this process using the \texttt{valis} registration library, which is designed for large, multi-resolution biomedical images. The H\&E slide was designated as the reference, and the Orion slide was warped to match it. \texttt{valis} performs a multi-step registration, beginning with a global rigid transformation and followed by non-rigid warping to correct for local tissue distortions introduced during slide preparation and imaging. The quality of the registration was confirmed by visual inspection of overlays, where the edges and features of both images were shown to be in close alignment across the entire slide.
+
+\subsection{Automated Tissue Core Extraction}
+Following registration, we developed an automated pipeline to detect and extract each of the TMA cores. This process operates on a downsampled version of the registered H\&E slide for computational efficiency. The core detection algorithm involves several image processing steps:
+\begin{enumerate}
+    \item \textbf{Feature Enhancement:} A Laplacian filter is applied to the grayscale H\&E thumbnail to enhance edges and tissue boundaries.
+    \item \textbf{Tissue Segmentation:} Otsu's method is used to perform adaptive thresholding on the filtered image, creating a binary mask that separates tissue from the background.
+    \item \textbf{Mask Refinement:} Morphological closing and opening operations are applied to the binary mask to fill small holes within the tissue regions and remove spurious noise pixels.
+    \item \textbf{Core Identification:} Connected component analysis is performed on the refined mask to identify distinct tissue regions. A size-based filter is applied to discard small artifacts, and the bounding box of each valid component is calculated.
+\end{enumerate}
+This procedure robustly identified over 270 TMA cores. The center coordinate of each bounding box was then mapped back to the full-resolution coordinate system. From both the full-resolution H\&E and the registered Orion slide, we extracted a large $2048 \times 2048$ pixel patch centered at each core's location. The resulting H\&E patches (RGB, 3 channels) and Orion patches (20 channels) were saved as floating-point NumPy arrays, forming the basis of our training dataset.
+
+\subsection{Deep Learning Framework}
+
+\subsubsection{Model Architecture}
+We employ a U-Net architecture \cite{Ronneberger2015}, a convolutional neural network designed for biomedical image segmentation and translation tasks. Our model, \texttt{UNetSmall}, consists of an encoder path that captures contextual features at progressively smaller spatial resolutions and a symmetric decoder path that reconstructs a high-resolution, multi-channel output. Skip connections link the encoder and decoder paths, allowing the network to combine deep, semantic features with shallow, high-resolution features, which is crucial for preserving spatial detail.
+
+\noindent
+The network takes a 3-channel H\&E image patch as input. As an optional feature, we can enable "boundary guidance" by computing a cell boundary map from the H\&E patch using a Sobel edge detector. This single-channel map is then concatenated with the RGB input, creating a 4-channel input tensor. The model outputs a 20-channel tensor of the same height and width as the input, with a final sigmoid activation to ensure predicted fluorescence intensities are in the range $[0, 1]$.
+
+\subsubsection{Dataset Preparation and Augmentation}
+The $2048 \times 2048$ pixel core patches are too large to be used directly for training. Instead, we sample smaller patches (e.g., $384 \times 384$ pixels) on-the-fly during training. For each core, we randomly sample multiple patches, which serves as a form of data augmentation.
+
+\noindent
+The H\&E patches undergo further augmentation, including random horizontal and vertical flips, random rotations, and color jittering (brightness, contrast, saturation). They are then normalized using ImageNet's standard mean and standard deviation.
+
+\noindent
+The target Orion patches require careful normalization. Each of the 20 channels has a different dynamic range. To handle this, we apply a robust, channel-wise percentile normalization. For each channel, we clip intensity values at the 1st and 99th percentiles and then scale the result linearly to the $[0, 1]$ range. This method is robust to outliers and standardizes the input distribution for the model.
+
+\subsubsection{Spatially-Aware Loss Function}
+A key component of our framework is a custom loss function designed to address the challenges of predicting sparse, spatially-detailed fluorescence images. The total loss, $L_{\text{total}}$, is a weighted sum of reconstruction, boundary, and regularization terms:
+\[ L_{\text{total}} = w_{\text{recon}} L_{\text{recon}} + w_{\text{bound}} L_{\text{bound}} + w_{\text{var}} L_{\text{var}} \]
+\begin{itemize}
+    \item \textbf{Reconstruction Loss ($L_{\text{recon}}$):} This term measures the pixel-wise difference between the predicted image $\hat{Y}$ and the ground truth image $Y$. It is a combination of Mean Squared Error (MSE, $L_2$) and Mean Absolute Error (MAE, $L_1$):
+    \[ L_{\text{recon}} = \lambda_{\text{mse}} \cdot \text{MSE}(\hat{Y}, Y) + \lambda_{\text{l1}} \cdot \text{MAE}(\hat{Y}, Y) \]
+    The $L_1$ component is particularly useful for encouraging sparsity, a common feature of fluorescence images where many pixels are dark.
+
+    \item \textbf{Boundary-Aware Loss ($L_{\text{bound}}$):} To encourage the model to learn fine details at cell boundaries, this term applies a higher weight to the reconstruction error in these regions. Given a pre-computed binary boundary mask $M_{\text{bound}}$ from the H\&E input, this loss is calculated as:
+    \[ L_{\text{bound}} = \text{MSE}(\hat{Y} \odot M_{\text{bound}}, Y \odot M_{\text{bound}}) \]
+    where $\odot$ is the element-wise product.
+
+    \item \textbf{Anti-Collapse Regularization ($L_{\text{var}}$):} A common failure mode in image-to-image translation is "mode collapse," where the model produces bland, low-variance outputs (e.g., a blank or uniform image). To prevent this, we introduce a loss term that penalizes low spatial variance in the predicted channels. For each channel in the prediction, we compute its spatial variance. If the variance falls below a certain threshold $\tau_v$, a penalty is applied:
+    \[ L_{\text{var}} = \text{mean}(\text{ReLU}(\tau_v - \text{Var}(\hat{Y}_{\text{channel}}))^2) \]
+    This encourages the model to generate outputs with realistic spatial texture.
+\end{itemize}
+
+\subsubsection{Training Details}
+The model was implemented in PyTorch and trained using the AdamW optimizer with a OneCycle learning rate schedule, which starts with a low learning rate, warms up to a maximum value, and then anneals down. We used a core-level split to create independent training and validation sets, ensuring that all patches from a single tissue core belong to only one set, preventing data leakage. Training was performed with automatic mixed precision to accelerate computation on NVIDIA GPUs.
+
+\section{Preliminary Results}
+The data preparation pipeline successfully generated a high-quality dataset of over 270 paired H\&E and 20-channel Orion immunofluorescence core images. The automated registration and extraction process proved robust, requiring minimal manual intervention.
+
+\noindent
+Our U-Net model was trained on this dataset. Qualitative assessment during training showed that the model learns to generate spatially coherent fluorescence patterns that correspond to morphological features in the H\&E input. Figure~\ref{fig:sanity_check} shows an example of the model's prediction for a validation patch. While some channels are predicted with greater fidelity than others, the model correctly identifies the location of positive staining for several key markers.
+
+% Placeholder for a figure showing results
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=\textwidth]{path/to/sanity_check_figure.png}
+    \fbox{\parbox[c][15em][c]{.9\textwidth}{\centering Figure placeholder: \\ A grid showing, for a few marker channels: \\ (Column 1) H\&E Input Patch \\ (Column 2) Ground Truth Orion Channel \\ (Column 3) Predicted Orion Channel}}
+    \caption{Example of virtual immunofluorescence prediction. The model takes the H\&E image patch (left) as input and generates predictions (right) for all 20 Orion channels. Here, we show a comparison between the ground truth fluorescence (middle) and the model's prediction for representative markers.}
+    \label{fig:sanity_check}
+\end{figure}

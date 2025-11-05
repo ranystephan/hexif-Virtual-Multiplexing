@@ -1,0 +1,24 @@
+Summary source: output/data_summary_nov4/channel_summary.json
+Channels analysed: 20
+Primary coverage threshold: 0.080
+
+Highest average max intensity channels:
+  ch00: mean ≈ 0.0275
+  ch01: mean ≈ 0.0143
+  ch13: mean ≈ 0.0133
+  ch18: mean ≈ 0.0063
+  ch17: mean ≈ 0.0050
+
+Lowest coverage channels:
+  ch16: coverage ≈ 0.0000
+  ch05: coverage ≈ 0.0000
+  ch07: coverage ≈ 0.0000
+  ch12: coverage ≈ 0.0000
+  ch09: coverage ≈ 0.0001
+
+Most speckled channels:
+  ch02: speckle ≈ 0.1289
+  ch13: speckle ≈ 0.1251
+  ch11: speckle ≈ 0.1218
+  ch00: speckle ≈ 0.1216
+  ch03: speckle ≈ 0.1207
