@@ -1,0 +1,15 @@
+# HEXIF Core Viewer Requirements
+# Install with: pip install -r requirements_viewer.txt
+
+# Core visualization
+streamlit>=1.28.0
+matplotlib>=3.7.0
+numpy>=1.24.0
+
+# Model inference (optional, but recommended)
+torch>=2.0.0
+torchvision>=0.15.0
+timm>=0.9.0
+
+# Utilities
+pillow>=10.0.0

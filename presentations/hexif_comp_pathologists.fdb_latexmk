@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1762325660.24297 "hexif_comp_pathologists.tex" "hexif_comp_pathologists.pdf" "hexif_comp_pathologists" 1762325665.96827 2
+["pdflatex"] 1762326096.15703 "hexif_comp_pathologists.tex" "hexif_comp_pathologists.pdf" "hexif_comp_pathologists" 1762326101.68402 2
   "../output/data_summary_nov4/plots/channel_coverage.png" 1762306611.09566 62861 67c2d7c5a5a24e3f4d489fb5148f9088 ""
   "../output/data_summary_nov4/plots/channel_mean_intensity.png" 1762306611.09658 68892 7309f683db7999bcca905bebae0037e0 ""
   "../output/data_summary_nov4/plots/channel_speckle_bar.png" 1762306611.09717 80502 ff407c049cc1045f29f329cc2c3045f7 ""
@@ -255,10 +255,10 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1759108655 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "hexif_comp_pathologists.aux" 1762325665.87907 3436 74e6fe24dac50f5f5c5ac935a1cc5c44 "pdflatex"
-  "hexif_comp_pathologists.nav" 1762325665.87996 2318 6bf076db6e1a8e33e3ccecc7cb97fcb8 "pdflatex"
-  "hexif_comp_pathologists.out" 1762325660.78585 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "hexif_comp_pathologists.tex" 1762325659.96822 15254 9d45b45e9e0b6c6de9d51abb30b5e56f ""
+  "hexif_comp_pathologists.aux" 1762326101.59867 3436 74e6fe24dac50f5f5c5ac935a1cc5c44 "pdflatex"
+  "hexif_comp_pathologists.nav" 1762326101.5994 2318 6bf076db6e1a8e33e3ccecc7cb97fcb8 "pdflatex"
+  "hexif_comp_pathologists.out" 1762326096.70615 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "hexif_comp_pathologists.tex" 1762326101.22671 15259 d4137820bde6051f1ac504db32199994 ""
   (generated)
   "hexif_comp_pathologists.aux"
   "hexif_comp_pathologists.log"

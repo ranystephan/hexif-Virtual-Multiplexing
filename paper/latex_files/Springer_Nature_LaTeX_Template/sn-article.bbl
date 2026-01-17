@@ -1,0 +1,150 @@
+\begin{thebibliography}{47}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{\url{https://doi.org/#1}}
+\providecommand{\eprint}[2][]{\url{#2}}
+ \bibcommenthead
+
+\bibitem[{Andani et~al.(2024)Andani, Yun, Moyes et~al.}]{Andani2024}
+Andani S, Yun T, Moyes A, et~al (2024) {HistoPlexer}: Histopathology-based protein multiplex generation using deep learning. bioRxiv \doi{10.1101/2024.01.09.574826}, preprint
+
+\bibitem[{Angelo et~al.(2014)Angelo, Bendall, Finck, Hale, Hber, Borowsky, Pothula, Satija, Goltsev, Luria, Bruber, and Nolan}]{Angelo2014}
+Angelo M, Bendall SC, Finck R, et~al (2014) Multiplexed ion beam imaging of human breast tumors. Nature Medicine 20(4):436--442. \doi{10.1038/nm.3488}
+
+\bibitem[{Baddeley et~al.(2015)Baddeley, Rubak, and Turner}]{Baddeley2015}
+Baddeley A, Rubak E, Turner R (2015) Spatial Point Patterns: Methodology and Applications with {R}. CRC Press
+
+\bibitem[{Barua et~al.(2018)Barua, Solis, Parra, Yadav, Wang, Zhang, Wistuba, Maitra, Merajver et~al.}]{Barua2018}
+Barua S, Solis L, Parra ER, et~al (2018) A functional spatial analysis platform for discovery of immunological interactions predictive of low-grade to high-grade transition of pancreatic intraductal papillary mucinous neoplasms. Cancer Informatics 17:1176935118782880. \doi{10.1177/1176935118782880}
+
+\bibitem[{Bera et~al.(2019)Bera, Schalper, Rimm, Velcheti, and Madabhushi}]{Bera2019}
+Bera K, Schalper KA, Rimm DL, et~al (2019) Artificial intelligence in digital pathology---new tools for diagnosis and precision oncology. Nature Reviews Clinical Oncology 16(11):703--715. \doi{10.1038/s41571-019-0252-y}
+
+\bibitem[{Bill et~al.(2023)Bill, Wirapati, Messemaker, Roz, Yim, Kubli, Koch, D'Arcangelo, Prewett, Dahlstrom et~al.}]{Bill2023}
+Bill R, Wirapati P, Messemaker M, et~al (2023) {CXCL9:SPP1} macrophage polarity identifies a network of cellular programs that control tumor immunity. Science 381(6657):515--524. \doi{10.1126/science.ade2292}
+
+\bibitem[{Binnewies et~al.(2018)Binnewies, Roberts, Kersten, Chan, Fearon, Merad, Coussens, Gabrilovich, Ostrand-Rosenberg, Hedrick, Vonderheide, Pittet, Jain, Zou, Howcroft, Woodhouse, Weinberg, and Krummel}]{Binnewies2018}
+Binnewies M, Roberts EW, Kersten K, et~al (2018) Understanding the tumor immune microenvironment ({TIME}) for effective therapy. Nature Medicine 24(5):541--550. \doi{10.1038/s41591-018-0014-x}
+
+\bibitem[{Borovec et~al.(2018)Borovec, Munoz-Barrutia, and Kybic}]{Borovec2018}
+Borovec J, Munoz-Barrutia A, Kybic J (2018) Benchmarking of image registration methods for differently stained histological slides. In: 2018 IEEE International Conference on Image Processing (ICIP), IEEE, pp 3368--3372, \doi{10.1109/ICIP.2018.8451318}
+
+\bibitem[{Burlingame et~al.(2020)Burlingame, Margolin, Gray, and Chang}]{Burlingame2020}
+Burlingame EA, Margolin AA, Gray JW, et~al (2020) {SHIFT}: speedy histological-to-immunofluorescent translation of a tumor signature enabled by deep learning. Scientific Reports 10(1):17507. \doi{10.1038/s41598-020-74500-3}
+
+\bibitem[{Campanella et~al.(2019)Campanella, Hanna, Geneslaw, Miraflor, Werneck Krauss~Silva, Busam, Brogi, Reuter, Klimstra, and Fuchs}]{Campanella2019}
+Campanella G, Hanna MG, Geneslaw L, et~al (2019) Clinical-grade computational pathology using weakly supervised deep learning on whole slide images. Nature Medicine 25(8):1301--1309. \doi{10.1038/s41591-019-0508-1}
+
+\bibitem[{Cassetta and Pollard(2020)}]{Cassetta2020}
+Cassetta L, Pollard JW (2020) Tumor-associated macrophages. Current Biology 30(15):R830--R838. \doi{10.1016/j.cub.2020.06.075}
+
+\bibitem[{Chen et~al.(2021)Chen, Lu, Weng, Chen, Williamson, Manz, Shady, and Mahmood}]{Chen2021ICCV}
+Chen RJ, Lu MY, Weng WH, et~al (2021) Multimodal co-attention transformer for survival prediction in gigapixel whole slide images. In: Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), pp 4015--4025, \doi{10.1109/ICCV48922.2021.00398}
+
+\bibitem[{Cheng et~al.(2021)Cheng, Li, Gao, Xing, Gao, Yang, Qin, Zhang et~al.}]{Cheng2021}
+Cheng S, Li Z, Gao R, et~al (2021) A pan-cancer single-cell transcriptional atlas of tumor infiltrating myeloid cells. Cell 184(3):792--809.e23. \doi{10.1016/j.cell.2021.01.010}
+
+\bibitem[{Echle et~al.(2021)Echle, Rindtorff, Brinker, Luedde, Pearson, and Kather}]{Echle2021}
+Echle A, Rindtorff NT, Brinker TJ, et~al (2021) Deep learning in cancer pathology: a new generation of clinical biomarkers. British Journal of Cancer 124(4):686--696. \doi{10.1038/s41416-020-01122-x}
+
+\bibitem[{Fu et~al.(2020)Fu, Jung, Torne, Gonz{\'a}lez, V{\"o}hringer, Shmatko, Yates, Devereau, Dunning, Pearson, Kather, Koelzer et~al.}]{Fu2020}
+Fu Y, Jung AW, Torne RV, et~al (2020) Pan-cancer computational histopathology reveals mutations, tumor composition and prognosis. Nature Cancer 1(8):800--810. \doi{10.1038/s43018-020-0085-8}
+
+\bibitem[{Gatenbee et~al.(2023)Gatenbee, Baker, Prabhakaran, Santos, Sher, Anderson, Robertson-Tessi, Martinez, Carmon, Kang, Schorle, Kang et~al.}]{Gatenbee2023}
+Gatenbee CD, Baker AM, Prabhakaran S, et~al (2023) Virtual alignment of pathology image series for multi-gigapixel whole slide images. Nature Communications 14(1):4502. \doi{10.1038/s41467-023-40218-9}
+
+\bibitem[{Giesen et~al.(2014)Giesen, Wang, Schapiro, Ziber, Raber, Bodenmiller et~al.}]{Giesen2014}
+Giesen C, Wang HAO, Schapiro D, et~al (2014) Highly multiplexed imaging of tumor tissues with subcellular resolution by mass cytometry. Nature Methods 11(4):417--422. \doi{10.1038/nmeth.2869}
+
+\bibitem[{Goltsev and Nolan(2023)}]{Goltsev2023}
+Goltsev Y, Nolan GP (2023) {CODEX} multiplexed tissue imaging. Nature Reviews Methods Primers 3:13. \doi{10.1038/s43586-023-00196-w}
+
+\bibitem[{Goltsev et~al.(2018)Goltsev, Samusik, Kennedy-Darling, Bhate, Hale, Vazquez, Black, and Nolan}]{Goltsev2018}
+Goltsev Y, Samusik N, Kennedy-Darling J, et~al (2018) Deep profiling of mouse splenic architecture with {CODEX} multiplexed imaging. Cell 174(4):968--981.e15. \doi{10.1016/j.cell.2018.07.010}
+
+\bibitem[{de~Haan et~al.(2021)de~Haan, Zhang, Zuckerman, Liu, Sisk, Diaz, Jen, Nobori, Liber, Wallace, and Ozcan}]{deHaan2021}
+de~Haan K, Zhang Y, Zuckerman JE, et~al (2021) Deep learning-based transformation of {H\&E} stained tissues into special stains. Nature Communications 12(1):4884. \doi{10.1038/s41467-021-25221-2}
+
+\bibitem[{Jackson et~al.(2020)Jackson, Fischer, Zanotelli, Ali, Mechera, Soysal, Borowsky, Pothula, Peters, Snijder, Spahn, Ghosh, Gerber, Schapiro, and Bodenmiller}]{Jackson2020}
+Jackson HW, Fischer JR, Zanotelli VRT, et~al (2020) The single-cell pathology landscape of breast cancer. Nature 578(7796):615--620. \doi{10.1038/s41586-019-1876-x}
+
+\bibitem[{Johnson and Khoshgoftaar(2019)}]{Johnson2019}
+Johnson JM, Khoshgoftaar TM (2019) Survey on deep learning with class imbalance. Journal of Big Data 6(1):27. \doi{10.1186/s40537-019-0192-5}
+
+\bibitem[{Lewis et~al.(2021)Lewis, Asselin-Labat, Nguyen, Berthelet, Tan, Wimmer, Merino, Rogers, and Naik}]{Lewis2021}
+Lewis SM, Asselin-Labat ML, Nguyen Q, et~al (2021) Spatial omics and multiplexed imaging to explore cancer biology. Nature Methods 18(9):997--1012. \doi{10.1038/s41592-021-01203-6}
+
+\bibitem[{Liu et~al.(2021)Liu, Lin, Cao, Hu, Wei, Zhang, Lin, and Guo}]{Liu2021Swin}
+Liu Z, Lin Y, Cao Y, et~al (2021) Swin {Transformer}: Hierarchical vision transformer using shifted windows. In: Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), pp 10012--10022, \doi{10.1109/ICCV48922.2021.00986}
+
+\bibitem[{Macenko et~al.(2009)Macenko, Niethammer, Marron, Borland, Woosley, Guan, Schmitt, and Thomas}]{Macenko2009}
+Macenko M, Niethammer M, Marron JS, et~al (2009) A method for normalizing histology slides for quantitative analysis. In: 2009 IEEE International Symposium on Biomedical Imaging: From Nano to Macro, IEEE, pp 1107--1110, \doi{10.1109/ISBI.2009.5193250}
+
+\bibitem[{Marusyk et~al.(2020)Marusyk, Janiszewska, and Polyak}]{Marusyk2020}
+Marusyk A, Janiszewska M, Polyak K (2020) Intratumor heterogeneity: the {Rosetta} {Stone} of therapy resistance. Cancer Cell 37(4):471--484. \doi{10.1016/j.ccell.2020.03.007}
+
+\bibitem[{Marx(2021)}]{Marx2021}
+Marx V (2021) Method of the {Year}: spatially resolved transcriptomics. Nature Methods 18(1):9--14. \doi{10.1038/s41592-020-01033-y}
+
+\bibitem[{Moldoveanu et~al.(2022)Moldoveanu, Ramsay, Labert et~al.}]{Moldoveanu2022}
+Moldoveanu D, Ramsay L, Labert M, et~al (2022) Spatially mapping the immune landscape of melanoma using imaging mass cytometry. Science Immunology 7(70):eabi5072. \doi{10.1126/sciimmunol.abi5072}
+
+\bibitem[{Mulder et~al.(2021)Mulder, Patel, Kong, Piot, Zellmer, Schr{\"o}der, Wharton, Christiakis, Lindner, Hartmann et~al.}]{Mulder2021}
+Mulder K, Patel AA, Kong WT, et~al (2021) Cross-tissue single-cell landscape of human monocytes and macrophages in health and disease. Immunity 54(8):1883--1900.e5. \doi{10.1016/j.immuni.2021.07.007}
+
+\bibitem[{Naik et~al.(2020)Naik, Madani, Esteva, Keskar, Press, Ruderman, Agus, and Socher}]{Naik2020}
+Naik N, Madani A, Esteva A, et~al (2020) Deep learning-enabled breast cancer hormonal receptor status determination from base-level {H\&E} stains. Nature Communications 11(1):5727. \doi{10.1038/s41467-020-19334-3}
+
+\bibitem[{Palla et~al.(2022)Palla, Spitzer, Klein, Fischer, Schaar, Kuemmerle, Rybakov, Ibarra, Holick, Takber et~al.}]{Palla2022}
+Palla G, Spitzer H, Klein M, et~al (2022) Squidpy: a scalable framework for spatial omics analysis. Nature Methods 19(2):171--178. \doi{10.1038/s41592-021-01358-2}
+
+\bibitem[{Pati et~al.(2022)Pati, Jaume, Foncubierta-Rodr{\'\i}guez, Fabia, Feroce, Hefer, Guerin, Sohler, Bruschek, Gabrani, and Goksel}]{Pati2022}
+Pati P, Jaume G, Foncubierta-Rodr{\'\i}guez A, et~al (2022) Hierarchical graph representations in digital pathology. Medical Image Analysis 75:102264. \doi{10.1016/j.media.2021.102264}
+
+\bibitem[{Peranzoni et~al.(2018)Peranzoni, Lemoine, Vimeux, Feuillet, Barrin, Kantari-Mimoun, Bercovici, Gurin, Germain, Bergeron et~al.}]{Peranzoni2018}
+Peranzoni E, Lemoine J, Vimeux L, et~al (2018) Macrophages impede {CD8 T} cells from reaching tumor cells and limit the efficacy of anti--{PD-1} treatment. Proceedings of the National Academy of Sciences 115(17):E4041--E4050. \doi{10.1073/pnas.1720948115}
+
+\bibitem[{Qi et~al.(2022)Qi, Sun, Zhang, Wang, Xun, Li, Ding, Bao, Hong, Jia et~al.}]{Qi2022}
+Qi J, Sun H, Zhang Y, et~al (2022) Single-cell and spatial analysis reveal interaction of {FAP+} fibroblasts and {SPP1+} macrophages in colorectal cancer. Nature Communications 13(1):1742. \doi{10.1038/s41467-022-29366-6}
+
+\bibitem[{Qian and Pollard(2010)}]{Qian2010}
+Qian BZ, Pollard JW (2010) Macrophage diversity enhances tumor progression and metastasis. Cell 141(1):39--51. \doi{10.1016/j.cell.2010.03.014}
+
+\bibitem[{{RareCyte, Inc.}(2024)}]{RareCyte2024}
+{RareCyte, Inc.} (2024) Orion instrument platform: Technical documentation. \url{https://rarecyte.com/orion/}, accessed: 2024
+
+\bibitem[{Rivenson et~al.(2019)Rivenson, Wang, Wei, de~Haan, Zhang, Wu, G{\"u}naydın, Zuckerman, Chong, Sisk, Westbrook, Wallace, and Ozcan}]{Rivenson2019}
+Rivenson Y, Wang H, Wei Z, et~al (2019) Virtual histological staining of unlabelled tissue-autofluorescence images via deep learning. Nature Biomedical Engineering 3(6):466--477. \doi{10.1038/s41551-019-0362-y}
+
+\bibitem[{Rivenson et~al.(2020)Rivenson, de~Haan, Wallace, and Ozcan}]{Rivenson2020}
+Rivenson Y, de~Haan K, Wallace WD, et~al (2020) Emerging advances to transform histopathology using virtual staining. BME Frontiers 2020:9647163. \doi{10.34133/2020/9647163}
+
+\bibitem[{Ronneberger et~al.(2015)Ronneberger, Fischer, and Brox}]{Ronneberger2015}
+Ronneberger O, Fischer P, Brox T (2015) {U-Net}: Convolutional networks for biomedical image segmentation. In: Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2015. Springer, pp 234--241, \doi{10.1007/978-3-319-24574-4_28}
+
+\bibitem[{Sch{\"u}rch et~al.(2020)Sch{\"u}rch, Bhate, Barlow, Phillips, Noti, Zlobec, Chu, Black, Dember, McIlwain, Kinber, Samusik, Goltsev, and Nolan}]{Schurch2020}
+Sch{\"u}rch CM, Bhate SS, Barlow GL, et~al (2020) Coordinated cellular neighborhoods orchestrate antitumoral immunity at the colorectal cancer invasive front. Cell 182(5):1341--1359.e19. \doi{10.1016/j.cell.2020.07.005}
+
+\bibitem[{Stringer et~al.(2021)Stringer, Wang, Michaelos, and Pachitariu}]{Stringer2021}
+Stringer C, Wang T, Michaelos M, et~al (2021) Cellpose: a generalist algorithm for cellular segmentation. Nature Methods 18(1):100--106. \doi{10.1038/s41592-020-01018-x}
+
+\bibitem[{Tan et~al.(2020)Tan, Nerurkar, Cai, Ng, Wu, Wee, Lim, Yeong, and Lim}]{Tan2020}
+Tan WCC, Nerurkar SN, Cai HY, et~al (2020) Overview of multiplex immunohistochemistry/immunofluorescence techniques in the era of cancer immunotherapy. Cancer Communications 40(4):135--153. \doi{10.1002/cac2.12023}
+
+\bibitem[{Thorsson et~al.(2018)Thorsson, Gibbs, Brown, Wolf, Bortone, Ou~Yang, Porta-Pardo, Gao, Plaisier, Eddy, Ziv, Culhane, Paull, Sivakumar, Gentles, Malhotra, Farshidfar, Colaprico, Parker, Mose et~al.}]{Thorsson2018}
+Thorsson V, Gibbs DL, Brown SD, et~al (2018) The immune landscape of cancer. Immunity 48(4):812--830.e14. \doi{10.1016/j.immuni.2018.03.023}
+
+\bibitem[{Xu et~al.(2017)Xu, Jia, Wang, Ai, Zhang, Lai, and Chang}]{Xu2017}
+Xu Y, Jia Z, Wang LB, et~al (2017) Large scale tissue histopathology image classification, segmentation, and visualization via deep learning. BMC Bioinformatics 18(1):281. \doi{10.1186/s12859-017-1685-x}
+
+\bibitem[{Zarella et~al.(2019)Zarella, Bowman, Aeffner, Farahani, Xthona, Abber, Goldstein, Sheth, Patel, Shah et~al.}]{Zarella2019}
+Zarella MD, Bowman D, Aeffner F, et~al (2019) A practical guide to whole slide imaging: a white paper from the {Digital Pathology Association}. Archives of Pathology \& Laboratory Medicine 143(2):222--234. \doi{10.5858/arpa.2018-0343-RA}
+
+\bibitem[{Zhang et~al.(2020{\natexlab{a}})Zhang, Li, Skrber, Heber, Russel, Hu, Liu, Li, Colonna et~al.}]{Zhang2020Cell}
+Zhang L, Li Z, Skrber KM, et~al (2020{\natexlab{a}}) Single-cell analyses inform mechanisms of myeloid-targeted therapies in colon cancer. Cell 181(2):442--459.e29. \doi{10.1016/j.cell.2020.03.048}
+
+\bibitem[{Zhang et~al.(2020{\natexlab{b}})Zhang, de~Haan, Rivenson, Li, Deber, and Ozcan}]{Zhang2020LightSci}
+Zhang Y, de~Haan K, Rivenson Y, et~al (2020{\natexlab{b}}) Digital synthesis of histological stains using micro-structured and multiplexed virtual staining of label-free tissue. Light: Science \& Applications 9(1):78. \doi{10.1038/s41377-020-0315-y}
+
+\end{thebibliography}

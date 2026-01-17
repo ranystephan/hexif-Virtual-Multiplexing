@@ -1,0 +1,709 @@
+%Version 3.1 December 2024
+% See section 11 of the User Manual for version history
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%\documentclass[referee,sn-basic]{sn-jnl}% referee option is meant for double line spacing
+
+%%=======================================================%%
+%% to print line numbers in the margin use lineno option %%
+%%=======================================================%%
+
+\documentclass[lineno,pdflatex,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+
+%%=========================================================================================%%
+%% the documentclass is set to pdflatex as default. You can delete it if not appropriate.  %%
+%%=========================================================================================%%
+
+%%\documentclass[sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+
+%%Note: the following reference styles support Namedate and Numbered referencing. By default the style follows the most common style. To switch between the options you can add or remove Numbered in the optional parenthesis. 
+%%The option is available for: sn-basic.bst, sn-chicago.bst%  
+ 
+%%\documentclass[pdflatex,sn-nature]{sn-jnl}% Style for submissions to Nature Portfolio journals
+%%\documentclass[pdflatex,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+%%\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}% Math and Physical Sciences Numbered Reference Style
+%%\documentclass[pdflatex,sn-mathphys-ay]{sn-jnl}% Math and Physical Sciences Author Year Reference Style
+%%\documentclass[pdflatex,sn-aps]{sn-jnl}% American Physical Society (APS) Reference Style
+%%\documentclass[pdflatex,sn-vancouver-num]{sn-jnl}% Vancouver Numbered Reference Style
+%%\documentclass[pdflatex,sn-vancouver-ay]{sn-jnl}% Vancouver Author Year Reference Style
+%%\documentclass[pdflatex,sn-apa]{sn-jnl}% APA Reference Style
+%%\documentclass[pdflatex,sn-chicago]{sn-jnl}% Chicago-based Humanities Reference Style
+
+%%%% Standard Packages
+%%<additional latex packages if required can be included here>
+
+\usepackage{graphicx}%
+\usepackage{multirow}%
+\usepackage{amsmath,amssymb,amsfonts}%
+\usepackage{amsthm}%
+\usepackage{mathrsfs}%
+\usepackage[title]{appendix}%
+\usepackage{xcolor}%
+\usepackage{textcomp}%
+\usepackage{manyfoot}%
+\usepackage{booktabs}%
+\usepackage{algorithm}%
+\usepackage{algorithmicx}%
+\usepackage{algpseudocode}%
+\usepackage{listings}%
+%%%%
+
+%%%%%=============================================================================%%%%
+%%%%  Remarks: This template is provided to aid authors with the preparation
+%%%%  of original research articles intended for submission to journals published 
+%%%%  by Springer Nature. The guidance has been prepared in partnership with 
+%%%%  production teams to conform to Springer Nature technical requirements. 
+%%%%  Editorial and presentation requirements differ among journal portfolios and 
+%%%%  research disciplines. You may find sections in this template are irrelevant 
+%%%%  to your work and are empowered to omit any such section if allowed by the 
+%%%%  journal you intend to submit to. The submission guidelines and policies 
+%%%%  of the journal take precedence. A detailed User Manual is available in the 
+%%%%  template package for technical guidance.
+%%%%%=============================================================================%%%%
+
+%% as per the requirement new theorem styles can be included as shown below
+\theoremstyle{thmstyleone}%
+\newtheorem{theorem}{Theorem}%  meant for continuous numbers
+%%\newtheorem{theorem}{Theorem}[section]% meant for sectionwise numbers
+%% optional argument [theorem] produces theorem numbering sequence instead of independent numbers for Proposition
+\newtheorem{proposition}[theorem]{Proposition}% 
+%%\newtheorem{proposition}{Proposition}% to get separate numbers for theorem and proposition etc.
+
+\theoremstyle{thmstyletwo}%
+\newtheorem{example}{Example}%
+\newtheorem{remark}{Remark}%
+
+\theoremstyle{thmstylethree}%
+\newtheorem{definition}{Definition}%
+
+\raggedbottom
+%%\unnumbered% uncomment this for unnumbered level heads
+
+\begin{document}
+
+\title[HExIF: Virtual Multiplex Immunofluorescence]{HExIF: An End-to-End Deep Learning Framework for Virtual Multiplex Immunofluorescence from H\&E Slides}
+
+%%=============================================================%%
+%% GivenName	-> \fnm{Joergen W.}
+%% Particle	-> \spfx{van der} -> surname prefix
+%% FamilyName	-> \sur{Ploeg}
+%% Suffix	-> \sfx{IV}
+%% \author*[1,2]{\fnm{Joergen W.} \spfx{van der} \sur{Ploeg} 
+%%  \sfx{IV}}\email{iauthor@gmail.com}
+%%=============================================================%%
+
+\author*[1,2]{\fnm{Rany} \sur{Stephan}}\email{ranycs@stanford.edu}
+
+\author[1,2]{\fnm{Andrew} \sur{Gentles}}\email{andrewg@stanford.edu}
+
+\affil*[1]{\orgdiv{Institute for Computational and Mathematical Engineering}, \orgname{Stanford University}, \orgaddress{\state{California}, \country{USA}}}
+
+\affil[2]{\orgdiv{Department of Biomedical Data Science}, \orgname{Stanford University School of Medicine}, \orgaddress{\state{California}, \country{USA}}}
+
+%%==================================%%
+%% Sample for unstructured abstract %%
+%%==================================%%
+
+\abstract{Multiplexed immunofluorescence imaging has emerged as a powerful technology for characterizing the spatial organization of the tumor microenvironment at single-cell resolution. However, these technologies remain costly, time-intensive, and require specialized equipment, limiting their adoption in routine clinical practice. Here, we present HExIF (Hematoxylin and Eosin to Immunofluorescence), a computational framework for predicting spatially-resolved multiplex protein expression directly from standard hematoxylin and eosin (H\&E)-stained tissue sections. Our approach integrates automated image registration, tissue segmentation, and a deep learning architecture based on hierarchical vision transformers to simultaneously predict expression patterns across a 20-marker immunofluorescence panel \textcolor{red}{TODO: change this when done with CODEX as well}. The framework employs a multi-component loss function designed to address the challenges of sparse marker expression and channel-specific intensity distributions. We demonstrate the methodology on an Orion multiplex imaging dataset with markers targeting macrophage subpopulations, T cell subtypes, and stromal components. This work establishes a foundation for virtual multiplexing that may accelerate spatial biomarker discovery and enable retrospective analysis of archival H\&E specimens.}
+
+\keywords{Computational pathology \and Virtual staining \and Multiplex immunofluorescence \and Deep learning \and Tumor microenvironment \and Spatial transcriptomics}
+
+\maketitle
+
+%% ===================================================================
+%% SECTION 1: INTRODUCTION
+%% ===================================================================
+
+\section{Introduction}\label{sec:intro}
+
+Understanding the spatial organization of cells within the tumor microenvironment (TME) has become a central focus in cancer research and precision oncology \cite{Binnewies2018}. The TME comprises a complex ecosystem of malignant cells, immune infiltrates, stromal components, and vasculature, whose spatial relationships profoundly influence disease progression, therapeutic response, and patient outcomes \cite{Schurch2020}. While bulk profiling methods have provided valuable insights into the molecular landscape of tumors, they inherently obscure the spatial heterogeneity that underlies critical biological phenomena such as immune evasion, metabolic adaptation, and therapeutic resistance \cite{Marusyk2020}.
+
+Recent advances in multiplexed imaging technologies---including CO-Detection by indEXing (CODEX), Multiplexed Ion Beam Imaging (MIBI), Imaging Mass Cytometry (IMC), and cyclic immunofluorescence platforms such as Orion---have enabled simultaneous visualization of dozens to hundreds of protein markers at subcellular resolution \cite{Goltsev2018, Angelo2014, Giesen2014}. These technologies have revealed previously unappreciated cellular neighborhoods, immune niches, and spatially-defined phenotypic states that carry prognostic and predictive significance across multiple cancer types \cite{Jackson2020}. However, multiplexed imaging remains constrained by substantial cost, specialized instrumentation, extended acquisition times, and complex experimental workflows, limiting its scalability for large cohort studies and routine clinical deployment.
+
+In contrast, hematoxylin and eosin (H\&E) staining represents the cornerstone of diagnostic pathology, with billions of archived specimens available worldwide \cite{Zarella2019}. H\&E imaging is inexpensive, rapid, and universally accessible, yet it provides only morphological information without the molecular specificity of immunolabeling. This disparity has motivated growing interest in computational approaches that leverage deep learning to infer molecular features from H\&E images, an approach broadly termed ``virtual staining'' or ``in silico immunohistochemistry'' \cite{Rivenson2020}.
+
+\subsection{Spatial Single-Cell Imaging in Computational Pathology}\label{subsec:spatial_imaging}
+
+The emergence of spatial single-cell imaging has catalyzed a paradigm shift in how we conceptualize tissue architecture and cellular interactions \cite{Lewis2021}. Unlike traditional immunohistochemistry (IHC), which typically permits visualization of only one to three markers simultaneously, multiplexed platforms enable comprehensive phenotyping of individual cells within their native tissue context. This capability has proven particularly valuable for dissecting the immune microenvironment, where the functional state of immune cells depends critically on their spatial positioning relative to tumor cells, vasculature, and other stromal elements \cite{Moldoveanu2022}.
+
+Orion, the multiplexed imaging platform employed in this study, utilizes cyclic immunofluorescence with spectrally-resolved detection to achieve simultaneous 20-channel imaging \cite{RareCyte2024}. The marker panel used in this work was designed to capture key populations of the myeloid and lymphoid compartments, with particular emphasis on macrophage heterogeneity. Specifically, the panel includes markers for: nuclear identification (Hoechst); macrophage lineage and polarization (CD68, IBA1, CD163, FOLR2, SPP1); T cell subsets (CD3$\varepsilon$, CD8$\alpha$, FOXP3); stromal components (FAP, SMA, Pan-CK); and additional markers relevant to immune function and tissue architecture (NLRP3, GFPT2, CD15, LYVE1, IL-4I1).
+
+\subsection{Immune Microenvironment Heterogeneity and Biological Motivation}\label{subsec:immune_heterogeneity}
+
+The tumor immune microenvironment exhibits profound spatial heterogeneity that has emerged as a critical determinant of clinical outcomes and therapeutic response \cite{Thorsson2018}. Among immune cell populations, tumor-associated macrophages (TAMs) have attracted particular attention due to their remarkable plasticity and context-dependent functions that can either promote or suppress tumor progression \cite{Cassetta2020}.
+
+Macrophages represent a phenotypically diverse population that defies simple classification into discrete subtypes. While the classical M1/M2 polarization paradigm provided an initial conceptual framework, single-cell and spatial analyses have revealed a continuum of macrophage states that vary with tissue context, disease stage, and spatial localization within the TME \cite{Mulder2021}. Markers such as CD163 and FOLR2 have been associated with alternatively-activated or tissue-resident macrophage phenotypes, while SPP1 (osteopontin) expression marks a distinct macrophage population with pro-tumorigenic and pro-fibrotic properties \cite{Bill2023}. The inflammasome component NLRP3 and the immunomodulatory enzyme IL-4I1 provide additional resolution for distinguishing macrophage functional states.
+
+The spatial distribution of macrophage subpopulations carries prognostic significance across multiple tumor types. Studies have demonstrated that the proximity of specific macrophage phenotypes to tumor cells, vasculature, and lymphocyte populations correlates with clinical outcomes and response to immunotherapy \cite{Qi2022}. However, comprehensive spatial characterization of macrophage heterogeneity currently requires multiplexed imaging, motivating the development of computational approaches to infer this information from more accessible H\&E specimens.
+
+\subsection{Limitations of Current Spatial Phenotyping Pipelines}\label{subsec:limitations}
+
+Existing approaches to virtual staining and computational immunohistochemistry face several methodological challenges that limit their utility for comprehensive spatial phenotyping:
+
+\textbf{Single-marker prediction.} The majority of published methods focus on predicting individual immunohistochemical stains, such as Ki-67, HER2, or PD-L1 \cite{Xu2017, Naik2020}. While valuable, this approach fails to capture the correlated expression patterns and spatial relationships among multiple markers that define cellular phenotypes and tissue organization.
+
+\textbf{Limited marker panels.} Methods that do address multi-marker prediction typically target small panels of 3--5 markers, insufficient for comprehensive immune phenotyping \cite{Fu2020}. Scaling to larger panels introduces challenges related to class imbalance, heterogeneous expression distributions, and increased model complexity.
+
+\textbf{Sparsity and class imbalance.} Many markers of biological interest---particularly those identifying rare immune populations---exhibit highly sparse expression patterns, with positive cells comprising less than 1\% of the tissue area. Standard regression losses struggle to capture these sparse signals, often producing models that underestimate rare events \cite{REF_class_imbalance}.
+
+\textbf{Registration and alignment.} Generating paired H\&E and multiplexed imaging data requires precise image registration, a non-trivial task given differences in tissue processing, sectioning, and imaging modalities. Registration errors propagate into training data noise, degrading model performance \cite{REF_registration}.
+
+\textbf{Intensity normalization.} Multiplexed imaging data exhibits substantial variability in intensity distributions across channels, experimental batches, and tissue types. Appropriate normalization strategies are essential for training stable models and ensuring transferability \cite{REF_normalization}.
+
+\subsection{Study Objectives and Contributions}\label{subsec:contributions}
+
+This work presents HExIF (Hematoxylin and Eosin to Immunofluorescence), an end-to-end computational framework for predicting spatially-resolved multiplex immunofluorescence from standard H\&E-stained tissue sections. Our primary contributions are:
+
+\begin{enumerate}
+    \item \textbf{Comprehensive pipeline architecture.} We develop an integrated workflow encompassing automated image registration, tissue segmentation, training data generation, and deep learning-based prediction. The pipeline leverages the VALIS registration framework for robust multimodal alignment and employs morphological analysis for tissue microarray (TMA) core detection.
+    
+    \item \textbf{20-channel simultaneous prediction.} Unlike prior work focused on single markers or limited panels, our approach predicts a comprehensive 20-marker Orion immunofluorescence panel from H\&E input. The marker panel enables detailed characterization of macrophage subpopulations, T cell subtypes, and stromal architecture.
+    
+    \item \textbf{Channel-aware training strategy.} We introduce adaptive sampling and loss weighting strategies that address the challenges of heterogeneous marker expression patterns. Channel-specific coverage statistics guide both training sample selection and loss computation, ensuring that rare markers receive adequate representation.
+    
+    \item \textbf{Multi-component loss function.} The training objective combines center-window weighted reconstruction loss, per-channel coverage matching, structural similarity constraints, total variation regularization, and an auxiliary marker presence classification head. This composite loss addresses multiple failure modes including intensity underestimation, spatial blurring, and hallucinated artifacts.
+    
+    \item \textbf{Scalable distributed training.} The implementation supports multi-GPU distributed training via PyTorch DistributedDataParallel, enabling efficient processing of large-scale imaging datasets. Global intensity normalization parameters are computed on the training set and synchronized across processes.
+\end{enumerate}
+
+The current work focuses on methodology development and validation using an Orion multiplex imaging dataset. We describe the computational approach in detail and present the framework as a foundation for subsequent quantitative evaluation and biological validation. Future extensions will incorporate additional multiplexed imaging modalities including CODEX, enabling cross-platform generalization studies.
+
+%% ===================================================================
+%% SECTION 2: RELATED WORK
+%% ===================================================================
+
+\section{Related Work}\label{sec:related}
+
+\subsection{Multiplexed Imaging Technologies}\label{subsec:multiplex_tech}
+
+The past decade has witnessed rapid development of multiplexed tissue imaging technologies that enable simultaneous detection of numerous protein markers at single-cell resolution. These platforms can be broadly categorized by their detection modality: mass spectrometry-based methods (IMC, MIBI), cyclic immunofluorescence (CODEX, CyCIF, Orion), and antibody-DNA barcoding approaches (CODEX) \cite{REF_multiplex_review}.
+
+\textbf{CODEX (CO-Detection by indEXing)} employs oligonucleotide-conjugated antibodies with iterative fluorescent reporter hybridization, enabling panels of 40--60 markers \cite{REF_CODEX}. The platform has been extensively applied to characterize immune organization in lymphoid tissues, tumor microenvironments, and inflammatory diseases. Goltsev and colleagues demonstrated its utility for mapping spatially-defined immune niches in normal and diseased tissues \cite{REF_Goltsev_CODEX}.
+
+\textbf{Imaging Mass Cytometry (IMC)} and \textbf{MIBI} utilize metal-tagged antibodies with mass spectrometry detection, achieving panels of 40+ markers with subcellular resolution \cite{REF_IMC, REF_MIBI}. While offering excellent multiplexing capacity and minimal spectral overlap, these platforms have lower throughput and require specialized instrumentation.
+
+\textbf{Orion} and related cyclic immunofluorescence platforms achieve multiplexing through iterative staining and imaging cycles with spectrally-resolved fluorophore detection \cite{RareCyte2024}. The ArgoFluor series employed in this study provides 20-channel capacity with optimized spectral separation. These platforms balance multiplexing capacity with relatively accessible instrumentation and established immunofluorescence workflows.
+
+\subsection{Computational Pathology for Spatial Omics}\label{subsec:comp_path}
+
+Computational pathology encompasses a broad range of methods for extracting quantitative information from tissue images, with applications spanning diagnosis, prognosis, and biomarker discovery \cite{REF_comp_path_review}. The integration of deep learning has transformed the field, enabling extraction of features that correlate with molecular alterations, treatment response, and survival outcomes from standard histopathology images \cite{REF_DL_path}.
+
+Within the spatial omics context, computational methods address several interrelated tasks: cell segmentation and phenotyping, spatial neighborhood analysis, and integration with molecular profiling data \cite{REF_spatial_analysis_review}. Cell segmentation in multiplexed imaging typically employs nuclear detection followed by cytoplasmic boundary estimation, with recent approaches leveraging deep learning for improved accuracy \cite{REF_cell_seg}. Following segmentation, cells are phenotyped based on marker expression patterns, often using clustering approaches or supervised classification.
+
+\subsection{Machine Learning for Cellular Phenotyping}\label{subsec:ml_phenotyping}
+
+Deep learning approaches for cellular phenotyping in tissue images have evolved from simple convolutional architectures to sophisticated multi-task and transformer-based models \cite{REF_DL_phenotyping}. Key methodological advances include:
+
+\textbf{U-Net and encoder-decoder architectures} have become the dominant paradigm for dense prediction tasks in pathology, providing both localization and context through skip connections \cite{REF_UNet}. Variants incorporating attention mechanisms, residual connections, and multi-scale feature aggregation have demonstrated improved performance on segmentation and regression tasks.
+
+\textbf{Vision transformers} have recently emerged as powerful alternatives to convolutional networks for pathology applications \cite{REF_ViT_path}. The Swin Transformer architecture, which employs shifted windows for efficient self-attention computation, has shown particular promise for capturing long-range dependencies in tissue images \cite{REF_Swin}. We adopt a Swin Transformer encoder with a feature pyramid decoder in this work.
+
+\textbf{Virtual staining} methods aim to computationally transform images from one staining modality to another. Rivenson and colleagues pioneered deep learning-based virtual staining, demonstrating that autofluorescence images could be transformed to appear as if H\&E-stained \cite{REF_Rivenson}. Subsequent work has extended this concept to various stain transformations including H\&E to IHC \cite{REF_HE_IHC}, unstained to H\&E \cite{REF_unstained_HE}, and autofluorescence to multiple special stains \cite{REF_AF_virtual}.
+
+\textbf{HistoPlexer}, developed by Andani and colleagues, represents a significant advance in multi-marker prediction from histopathology images \cite{REF_HistoPlexer}. Their approach employs a conditional generative model to predict multiplex immunofluorescence patterns, demonstrating feasibility of comprehensive virtual multiplexing. Our work builds on this foundation while introducing several methodological innovations including channel-aware sampling and multi-component loss design.
+
+\subsection{Spatial Statistics and Microenvironment Modeling}\label{subsec:spatial_stats}
+
+Quantitative analysis of spatial patterns in tissue images draws on methods from spatial statistics, graph theory, and computational geometry \cite{REF_spatial_stats}. Common approaches include:
+
+\textbf{Spatial point patterns} characterize the distribution of cells through summary statistics such as Ripley's K function, nearest neighbor distances, and spatial correlation functions \cite{REF_point_patterns}. These methods quantify clustering, dispersion, and co-localization among cell populations.
+
+\textbf{Graph-based representations} model tissue architecture as networks where nodes represent cells and edges encode spatial relationships \cite{REF_graph_tissue}. Community detection algorithms can identify cellular neighborhoods, while graph neural networks enable learning of spatial features for downstream prediction tasks.
+
+\textbf{Spatial transcriptomics integration} combines imaging-based protein measurements with RNA profiling to provide complementary molecular and spatial information \cite{REF_spatial_tx}. While outside the scope of this work, such integration represents an important direction for comprehensive tissue characterization.
+
+\subsection{Macrophage Biology and Spatial Immunology}\label{subsec:macrophage_bio}
+
+Tumor-associated macrophages represent one of the most abundant immune populations in the tumor microenvironment, comprising up to 50\% of the tumor mass in some cancer types \cite{REF_TAM_abundance}. Their functional diversity and plasticity have made them both challenging to characterize and attractive as therapeutic targets.
+
+Single-cell transcriptomic studies have identified multiple macrophage subpopulations within tumors, including SPP1$^{+}$ macrophages associated with tissue remodeling and angiogenesis, FOLR2$^{+}$ macrophages with tissue-resident phenotypes, and inflammatory macrophages expressing NLRP3 and other inflammasome components \cite{REF_TAM_scRNA}. Importantly, these subpopulations exhibit distinct spatial distributions, with SPP1$^{+}$ macrophages enriched at the tumor-stroma interface and FOLR2$^{+}$ macrophages in perivascular regions \cite{REF_TAM_spatial_dist}.
+
+The spatial organization of macrophages relative to T cells has emerged as a critical determinant of immunotherapy response. Studies have demonstrated that physical proximity between macrophages and CD8$^{+}$ T cells influences T cell activation, exhaustion, and cytotoxic function \cite{REF_TAM_Tcell}. Spatial metrics quantifying macrophage-T cell interactions have shown prognostic value in multiple cancer types and may predict response to immune checkpoint blockade.
+
+Given the biological importance of macrophage spatial heterogeneity, we designed our marker panel to enable detailed characterization of macrophage subpopulations. The inclusion of CD68 (pan-macrophage), IBA1 (microglial/macrophage lineage), CD163 (alternative activation), FOLR2 (tissue-resident), SPP1 (pro-fibrotic), NLRP3 (inflammasome), and IL-4I1 (immunomodulatory) provides comprehensive coverage of macrophage diversity relevant to tumor immunity.
+
+%% ===================================================================
+%% SECTION 3: DATA AND IMAGING MODALITIES
+%% ===================================================================
+
+\section{Data and Imaging Modalities}\label{sec:data}
+
+\subsection{Orion Multiplex Imaging Platform}\label{subsec:orion_platform}
+
+The Orion multiplex imaging platform enables simultaneous detection of 20 protein markers through cyclic immunofluorescence with spectrally-resolved ArgoFluor detection \cite{RareCyte2024}. Unlike sequential staining approaches that require tissue stripping between cycles, Orion employs spectral unmixing algorithms to resolve overlapping fluorophore emissions, enabling single-round acquisition of the complete marker panel.
+
+Image acquisition generates a multi-channel OME-TIFF stack with 20 fluorescence channels plus optional brightfield reference. Native resolution varies by objective but typically achieves subcellular detail sufficient for nuclear morphology and membrane marker localization. For this study, registered images were processed at full resolution prior to patch extraction for model training.
+
+\subsection{Marker Panel and Biological Annotation}\label{subsec:marker_panel}
+
+The 20-channel Orion panel employed in this study was designed to comprehensively characterize the tumor immune microenvironment with emphasis on myeloid diversity. Table~\ref{tab:markers} provides the complete marker list with biological annotations.
+
+\begin{table}[h]
+\caption{Orion 20-channel marker panel with biological annotations.}\label{tab:markers}
+\begin{tabular*}{\textwidth}{@{\extracolsep\fill}clll}
+\toprule
+Channel & Marker & Fluorophore & Biological Function \\
+\midrule
+01 & Hoechst & -- & Nuclear DNA stain \\
+02 & AF1 & -- & Autofluorescence control \\
+03 & SPP1 & ArgoFluor520 & Macrophage (pro-fibrotic) \\
+04 & CD68 & ArgoFluor555L & Pan-macrophage/monocyte \\
+05 & CD3$\varepsilon$ & ArgoFluor548 & Pan-T cell \\
+06 & AF2 & -- & Autofluorescence control \\
+07 & IBA1 & ArgoFluor660L & Microglia/macrophage \\
+08 & -- & ArgoFluor572 & Reserved \\
+09 & FAP & ArgoFluor602 & Fibroblast activation \\
+10 & CD8$\alpha$ & ArgoFluor624 & Cytotoxic T cells \\
+11 & CD163 & ArgoFluor658 & M2/alternative macrophage \\
+12 & FOLR2 & ArgoFluor676 & Tissue-resident macrophage \\
+13 & GFPT2 & ArgoFluor698 & Metabolic enzyme \\
+14 & NLRP3 & ArgoFluor706 & Inflammasome \\
+15 & FOXP3 & ArgoFluor724 & Regulatory T cells \\
+16 & CD15 & ArgoFluor760 & Granulocytes \\
+17 & LYVE1 & ArgoFluor782 & Lymphatic endothelium \\
+18 & SMA & ArgoFluor812 & Smooth muscle/myofibroblast \\
+19 & Pan-CK & ArgoFluor845 & Epithelial cells \\
+20 & IL-4I1 & ArgoFluor874 & Immunomodulatory enzyme \\
+\botrule
+\end{tabular*}
+\end{table}
+
+The panel enables identification of key immune populations including: (1) macrophage subsets distinguishable by CD68, IBA1, CD163, FOLR2, SPP1, and IL-4I1 expression patterns; (2) T cell populations marked by CD3$\varepsilon$ with subset resolution via CD8$\alpha$ and FOXP3; (3) stromal components including FAP$^{+}$ cancer-associated fibroblasts and SMA$^{+}$ myofibroblasts; and (4) structural markers for epithelium (Pan-CK) and lymphatic vessels (LYVE1).
+
+\subsection{Image Acquisition and Raw Data Characteristics}\label{subsec:acquisition}
+
+Tissue microarray (TMA) specimens were processed following standard immunofluorescence protocols with antibody validation and spectral calibration per manufacturer recommendations. Whole-slide images were acquired at native Orion resolution with matched H\&E staining performed on serial sections.
+
+Raw Orion data exhibits several characteristics relevant to computational processing:
+\begin{itemize}
+    \item \textbf{Dynamic range heterogeneity}: Signal intensity varies by several orders of magnitude across channels, with Hoechst nuclear staining exhibiting the highest signal and markers such as IL-4I1 showing sparse, low-intensity expression.
+    \item \textbf{Spatial sparsity}: Many markers label rare cell populations, with positive pixels comprising less than 1--5\% of tissue area. This extreme class imbalance necessitates specialized training strategies.
+    \item \textbf{Background autofluorescence}: Channels AF1 and AF2 capture tissue autofluorescence for quality control and potential correction, though autofluorescence contribution varies by tissue type and processing.
+\end{itemize}
+
+\subsection{Planned Extension to CODEX Imaging}\label{subsec:codex_extension}
+
+While the current implementation focuses on Orion multiplex data, the framework architecture is designed for extension to additional multiplexed imaging modalities. CODEX imaging data from ccRCC (clear cell renal cell carcinoma) and ccOC (clear cell ovarian carcinoma) tissue microarrays will be incorporated in subsequent phases of this work. The CODEX panel includes 53 markers with substantial overlap to the Orion panel (CD3, CD8, CD68, CD163, FAP, CD15, SMA, Pan-CK), enabling cross-platform validation and transfer learning studies. Methodological adaptations for CODEX data will address differences in marker panel composition, intensity distributions, and spatial resolution.
+
+%% ===================================================================
+%% SECTION 4: COMPUTATIONAL PIPELINE OVERVIEW
+%% ===================================================================
+
+\section{Computational Pipeline Overview}\label{sec:pipeline}
+
+\subsection{System Architecture and Data Flow}\label{subsec:architecture}
+
+The HExIF pipeline comprises four major processing stages: (1) multimodal image registration, (2) tissue segmentation and region extraction, (3) training data generation with intensity normalization, and (4) deep learning model training and inference. Figure~\ref{fig:pipeline} provides a schematic overview of the complete workflow.
+
+The pipeline is implemented in Python with dependencies including PyVIPS for large-image handling, VALIS for registration, scikit-image for morphological processing, and PyTorch for deep learning components. Distributed training support enables efficient processing on multi-GPU systems.
+
+\subsection{Image Registration and Alignment}\label{subsec:registration}
+
+Accurate spatial alignment between H\&E and Orion images is essential for generating paired training data. We employ the VALIS (Virtual Alignment of pathoLogy Image Series) registration framework, which provides robust multimodal alignment through a combination of rigid and non-rigid transformations \cite{REF_VALIS}.
+
+The registration workflow proceeds as follows:
+\begin{enumerate}
+    \item \textbf{Image loading}: H\&E and Orion whole-slide images are loaded via Bio-Formats reader to ensure compatibility with vendor-specific OME-TIFF formats.
+    \item \textbf{Rigid alignment}: Initial global alignment is computed using intensity-based registration with mutual information similarity metric.
+    \item \textbf{Non-rigid refinement}: Local deformations are estimated using B-spline free-form deformation to accommodate tissue distortions from sectioning and processing.
+    \item \textbf{Warping}: The Orion multi-channel stack is warped to the H\&E coordinate system, producing pixel-level correspondence between modalities.
+\end{enumerate}
+
+Registration quality is assessed through overlay visualization and edge alignment metrics. Cores with substantial residual misalignment are flagged for manual review or exclusion from training.
+
+\subsection{Preprocessing and Artifact Handling}\label{subsec:preprocessing}
+
+Following registration, several preprocessing steps prepare the data for model training:
+
+\textbf{Tissue segmentation} distinguishes tissue regions from background using a combination of Laplacian edge detection and Otsu thresholding applied to H\&E images. The Laplacian filter emphasizes tissue boundaries, while Otsu's method provides adaptive binarization. Morphological closing and opening operations remove small artifacts and fill holes.
+
+\textbf{TMA core detection} identifies individual tissue cores within TMA images through connected component analysis of the tissue mask. Bounding boxes are computed for each core, and cores are extracted with consistent padding to ensure uniform patch dimensions.
+
+\textbf{Intensity normalization} addresses the substantial dynamic range differences across Orion channels. A global quantile-based scaling procedure is applied:
+\begin{equation}
+    \tilde{x}_{c}(u,v) = \frac{x_{c}(u,v) - q_{c}^{\text{low}}}{q_{c}^{\text{high}} - q_{c}^{\text{low}} + \epsilon}
+\end{equation}
+where $q_{c}^{\text{low}}$ and $q_{c}^{\text{high}}$ denote the 1st and 99.5th percentile intensities for channel $c$ computed across the training set. This normalization is followed by a log-transform:
+\begin{equation}
+    z_{c}(u,v) = \log\left(1 + \max(\tilde{x}_{c}(u,v), 0)\right)
+\end{equation}
+The log-transform compresses the dynamic range and stabilizes training for channels with Poisson-like noise characteristics. Quantile parameters are computed on the training set only and persisted for application to validation and test data.
+
+\subsection{Cell Segmentation and Nuclear Detection}\label{subsec:segmentation}
+
+While the current implementation focuses on pixel-level prediction rather than cell-level phenotyping, the Hoechst nuclear channel provides opportunity for downstream cell segmentation. Nuclear detection can be performed using standard approaches (e.g., Otsu thresholding, watershed) or deep learning-based methods. Predicted marker intensities can then be aggregated within nuclear or cellular regions for single-cell analysis.
+
+\subsection{Feature Extraction from Multiplex Channels}\label{subsec:features}
+
+The 20-channel Orion output encodes rich spatial and molecular information. For each predicted marker channel, relevant features include:
+\begin{itemize}
+    \item \textbf{Intensity statistics}: Mean, variance, and percentile values quantifying marker abundance.
+    \item \textbf{Spatial coverage}: Fraction of pixels exceeding expression threshold, indicating population prevalence.
+    \item \textbf{Texture features}: GLCM-based or learned features capturing spatial organization of marker expression.
+    \item \textbf{Co-localization}: Correlation and overlap metrics between marker pairs identifying co-expression patterns.
+\end{itemize}
+
+%% ===================================================================
+%% SECTION 5: MACHINE LEARNING FOR CELLULAR PHENOTYPING
+%% ===================================================================
+
+\section{Machine Learning for Cellular Phenotyping}\label{sec:ml}
+
+\subsection{Problem Formulation and Phenotype Definitions}\label{subsec:formulation}
+
+We formulate virtual multiplexing as a dense regression problem: given an H\&E image patch $\mathbf{X} \in \mathbb{R}^{H \times W \times 3}$, predict the corresponding multi-channel Orion intensity map $\mathbf{Y} \in \mathbb{R}^{H \times W \times C}$ where $C=20$ denotes the number of marker channels. The prediction is performed in log-transformed, quantile-normalized space to stabilize training dynamics.
+
+Let $f_\theta: \mathbb{R}^{H \times W \times 3} \rightarrow \mathbb{R}^{H \times W \times C}$ denote the neural network parameterized by $\theta$. The model produces non-negative outputs $\hat{\mathbf{Y}} = f_\theta(\mathbf{X})$ via Softplus activation, ensuring predictions lie in the valid intensity range.
+
+\subsection{Feature Representation and Normalization}\label{subsec:representation}
+
+H\&E input images are normalized using ImageNet statistics (mean $[0.485, 0.456, 0.406]$, standard deviation $[0.229, 0.224, 0.225]$), enabling effective transfer learning from pretrained vision encoders. Data augmentation during training includes random horizontal and vertical flips, rotation ($\pm 10°$), and color jittering (brightness, contrast, saturation, hue).
+
+Orion target channels undergo the global quantile scaling and log-transform described in Section~\ref{subsec:preprocessing}. This normalization ensures consistent intensity distributions across channels despite their heterogeneous dynamic ranges, while the log-transform emphasizes low-intensity signals that may otherwise be dominated by bright markers during training.
+
+\subsection{Learning Framework and Model Architecture}\label{subsec:model}
+
+We employ an encoder-decoder architecture combining a hierarchical vision transformer encoder with a feature pyramid decoder (Figure~\ref{fig:architecture}).
+
+\textbf{Encoder}: The Swin Transformer (swin\_tiny\_patch4\_window7\_224) provides the encoding backbone \cite{REF_Swin}. Swin Transformers partition the input image into non-overlapping patches and apply self-attention within local windows, achieving linear computational complexity with respect to image size. The hierarchical design produces multi-scale features at 1/4, 1/8, 1/16, and 1/32 of input resolution. We utilize pretrained ImageNet weights for initialization.
+
+\textbf{Decoder}: A lightweight feature pyramid network (FPN) aggregates multi-scale encoder features. Lateral connections project encoder features to a common channel dimension (192 channels) via $1 \times 1$ convolution. Features are progressively upsampled using bilinear interpolation and combined with skip connections. The final decoder block reduces channels by half before the output projection.
+
+\textbf{Output}: A $1 \times 1$ convolution projects decoder features to 20 channels, followed by Softplus activation ($\beta=1.0$) to ensure non-negative predictions in the log-intensity domain.
+
+The architecture is designed to capture both local morphological features (cell nuclei, tissue texture) and global contextual patterns (tissue architecture, spatial relationships) relevant to marker expression prediction.
+
+\subsection{Training Strategy and Validation Protocol}\label{subsec:training}
+
+\textbf{Data splitting}: Paired H\&E and Orion cores are randomly split into training and validation sets with a 80/20 ratio. Splitting is performed at the core level to prevent data leakage between spatially adjacent patches.
+
+\textbf{Patch sampling}: Training patches of size $224 \times 224$ pixels are extracted using stratified sampling that favors regions containing positive marker expression. For each training iteration, a target channel is selected according to channel-specific sampling probabilities inversely proportional to marker coverage:
+\begin{equation}
+    p_c \propto \left(\text{coverage}_c + \epsilon\right)^{-\alpha} \cdot \left(\bar{I}_c + \epsilon\right)
+\end{equation}
+where $\text{coverage}_c$ denotes the fraction of pixels exceeding threshold for channel $c$, $\bar{I}_c$ is the mean intensity, and $\alpha=1.0$ controls sampling temperature. Patches are accepted if they contain sufficient positive pixels for the targeted channel, with multiple resampling attempts for rare markers.
+
+\textbf{Optimization}: Models are trained using AdamW optimizer with learning rate $3 \times 10^{-4}$, weight decay $10^{-4}$, and gradient clipping at norm 1.0. Learning rate scheduling employs cosine annealing with optional linear warmup. Mixed-precision training (FP16) is enabled via automatic mixed precision (AMP) for computational efficiency.
+
+\textbf{Distributed training}: Multi-GPU training utilizes PyTorch DistributedDataParallel (DDP) with NCCL backend. Global quantile normalization parameters are computed on rank 0 and broadcast to all processes via filesystem synchronization.
+
+\subsection{Handling Rare and Ambiguous Cell Phenotypes}\label{subsec:rare_phenotypes}
+
+The extreme class imbalance inherent in multiplexed imaging---where rare immune populations may comprise less than 0.1\% of tissue area---presents substantial challenges for model training. We address this through multiple complementary strategies:
+
+\textbf{Adaptive sampling}: The channel-aware sampling procedure described above ensures that each training batch contains examples of rare marker expression. Channels with highest speckle scores (quantified by coefficient of variation) receive additional resampling budget.
+
+\textbf{Weighted loss}: Pixel-level loss weights emphasize positive regions:
+\begin{equation}
+    w_c(u,v) = 1 + \gamma \cdot \mathbb{1}\{y_c(u,v) > \tau\}
+\end{equation}
+where $\gamma=3.0$ provides boosted weight for pixels exceeding threshold $\tau=0.10$. Channel-specific loss weights inversely proportional to coverage further emphasize rare markers.
+
+\textbf{Presence auxiliary task}: An auxiliary classification head predicts binary marker presence (maximum intensity above threshold) for each channel, providing gradient signal even when pixel-level predictions are imprecise for very sparse markers.
+
+%% ===================================================================
+%% SECTION 6: LOSS FUNCTION DESIGN
+%% ===================================================================
+
+\section{Loss Function Design}\label{sec:loss}
+
+The training objective comprises multiple complementary terms addressing different aspects of prediction quality:
+
+\begin{equation}
+    \mathcal{L} = \lambda_{\text{rec}} \mathcal{L}_{\text{rec}} + \lambda_{\text{cov}} \mathcal{L}_{\text{cov}} + \lambda_{\text{ssim}} \mathcal{L}_{\text{ssim}} + \lambda_{\text{tv}} \mathcal{L}_{\text{tv}} + \lambda_{\text{pres}} \mathcal{L}_{\text{pres}}
+\end{equation}
+
+\textbf{Center-window reconstruction loss} ($\mathcal{L}_{\text{rec}}$): Pixel-wise reconstruction error is computed within a central window to avoid boundary artifacts from convolutional padding:
+\begin{equation}
+    \mathcal{L}_{\text{rec}} = \frac{1}{|\Omega|} \sum_{c=1}^{C} \sum_{(u,v) \in \Omega} w_c(u,v) \cdot |y_c(u,v) - \hat{y}_c(u,v)|^p
+\end{equation}
+where $\Omega$ denotes the central $12 \times 12$ pixel window, $w_c(u,v)$ is the adaptive weight, and $p \in \{1, 2\}$ selects L1 or L2 loss. L1 loss provides robustness to outliers while L2 loss encourages smooth predictions.
+
+\textbf{Coverage loss} ($\mathcal{L}_{\text{cov}}$): Per-channel mean intensity matching ensures global marker abundance is preserved:
+\begin{equation}
+    \mathcal{L}_{\text{cov}} = \sum_{c=1}^{C} |\bar{y}_c - \bar{\hat{y}}_c|
+\end{equation}
+where $\bar{y}_c$ and $\bar{\hat{y}}_c$ denote spatial means. Channel weights can be applied to emphasize rare markers.
+
+\textbf{Multi-scale structural similarity} ($\mathcal{L}_{\text{ssim}}$): MS-SSIM loss encourages structural correspondence between predicted and target images:
+\begin{equation}
+    \mathcal{L}_{\text{ssim}} = 1 - \text{MS-SSIM}(\mathbf{Y}, \hat{\mathbf{Y}})
+\end{equation}
+This perceptual loss complements pixel-wise terms by capturing spatial patterns at multiple scales.
+
+\textbf{Total variation regularization} ($\mathcal{L}_{\text{tv}}$): TV regularization discourages hallucinated noise and speckle artifacts:
+\begin{equation}
+    \mathcal{L}_{\text{tv}} = \sum_{c=1}^{C} \left( \|\nabla_h \hat{y}_c\|_1 + \|\nabla_v \hat{y}_c\|_1 \right)
+\end{equation}
+where $\nabla_h$ and $\nabla_v$ denote horizontal and vertical gradient operators.
+
+\textbf{Presence loss} ($\mathcal{L}_{\text{pres}}$): Binary classification of marker presence:
+\begin{equation}
+    \mathcal{L}_{\text{pres}} = \sum_{c=1}^{C} \text{BCE}\left(\sigma\left(\frac{\hat{y}_c^{\max} - \tau}{T}\right), \mathbb{1}\{y_c^{\max} > \tau\}\right)
+\end{equation}
+where $\hat{y}_c^{\max}$ is the maximum predicted intensity for channel $c$, $\sigma$ is the sigmoid function, and $T$ is a temperature parameter. This auxiliary objective provides explicit supervision for rare marker detection.
+
+Default loss weights are $\lambda_{\text{rec}}=1.0$, $\lambda_{\text{cov}}=0.1$, $\lambda_{\text{ssim}}=0.15$, $\lambda_{\text{tv}}=10^{-4}$, $\lambda_{\text{pres}}=0.25$.
+
+%% ===================================================================
+%% SECTION 7: EXPERIMENTAL DESIGN (PLACEHOLDER)
+%% ===================================================================
+
+\section{Experimental Design}\label{sec:experiments}
+
+\textit{This section will describe the experimental evaluation protocol including: dataset partitioning, evaluation metrics (per-channel PSNR, SSIM, correlation), baseline comparisons, cross-validation strategy, and ablation studies. Quantitative results will be added upon completion of systematic evaluation.}
+
+%% ===================================================================
+%% SECTION 8: RESULTS (PLACEHOLDER)
+%% ===================================================================
+
+\section{Results}\label{sec:results}
+
+\textit{This section will present quantitative and qualitative results including: (1) per-channel prediction accuracy metrics, (2) comparison of Swin-UNet vs. ConvNeXt encoder variants, (3) ablation studies on loss components and sampling strategies, (4) visualization of predicted vs. ground truth marker expression, and (5) analysis of failure modes and challenging cases. Results will be populated following systematic evaluation.}
+
+%% ===================================================================
+%% SECTION 9: DISCUSSION
+%% ===================================================================
+
+\section{Discussion}\label{sec:discussion}
+
+\subsection{Summary of Approach}
+
+We have presented HExIF, a comprehensive computational framework for predicting multiplex immunofluorescence from standard H\&E histopathology images. The approach integrates automated image registration, tissue segmentation, channel-aware training strategies, and multi-component loss functions designed to address the unique challenges of sparse, heterogeneous marker expression patterns.
+
+The 20-marker Orion panel employed in this study enables detailed characterization of the tumor immune microenvironment, with particular depth in macrophage subpopulation diversity. By simultaneously predicting all markers, the framework preserves spatial relationships and co-expression patterns that are essential for downstream phenotyping and spatial analysis.
+
+\subsection{Methodological Considerations}
+
+Several design choices warrant discussion:
+
+\textbf{Encoder architecture}: The Swin Transformer backbone was selected for its ability to capture long-range spatial dependencies through hierarchical self-attention, which may be particularly relevant for learning relationships between distant tissue structures. The comparison with convolutional alternatives (ConvNeXt) will inform architecture selection for different marker types.
+
+\textbf{Loss function complexity}: The multi-component loss incorporates five distinct terms, each addressing specific failure modes. While this complexity risks over-tuning, ablation studies will quantify the contribution of each component. The auxiliary presence loss is particularly relevant for rare markers where pixel-level accuracy may be limited.
+
+\textbf{Normalization strategy}: Global quantile scaling with log-transform provides a practical solution for intensity heterogeneity but assumes consistent staining across the training set. Extension to multi-site or multi-batch data will require more sophisticated normalization approaches.
+
+\subsection{Limitations}
+
+Several limitations should be acknowledged:
+
+\begin{itemize}
+    \item \textbf{Training data requirements}: The method requires spatially-registered H\&E and multiplexed imaging pairs, limiting training to cohorts where both modalities are available on serial sections.
+    
+    \item \textbf{Marker panel specificity}: The trained model predicts the specific Orion panel used for training. Extension to different panels requires retraining with corresponding data.
+    
+    \item \textbf{Registration accuracy}: Prediction quality depends on registration accuracy. Residual misalignment introduces noise that may particularly affect sparse markers.
+    
+    \item \textbf{Generalization}: Performance on tissue types, disease contexts, or scanner configurations not represented in training data is unknown and will require prospective evaluation.
+\end{itemize}
+
+\subsection{Biological Implications}
+
+Virtual multiplexing has potential applications across several areas:
+
+\textbf{Retrospective analysis}: Millions of archival H\&E specimens lack matched multiplexed imaging. Virtual staining could enable retrospective spatial biomarker analysis in large cohorts with clinical outcome data.
+
+\textbf{Prioritization for multiplexed imaging}: Predicted marker patterns could guide selection of cases or regions for subsequent experimental validation with actual multiplexed staining.
+
+\textbf{Rapid screening}: In clinical contexts where multiplexed imaging turnaround time is prohibitive, virtual predictions could provide preliminary spatial biomarker estimates to inform initial decision-making.
+
+\subsection{Future Directions}
+
+Several extensions are planned:
+
+\begin{itemize}
+    \item Integration of CODEX data to enable cross-platform training and validation
+    \item Uncertainty quantification to identify predictions requiring experimental confirmation
+    \item Extension to whole-slide inference with efficient tiling strategies
+    \item Development of downstream analysis pipelines for cell phenotyping and spatial statistics
+    \item Evaluation on independent cohorts with clinical outcome correlation
+\end{itemize}
+
+%% ===================================================================
+%% SECTION 10: CONCLUSION
+%% ===================================================================
+
+\section{Conclusion}\label{sec:conclusion}
+
+We have developed HExIF, an end-to-end framework for predicting 20-channel multiplex immunofluorescence from hematoxylin and eosin-stained tissue images. The approach addresses key challenges in virtual multiplexing through automated registration, channel-aware training strategies, and multi-component loss functions designed for sparse marker expression. While quantitative evaluation is ongoing, the methodology establishes a foundation for virtual spatial biomarker analysis that may expand the accessibility and applicability of multiplexed tissue imaging.
+
+\backmatter
+
+\bmhead{Supplementary information}
+
+Supplementary materials will include: (1) detailed hyperparameter configurations, (2) extended marker panel characterization, (3) additional visualization examples, and (4) code availability information.
+
+\bmhead{Acknowledgements}
+
+[Acknowledgements to be added]
+
+\section*{Declarations}
+
+\begin{itemize}
+\item \textbf{Funding}: [Funding information to be added]
+\item \textbf{Conflict of interest}: The authors declare no competing interests.
+\item \textbf{Ethics approval}: [IRB/ethics information for tissue specimens to be added]
+\item \textbf{Data availability}: [Data availability statement to be added]
+\item \textbf{Code availability}: Code will be made available upon publication at [repository URL to be added].
+\item \textbf{Author contributions}: R.S. developed the computational framework and performed experiments. A.G. supervised the project and provided guidance. All authors contributed to manuscript preparation.
+\end{itemize}
+
+%%===========================================================================================%%
+%% References
+%%===========================================================================================%%
+
+\begin{thebibliography}{99}
+
+\bibitem{REF_TME_review}
+Binnewies M, Roberts EW, Kersten K, et al. Understanding the tumor immune microenvironment (TIME) for effective therapy. Nat Med. 2018;24(5):541-550.
+
+\bibitem{REF_TME_spatial}
+Schürch CM, Bhate SS, Barlow GL, et al. Coordinated cellular neighborhoods orchestrate antitumoral immunity at the colorectal cancer invasive front. Cell. 2020;182(5):1341-1359.
+
+\bibitem{REF_spatial_heterogeneity}
+Marusyk A, Janiszewska M, Polyak K. Intratumor heterogeneity: the Rosetta Stone of therapy resistance. Cancer Cell. 2020;37(4):471-484.
+
+\bibitem{REF_CODEX}
+Goltsev Y, Samusik N, Kennedy-Darling J, et al. Deep profiling of mouse splenic architecture with CODEX multiplexed imaging. Cell. 2018;174(4):968-981.
+
+\bibitem{REF_MIBI}
+Angelo M, Bendall SC, Finck R, et al. Multiplexed ion beam imaging of human breast tumors. Nat Med. 2014;20(4):436-442.
+
+\bibitem{REF_IMC}
+Giesen C, Wang HA, Schapiro D, et al. Highly multiplexed imaging of tumor tissues with subcellular resolution by mass cytometry. Nat Methods. 2014;11(4):417-422.
+
+\bibitem{REF_spatial_signatures}
+Jackson HW, Fischer JR, Zanotelli VR, et al. The single-cell pathology landscape of breast cancer. Nature. 2020;578(7796):615-620.
+
+\bibitem{REF_HE_archive}
+Zarella MD, Bowman D, Aeffner F, et al. A practical guide to whole slide imaging: a white paper from the Digital Pathology Association. Arch Pathol Lab Med. 2019;143(2):222-234.
+
+\bibitem{REF_virtual_staining_review}
+Rivenson Y, de Haan K, Wallace WD, Ozcan A. Emerging advances to transform histopathology using virtual staining. BME Front. 2020;2020:9647163.
+
+\bibitem{REF_spatial_omics_review}
+Lewis SM, Asselin-Labat ML, Nguyen Q, et al. Spatial omics and multiplexed imaging to explore cancer biology. Nat Methods. 2021;18(9):997-1012.
+
+\bibitem{REF_immune_spatial}
+Moldoveanu D, Ramsay L, Laber M, et al. Spatially mapping the immune landscape of melanoma using imaging mass cytometry. Sci Immunol. 2022;7(70):eabi5072.
+
+\bibitem{REF_Orion}
+RareCyte Inc. Orion Instrument Platform. [Technical documentation].
+
+\bibitem{REF_immune_heterogeneity}
+Thorsson V, Gibbs DL, Brown SD, et al. The immune landscape of cancer. Immunity. 2018;48(4):812-830.
+
+\bibitem{REF_TAM_review}
+Cassetta L, Pollard JW. Tumor-associated macrophages. Curr Biol. 2020;30(15):R830-R838.
+
+\bibitem{REF_macrophage_continuum}
+Mulder K, Patel AA, Kong WT, et al. Cross-tissue single-cell landscape of human monocytes and macrophages in health and disease. Immunity. 2021;54(8):1883-1900.
+
+\bibitem{REF_SPP1_macrophage}
+Bill R, Wirapati P, Messemaker M, et al. CXCL9:SPP1 macrophage polarity identifies a network of cellular programs that control tumor immunity. Science. 2023;381(6657):515-524.
+
+\bibitem{REF_macrophage_spatial}
+Qi J, Sun H, Zhang Y, et al. Single-cell and spatial analysis reveal interaction of FAP+ fibroblasts and SPP1+ macrophages in colorectal cancer. Nat Commun. 2022;13(1):1742.
+
+\bibitem{REF_single_marker_1}
+Xu Y, Jia Z, Wang LB, et al. Large scale tissue histopathology image classification, segmentation, and visualization via deep learning. BMC Bioinform. 2017;18(1):281.
+
+\bibitem{REF_single_marker_2}
+Naik N, Madani A, Esteva A, et al. Deep learning-enabled breast cancer hormonal receptor status determination from base-level H\&E stains. Nat Commun. 2020;11(1):5727.
+
+\bibitem{REF_limited_panel}
+Fu Y, Jung AW, Torne RV, et al. Pan-cancer computational histopathology reveals mutations, tumor composition and prognosis. Nat Cancer. 2020;1(8):800-810.
+
+\bibitem{REF_class_imbalance}
+Johnson JM, Khoshgoftaar TM. Survey on deep learning with class imbalance. J Big Data. 2019;6(1):27.
+
+\bibitem{REF_registration}
+Borovec J, Munoz-Barrutia A, Kybic J. Benchmarking of image registration methods for differently stained histological slides. In: ICIP 2018. IEEE; 2018:3368-3372.
+
+\bibitem{REF_normalization}
+Macenko M, Niethammer M, Marron JS, et al. A method for normalizing histology slides for quantitative analysis. In: ISBI 2009. IEEE; 2009:1107-1110.
+
+\bibitem{REF_multiplex_review}
+Tan WCC, Nerurkar SN, Cai HY, et al. Overview of multiplex immunohistochemistry/immunofluorescence techniques in the era of cancer immunotherapy. Cancer Commun. 2020;40(4):135-153.
+
+\bibitem{REF_Goltsev_CODEX}
+Goltsev Y, Nolan GP. CODEX multiplexed tissue imaging. Nat Rev Methods Primers. 2023;3:13.
+
+\bibitem{REF_comp_path_review}
+Echle A, Rindtorff NT, Brinker TJ, et al. Deep learning in cancer pathology: a new generation of clinical biomarkers. Br J Cancer. 2021;124(4):686-696.
+
+\bibitem{REF_DL_path}
+Bera K, Schalper KA, Rimm DL, Velcheti V, Madabhushi A. Artificial intelligence in digital pathology—new tools for diagnosis and precision oncology. Nat Rev Clin Oncol. 2019;16(11):703-715.
+
+\bibitem{REF_spatial_analysis_review}
+Palla G, Spitzer H, Klein M, et al. Squidpy: a scalable framework for spatial omics analysis. Nat Methods. 2022;19(2):171-178.
+
+\bibitem{REF_cell_seg}
+Stringer C, Wang T, Michaelos M, Pachitariu M. Cellpose: a generalist algorithm for cellular segmentation. Nat Methods. 2021;18(1):100-106.
+
+\bibitem{REF_DL_phenotyping}
+Campanella G, Hanna MG, Geneslaw L, et al. Clinical-grade computational pathology using weakly supervised deep learning on whole slide images. Nat Med. 2019;25(8):1301-1309.
+
+\bibitem{REF_UNet}
+Ronneberger O, Fischer P, Brox T. U-Net: Convolutional networks for biomedical image segmentation. In: MICCAI 2015. Springer; 2015:234-241.
+
+\bibitem{REF_ViT_path}
+Chen RJ, Lu MY, Weng WH, et al. Multimodal co-attention transformer for survival prediction in gigapixel whole slide images. In: ICCV 2021. IEEE; 2021:4015-4025.
+
+\bibitem{REF_Swin}
+Liu Z, Lin Y, Cao Y, et al. Swin Transformer: Hierarchical vision transformer using shifted windows. In: ICCV 2021. IEEE; 2021:10012-10022.
+
+\bibitem{REF_Rivenson}
+Rivenson Y, Wang H, Wei Z, et al. Virtual histological staining of unlabelled tissue-autofluorescence images via deep learning. Nat Biomed Eng. 2019;3(6):466-477.
+
+\bibitem{REF_HE_IHC}
+Burlingame EA, Margolin AA, Gray JW, Chang YH. SHIFT: speedy histological-to-immunofluorescent translation of a tumor signature enabled by deep learning. Sci Rep. 2020;10(1):17507.
+
+\bibitem{REF_unstained_HE}
+de Haan K, Zhang Y, Zuckerman JE, et al. Deep learning-based transformation of H\&E stained tissues into special stains. Nat Commun. 2021;12(1):4884.
+
+\bibitem{REF_AF_virtual}
+Zhang Y, de Haan K, Rivenson Y, et al. Digital synthesis of histological stains using micro-structured and multiplexed virtual staining of label-free tissue. Light Sci Appl. 2020;9(1):78.
+
+\bibitem{REF_HistoPlexer}
+Andani S, Yun T, Moyes A, et al. HistoPlexer: Histopathology-based protein multiplex generation using deep learning. bioRxiv. 2024. doi:10.1101/2024.01.09.574826.
+
+\bibitem{REF_spatial_stats}
+Baddeley A, Rubak E, Turner R. Spatial Point Patterns: Methodology and Applications with R. CRC Press; 2015.
+
+\bibitem{REF_point_patterns}
+Barua S, Solis L, Parra ER, et al. A functional spatial analysis platform for discovery of immunological interactions predictive of low-grade to high-grade transition of pancreatic intraductal papillary mucinous neoplasms. Cancer Inform. 2018;17:1176935118782880.
+
+\bibitem{REF_graph_tissue}
+Pati P, Jaume G, Foncubierta-Rodríguez A, et al. Hierarchical graph representations in digital pathology. Med Image Anal. 2022;75:102264.
+
+\bibitem{REF_spatial_tx}
+Marx V. Method of the Year: spatially resolved transcriptomics. Nat Methods. 2021;18(1):9-14.
+
+\bibitem{REF_TAM_abundance}
+Qian BZ, Pollard JW. Macrophage diversity enhances tumor progression and metastasis. Cell. 2010;141(1):39-51.
+
+\bibitem{REF_TAM_scRNA}
+Cheng S, Li Z, Gao R, et al. A pan-cancer single-cell transcriptional atlas of tumor infiltrating myeloid cells. Cell. 2021;184(3):792-809.
+
+\bibitem{REF_TAM_spatial_dist}
+Zhang L, Li Z, Skrber KM, et al. Single-cell analyses inform mechanisms of myeloid-targeted therapies in colon cancer. Cell. 2020;181(2):442-459.
+
+\bibitem{REF_TAM_Tcell}
+Peranzoni E, Lemoine J, Vimeux L, et al. Macrophages impede CD8 T cells from reaching tumor cells and limit the efficacy of anti–PD-1 treatment. Proc Natl Acad Sci. 2018;115(17):E4041-E4050.
+
+\bibitem{REF_VALIS}
+Gatenbee CD, Baker AM, Prabhakaran S, et al. Virtual alignment of pathology image series for multi-gigapixel whole slide images. Nat Commun. 2023;14(1):4502.
+
+\end{thebibliography}
+
+\end{document}
