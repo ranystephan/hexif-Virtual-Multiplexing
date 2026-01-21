@@ -1,5 +1,7 @@
 # HEXIF: Histology to Multiplex Immunofluorescence Translation
 
+__Gentles Lab__
+
 This repository contains the official implementation of the HEXIF model, a deep learning framework for synthesizing multiplex immunofluorescence (ORION/CODEX) images directly from standard H&E stained histology slides.
 
 ## Installation
