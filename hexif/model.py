@@ -6,7 +6,7 @@ import timm
 HAS_TIMM = True
 
 class SwinUNet(nn.Module):
-    def __init__(self, out_ch: int = 20, base_ch: int = 192, softplus_beta: float = 1.0):
+    def __init__(self, out_ch: int = 20, base_ch: int = 192, softplus_beta: float = 1.0, presence_head: bool = False):
         super().__init__()
         if not HAS_TIMM:
             raise ImportError("timm is required. pip install timm")
@@ -22,8 +22,16 @@ class SwinUNet(nn.Module):
         self.smooth0 = nn.Sequential(nn.Conv2d(base_ch, base_ch//2, 3, padding=1), nn.ReLU(inplace=True))
         self.out = nn.Conv2d(base_ch//2, out_ch, 1)
         self.softplus = nn.Softplus(beta=softplus_beta)
+        self.presence_head = None
+        self.has_presence_head = bool(presence_head)
+        if presence_head:
+            self.presence_head = nn.Sequential(
+                nn.AdaptiveAvgPool2d(1),
+                nn.Flatten(),
+                nn.Linear(base_ch//2, out_ch),
+            )
         
-    def forward(self, x):
+    def forward(self, x, return_presence: bool = False):
         feats = self.enc(x)
         feats = [f.permute(0, 3, 1, 2) for f in feats]
         f3 = self.lats[3](feats[3])
@@ -37,6 +45,9 @@ class SwinUNet(nn.Module):
         up = self.smooth0(up)
         y = self.out(up)
         y = self.softplus(y)  # log1p domain is >=0
+        if return_presence and self.presence_head is not None:
+            presence_logits = self.presence_head(up)
+            return y, presence_logits
         return y
         
     @staticmethod

@@ -1,4 +1,4 @@
-\begin{thebibliography}{47}
+\begin{thebibliography}{46}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{#1}}
 \providecommand{\urlprefix}{URL }
@@ -110,9 +110,6 @@ Qi J, Sun H, Zhang Y, et~al (2022) Single-cell and spatial analysis reveal inter
 
 \bibitem[{Qian and Pollard(2010)}]{Qian2010}
 Qian BZ, Pollard JW (2010) Macrophage diversity enhances tumor progression and metastasis. Cell 141(1):39--51. \doi{10.1016/j.cell.2010.03.014}
-
-\bibitem[{{RareCyte, Inc.}(2024)}]{RareCyte2024}
-{RareCyte, Inc.} (2024) Orion instrument platform: Technical documentation. \url{https://rarecyte.com/orion/}, accessed: 2024
 
 \bibitem[{Rivenson et~al.(2019)Rivenson, Wang, Wei, de~Haan, Zhang, Wu, G{\"u}naydın, Zuckerman, Chong, Sisk, Westbrook, Wallace, and Ozcan}]{Rivenson2019}
 Rivenson Y, Wang H, Wei Z, et~al (2019) Virtual histological staining of unlabelled tissue-autofluorescence images via deep learning. Nature Biomedical Engineering 3(6):466--477. \doi{10.1038/s41551-019-0362-y}

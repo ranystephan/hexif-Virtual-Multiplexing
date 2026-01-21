@@ -23,8 +23,12 @@ def train_one_epoch(loader, model, criterion, opt, device, use_amp=True, grad_cl
 
         opt.zero_grad(set_to_none=True)
         with torch.cuda.amp.autocast(enabled=use_amp and device.type=='cuda'):
-            pred_log = model(he)
-            loss = criterion(pred_log, tgt_log)
+            out = model(he, return_presence=getattr(model, "has_presence_head", False))
+            if isinstance(out, tuple):
+                pred_log, presence_logits = out
+            else:
+                pred_log, presence_logits = out, None
+            loss = criterion(pred_log, tgt_log, presence_logits=presence_logits)
 
         scaler.scale(loss).backward()
         if grad_clip is not None:
@@ -52,8 +56,12 @@ def validate_one_epoch(loader, model, criterion, device, use_amp=True, sampler=N
         he = batch['he'].to(device, non_blocking=True)
         tgt_log = batch['tgt_log'].to(device, non_blocking=True)
         with torch.cuda.amp.autocast(enabled=use_amp and device.type=='cuda'):
-            pred_log = model(he)
-            loss = criterion(pred_log, tgt_log)
+            out = model(he, return_presence=getattr(model, "has_presence_head", False))
+            if isinstance(out, tuple):
+                pred_log, presence_logits = out
+            else:
+                pred_log, presence_logits = out, None
+            loss = criterion(pred_log, tgt_log, presence_logits=presence_logits)
         bs = he.size(0)
         total += float(loss) * bs
         n += bs

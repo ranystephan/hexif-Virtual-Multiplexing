@@ -3,46 +3,52 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: sn-article.aux
 The style file: sn-basic.bst
 Database file #1: sn-bibliography.bib
+Repeated entry---line 576 of file sn-bibliography.bib
+ : @article{Moldoveanu2022
+ :                        ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "RareCyte2024"
 sn-basic.bst [2024/07/19 v1.1 bibliography style]
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 47 entries,
+You've used 46 entries,
             3567 wiz_defined-function locations,
-            1070 strings with 19580 characters,
-and the built_in function-call counts, 47475 in all, are:
-= -- 4325
-> -- 2957
-< -- 11
-+ -- 1107
-- -- 924
-* -- 4289
-:= -- 7097
-add.period$ -- 87
-call.type$ -- 47
-change.case$ -- 608
-chr.to.int$ -- 46
-cite$ -- 47
-duplicate$ -- 2845
-empty$ -- 3169
-format.name$ -- 1069
-if$ -- 9766
+            1066 strings with 19467 characters,
+and the built_in function-call counts, 47099 in all, are:
+= -- 4290
+> -- 2947
+< -- 10
++ -- 1103
+- -- 921
+* -- 4269
+:= -- 7031
+add.period$ -- 86
+call.type$ -- 46
+change.case$ -- 601
+chr.to.int$ -- 45
+cite$ -- 46
+duplicate$ -- 2814
+empty$ -- 3139
+format.name$ -- 1065
+if$ -- 9691
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 366
-newline$ -- 150
-num.names$ -- 188
-pop$ -- 1304
+missing$ -- 361
+newline$ -- 147
+num.names$ -- 184
+pop$ -- 1293
 preamble$ -- 1
-purify$ -- 550
+purify$ -- 545
 quote$ -- 0
-skip$ -- 1223
+skip$ -- 1211
 stack$ -- 0
-substring$ -- 3033
-swap$ -- 1004
+substring$ -- 3020
+swap$ -- 994
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 420
+type$ -- 411
 warning$ -- 0
-while$ -- 261
+while$ -- 258
 width$ -- 0
-write$ -- 572
+write$ -- 561
+(There was 1 error message)

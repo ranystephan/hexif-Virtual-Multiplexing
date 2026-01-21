@@ -25,16 +25,17 @@ class HexifPredictor:
     def _load_model(self, path: str) -> SwinUNet:
         logging.info(f"Loading model from {path}")
         checkpoint = torch.load(path, map_location=self.device)
-        model = SwinUNet(out_ch=20, base_ch=192).to(self.device)
+        state_dict = checkpoint["model"] if "model" in checkpoint else checkpoint
+        has_presence = any(k.startswith("presence_head") for k in state_dict.keys())
+        model = SwinUNet(out_ch=20, base_ch=192, presence_head=has_presence).to(self.device)
         
         # Handle state dict keys (DDP adds 'module.' prefix)
-        state_dict = checkpoint["model"] if "model" in checkpoint else checkpoint
         new_state_dict = {}
         for k, v in state_dict.items():
             name = k[7:] if k.startswith("module.") else k
             new_state_dict[name] = v
             
-        model.load_state_dict(new_state_dict)
+        model.load_state_dict(new_state_dict, strict=False)
         model.eval()
         return model
 

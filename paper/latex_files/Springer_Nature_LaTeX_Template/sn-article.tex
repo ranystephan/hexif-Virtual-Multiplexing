@@ -88,6 +88,9 @@
 \raggedbottom
 %%\unnumbered% uncomment this for unnumbered level heads
 
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+
 \begin{document}
 
 \title[HExIF: Virtual Multiplex Immunofluorescence]{HExIF: An End-to-End Deep Learning Framework for Virtual Multiplex Immunofluorescence from H\&E Slides}
@@ -117,7 +120,7 @@
 %% Sample for unstructured abstract %%
 %%==================================%%
 
-\abstract{Multiplexed immunofluorescence imaging has emerged as a powerful technology for characterizing the spatial organization of the tumor microenvironment at single-cell resolution. However, these technologies remain costly, time-intensive, and require specialized equipment, limiting their adoption in routine clinical practice. Here, we present HExIF (Hematoxylin and Eosin to Immunofluorescence), a computational framework for predicting spatially-resolved multiplex protein expression directly from standard hematoxylin and eosin (H\&E)-stained tissue sections. Our approach integrates automated image registration, tissue segmentation, and a deep learning architecture based on hierarchical vision transformers to simultaneously predict expression patterns across a 20-marker immunofluorescence panel \textcolor{red}{TODO: change this when done with CODEX as well}. The framework employs a multi-component loss function designed to address the challenges of sparse marker expression and channel-specific intensity distributions. We demonstrate the methodology on an Orion multiplex imaging dataset with markers targeting macrophage subpopulations, T cell subtypes, and stromal components. This work establishes a foundation for virtual multiplexing that may accelerate spatial biomarker discovery and enable retrospective analysis of archival H\&E specimens.}
+\abstract{Multiplexed immunofluorescence imaging has emerged as a powerful technology for characterizing the spatial organization of the tumor microenvironment at single-cell resolution. However, these technologies remain costly, time-intensive, and require specialized equipment, limiting their adoption in routine clinical practice. Here, we present HExIF (Hematoxylin and Eosin to Immunofluorescence), a computational framework for predicting spatially-resolved multiplex protein expression directly from standard hematoxylin and eosin (H\&E)-stained tissue sections. Our approach integrates automated image registration, tissue segmentation, and a deep learning architecture based on hierarchical vision transformers to simultaneously predict expression patterns across a 20-marker immunofluorescence panel \textcolor{red}{TODO: change this when done with CODEX as well}. The framework employs a multi-component loss function designed to address the challenges of sparse marker expression and channel-specific intensity distributions. We demonstrate the methodology on an Orion multiplex imaging dataset \cite{Lin2023} with markers targeting macrophage subpopulations, T cell subtypes, and stromal components. This work establishes a foundation for virtual multiplexing that may accelerate spatial biomarker discovery and enable retrospective analysis of archival H\&E specimens.}
 
 \keywords{Computational pathology \and Virtual staining \and Multiplex immunofluorescence \and Deep learning \and Tumor microenvironment \and Spatial transcriptomics}
 
@@ -139,7 +142,7 @@ In contrast, hematoxylin and eosin (H\&E) staining represents the cornerstone of
 
 The emergence of spatial single-cell imaging has catalyzed a paradigm shift in how we conceptualize tissue architecture and cellular interactions \cite{Lewis2021}. Unlike traditional immunohistochemistry (IHC), which typically permits visualization of only one to three markers simultaneously, multiplexed platforms enable comprehensive phenotyping of individual cells within their native tissue context. This capability has proven particularly valuable for dissecting the immune microenvironment, where the functional state of immune cells depends critically on their spatial positioning relative to tumor cells, vasculature, and other stromal elements \cite{Moldoveanu2022}.
 
-Orion, the multiplexed imaging platform employed in this study, utilizes cyclic immunofluorescence with spectrally-resolved detection to achieve simultaneous 20-channel imaging \cite{RareCyte2024}. The marker panel used in this work was designed to capture key populations of the myeloid and lymphoid compartments, with particular emphasis on macrophage heterogeneity. Specifically, the panel includes markers for: nuclear identification (Hoechst); macrophage lineage and polarization (CD68, IBA1, CD163, FOLR2, SPP1); T cell subsets (CD3$\varepsilon$, CD8$\alpha$, FOXP3); stromal components (FAP, SMA, Pan-CK); and additional markers relevant to immune function and tissue architecture (NLRP3, GFPT2, CD15, LYVE1, IL-4I1).
+Orion, the multiplexed imaging platform employed in this study, utilizes cyclic immunofluorescence with spectrally-resolved detection to achieve simultaneous 20-channel imaging \cite{RareCyte2020}. The marker panel used in this work was designed to capture key populations of the myeloid and lymphoid compartments, with particular emphasis on macrophage heterogeneity. Specifically, the panel includes markers for: nuclear identification (Hoechst); macrophage lineage and polarization (CD68, IBA1, CD163, FOLR2, SPP1); T cell subsets (CD3$\varepsilon$, CD8$\alpha$, FOXP3); stromal components (FAP, SMA, Pan-CK); and additional markers relevant to immune function and tissue architecture (NLRP3, GFPT2, CD15, LYVE1, IL-4I1).
 
 \subsection{Immune Microenvironment Heterogeneity and Biological Motivation}\label{subsec:immune_heterogeneity}
 
@@ -195,7 +198,7 @@ The past decade has witnessed rapid development of multiplexed tissue imaging te
 
 \textbf{Imaging Mass Cytometry (IMC)} and \textbf{MIBI} utilize metal-tagged antibodies with mass spectrometry detection, achieving panels of 40+ markers with subcellular resolution \cite{Giesen2014, Angelo2014}. While offering excellent multiplexing capacity and minimal spectral overlap, these platforms have lower throughput and require specialized instrumentation.
 
-\textbf{Orion} and related cyclic immunofluorescence platforms achieve multiplexing through iterative staining and imaging cycles with spectrally-resolved fluorophore detection \cite{RareCyte2024}. The ArgoFluor series employed in this study provides 20-channel capacity with optimized spectral separation. These platforms balance multiplexing capacity with relatively accessible instrumentation and established immunofluorescence workflows.
+\textbf{Orion} and related cyclic immunofluorescence platforms achieve multiplexing through iterative staining and imaging cycles with spectrally-resolved fluorophore detection \cite{RareCyte2020}. The ArgoFluor series employed in this study provides 20-channel capacity with optimized spectral separation. These platforms balance multiplexing capacity with relatively accessible instrumentation and established immunofluorescence workflows.
 
 \subsection{Computational Pathology for Spatial Omics}\label{subsec:comp_path}
 
@@ -213,7 +216,7 @@ Deep learning approaches for cellular phenotyping in tissue images have evolved 
 
 \textbf{Virtual staining} methods aim to computationally transform images from one staining modality to another. Rivenson and colleagues pioneered deep learning-based virtual staining, demonstrating that autofluorescence images could be transformed to appear as if H\&E-stained \cite{Rivenson2019}. Subsequent work has extended this concept to various stain transformations including H\&E to IHC \cite{Burlingame2020}, unstained to H\&E \cite{deHaan2021}, and autofluorescence to multiple special stains \cite{Zhang2020LightSci}.
 
-\textbf{HistoPlexer}, developed by Andani and colleagues, represents a significant advance in multi-marker prediction from histopathology images \cite{Andani2024}. Their approach employs a conditional generative model to predict multiplex immunofluorescence patterns, demonstrating feasibility of comprehensive virtual multiplexing. Our work builds on this foundation while introducing several methodological innovations including channel-aware sampling and multi-component loss design.
+\textbf{HistoPlexer}, developed by Andani and colleagues \cite{Andani2025}, represents a significant advance in multi-marker prediction from histopathology images. Their approach employs a conditional generative model to predict multiplex immunofluorescence patterns, demonstrating feasibility of comprehensive virtual multiplexing. Our work builds on this foundation while introducing several methodological innovations including channel-aware sampling and multi-component loss design.
 
 \subsection{Spatial Statistics and Microenvironment Modeling}\label{subsec:spatial_stats}
 
@@ -243,7 +246,7 @@ Given the biological importance of macrophage spatial heterogeneity, we designed
 
 \subsection{Orion Multiplex Imaging Platform}\label{subsec:orion_platform}
 
-The Orion multiplex imaging platform enables simultaneous detection of 20 protein markers through cyclic immunofluorescence with spectrally-resolved ArgoFluor detection \cite{RareCyte2024}. Unlike sequential staining approaches that require tissue stripping between cycles, Orion employs spectral unmixing algorithms to resolve overlapping fluorophore emissions, enabling single-round acquisition of the complete marker panel.
+The Orion multiplex imaging platform enables simultaneous detection of 20 protein markers through cyclic immunofluorescence with spectrally-resolved ArgoFluor detection \cite{RareCyte2020}. Unlike sequential staining approaches that require tissue stripping between cycles, Orion employs spectral unmixing algorithms to resolve overlapping fluorophore emissions, enabling single-round acquisition of the complete marker panel.
 
 Image acquisition generates a multi-channel OME-TIFF stack with 20 fluorescence channels plus optional brightfield reference. Native resolution varies by objective but typically achieves subcellular detail sufficient for nuclear morphology and membrane marker localization. For this study, registered images were processed at full resolution prior to patch extraction for model training.
 
@@ -307,6 +310,12 @@ While the current implementation focuses on Orion multiplex data, the framework 
 \subsection{System Architecture and Data Flow}\label{subsec:architecture}
 
 The HExIF pipeline comprises four major processing stages: (1) multimodal image registration, (2) tissue segmentation and region extraction, (3) training data generation with intensity normalization, and (4) deep learning model training and inference. Figure~\ref{fig:pipeline} provides a schematic overview of the complete workflow.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{diagrams/pipeline_diagram.png}
+\caption{\textbf{HExIF Computational Pipeline.} (A) Data Preparation \& Preprocessing: Paired H\&E and Orion Whole Slide Images (WSIs) are spatially registered using VALIS. Tissue cores are detected and extracted to generate aligned training patches. (B) Deep Learning Model: A Swin-UNet architecture processes H\&E patches to predict 20-channel multiplex immunofluorescence maps. The model is trained using a composite loss function ($L_{total}$) incorporating center-masked reconstruction ($L_{center}$), structural similarity ($L_{SSIM}$), and coverage ($L_{cov}$) terms. (C) Inference: The trained model is applied to unseen H\&E slides in a sliding window fashion to generate whole-slide virtual multiplex immunofluorescence images.}\label{fig:pipeline}
+\end{figure}
 
 The pipeline is implemented in Python with dependencies including PyVIPS for large-image handling, VALIS for registration, scikit-image for morphological processing, and PyTorch for deep learning components. Distributed training support enables efficient processing on multi-GPU systems.
 

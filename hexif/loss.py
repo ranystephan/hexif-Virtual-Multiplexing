@@ -78,7 +78,7 @@ class OrionLoss(nn.Module):
         self.channel_weight_map = weights.view(1, -1, 1, 1)
         self.channel_weight_vec = weights.view(1, -1)
 
-    def forward(self, pred_log, tgt_log):
+    def forward(self, pred_log, tgt_log, presence_logits: Optional[torch.Tensor] = None):
         B, C, H, W = pred_log.shape
         if self.cw > 0:
             y1 = H//2 - self.cw//2
@@ -130,7 +130,10 @@ class OrionLoss(nn.Module):
             pred_max = pred_log.amax(dim=(2, 3))
             tgt_max = tgt_log.amax(dim=(2, 3))
             tgt_presence = (tgt_max > self.pos_tau).float()
-            logits = (pred_max - self.pos_tau) / self.presence_temperature
+            if presence_logits is None:
+                logits = (pred_max - self.pos_tau) / self.presence_temperature
+            else:
+                logits = presence_logits
             if self.use_focal_presence:
                 presence_loss = sigmoid_focal_loss(logits, tgt_presence,
                                                    alpha=self.focal_alpha,

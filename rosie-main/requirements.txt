@@ -1,9 +1,0 @@
-torch
-torchvision
-pandas
-wandb
-numpy
-tqdm
-scikit-image
-ome-zarr
-fastparquet
